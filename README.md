@@ -196,7 +196,7 @@ uv lock --upgrade          # aggiorna il lockfile alle ultime versioni compatibi
 Modifica `main.py` per puntare al `.eml` che vuoi processare:
 
 ```python
-result = graph.invoke({"file_path": "src/data/email/Confirmation.eml"})
+file_path = "src/data/email/New_Volo2.eml"
 ```
 
 A fine esecuzione viene anche generato `graph.png`, il diagramma Mermaid del grafo.
