@@ -1,0 +1,1482 @@
+Received: from CW1P265MB9263.GBRP265.PROD.OUTLOOK.COM (2603:10a6:400:274::18)
+ by LO4P265MB4309.GBRP265.PROD.OUTLOOK.COM with HTTPS; Thu, 7 May 2026
+ 15:40:45 +0000
+Received: from LO4P123CA0556.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:33b::6)
+ by CW1P265MB9263.GBRP265.PROD.OUTLOOK.COM (2603:10a6:400:274::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9870.27; Thu, 7 May
+ 2026 15:40:14 +0000
+Received: from LO1PEPF000022FC.GBRP265.PROD.OUTLOOK.COM
+ (2603:10a6:600:33b:cafe::aa) by LO4P123CA0556.outlook.office365.com
+ (2603:10a6:600:33b::6) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9891.17 via Frontend Transport; Thu,
+ 7 May 2026 15:40:13 +0000
+Authentication-Results: spf=pass (sender IP is 57.103.84.26)
+ smtp.mailfrom=icloud.com; dkim=pass (signature was verified)
+ header.d=icloud.com;dmarc=pass action=none
+ header.from=icloud.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of icloud.com designates
+ 57.103.84.26 as permitted sender) receiver=protection.outlook.com;
+ client-ip=57.103.84.26; helo=outbound.qs.icloud.com; pr=C
+Received: from outbound.qs.icloud.com (57.103.84.26) by
+ LO1PEPF000022FC.mail.protection.outlook.com (10.167.240.20) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9891.9
+ via Frontend Transport; Thu, 7 May 2026 15:40:13 +0000
+Received: from outbound.qs.icloud.com (unknown [127.0.0.2])
+	by p00-icloudmta-asmtp-us-east-2d-20-percent-2 (Postfix) with ESMTPS id 179D91870906
+	for <alessandro.sacchi@piksel.com>; Thu, 07 May 2026 15:40:12 +0000 (UTC)
+X-ICL-Out-Info: HUtFAUMEWwJACUgBTUQeDx5WFlZNRAJCTQ5BHVwHRQBCCFYCVAFLVxQEGV8IGRhTE1oQWl8HWwAwUBtfAkIPHBNWFRMLU1ZTHFxWQAxUCFoZC0gDX3cCURxWDVdDVARfUEsbDlwXA1ccVkVcGEMJXQVXHB0cREVbE1UXRgkZCF0dGQhHHwowA0IOVgNDB0UALRkcV1BeCF4fTBwdDlgGEh1QHA5RD1IEQA5OUAgaCFQTXVUHCANfHxILSwtAD1MFEgBLC1RRDwRJeRVWQ1QEX04ZDEodUlZbE1UXRgk=
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=icloud.com; s=1a1hai; t=1778168412; x=1780760412; bh=UV4ckRuGMNBeb9qRPKsqXm+KheJ/Z7PvCivwXGwJYXA=; h=To:From:Subject:Date:Message-id:Content-Type:MIME-Version:x-icloud-hme; b=rTzvkLmFnHI1jn2TplhsLD2voDlQ+I5pkvtiMPvQKAuwcHdMQvos/v5ussqUyiyUqR6gM5vzJzkgumpxsRFgUp+TgPdhdLCrjedEMgpb4byDBmkjzvcdWd8RLe3Gw2qwNN3pURw7GXFN2BABVVxn9NbwGVRvuw2kOjVCwPynVKbtzWhYkPEkgsdfcTva9l/aHvvKsnEv9/Le0r61/bqo+cxbJ4ezVKAoKqkHC9RKayjfikHtFmciCwSfk+hElQpbe5sUggHI4fXHMx/5CgAlzJ8m5hIL3A8rdUIimjvK8tTGxOSM/g2hDEuunJjYOyAZNuTsgPtOggqbX4DTpn5YeQ==
+Received: from p00-mailws2-65744d9f87-bjnwg (unknown [10.112.113.19])
+	by p00-icloudmta-asmtp-us-east-2d-20-percent-2 (Postfix) with ESMTPSA id B866C187095A
+	for <alessandro.sacchi@piksel.com>; Thu, 07 May 2026 15:40:11 +0000 (UTC)
+To: alessandro.sacchi@piksel.com
+From: Alessandro Sacchi <ale.sacchi2002@icloud.com>
+Subject: Fwd: Itinerario di Viaggio Ryanair
+Date: Thu, 7 May 2026 15:40:11 +0000 (GMT)
+X-Mailer: iCloud MailClient2614Hotfix46 MailServer2612B5.952a5ad53a12
+Message-id: <896076ce-cfcd-4e44-b238-887b9389fd69@me.com>
+Content-Type: multipart/alternative; boundary=Apple-Webmail-42--457c456d-7f70-46d9-99fd-c871ffef4cb7
+References: <de657f$3trhpl@mail4.ryanair.com>
+ <CAADfny9SqfQkCAg+CkEFmYHDebu9Xep-PCMx5kdcSGhUySqzAg@mail.gmail.com>
+X-Proofpoint-GUID: lwltKMcP11imq9TbJWJ5wZ-pdnbtqyj_
+X-Authority-Info-Out: v=2.4 cv=DOCCIiNb c=1 sm=1 tr=0 ts=69fcb25c
+ cx=c_apl:c_pps:t_out a=w0vwr1DNSLjGex3smDq1Tg==:117 a=NGcC8JguVDcA:10
+ a=x7bEGLp0ZPQA:10 a=pxaA-jRotakA:10 a=VkNPw1HP01LnGYTKEx00:22
+ a=C33KhHhesHnLg46QuosA:9 a=QEXdDO2ut3YA:10 a=w6jg3rqHAAAA:8 a=JqEG_dyiAAAA:8
+ a=3j4BkbkPAAAA:8 a=BkpHzsgbAAAA:8 a=vnREMb7VAAAA:8 a=jU4qhlNgAAAA:8
+ a=1XWaLZrsAAAA:8 a=t-IPkPogAAAA:8 a=swWvZdFEeAAmPFL9YIcA:9
+ a=QdT3O-SVvPC6VcrC:21 a=_W_S_7VecoQA:10
+X-Proofpoint-Spam-Details-Enc: AW1haW4tMjYwNTA3MDE1NyBTYWx0ZWRfX4RhLROgluDgo
+ fE80lMTX6mGTDQR1BZyz4lur/Q6XJeFtixCqtZ6nlf18CuhXNENglU/nTN8gNkqxWJkKmHrFWc3
+ nPbGMLCxVkMuEi6JNWQYu+thivdyjcHrzkeKF/Wc3x+Vs6rBa/j4TC172xsLztOTFaR6LgEm0g1
+ quRiD4pwPsxhp8VYsbT+AL3GlzZ1tM0XKSGTW07SHhRSVqW6YUFIY5FQrQLEQ3Ryax3lgTSvesz
+ h7Dea+509mUNVbE30+mGh5b06z4gD9JRvDVHamPPTUsHq0uBc7DIDRlPIB38Md820Ff30dF3wD1
+ fZrP2qpR96XsHn7Jk4F+2Q+vVNwxADSiKEQiz+uOhxs/87IUT+FqP1DRQErppk=
+X-Proofpoint-ORIG-GUID: lwltKMcP11imq9TbJWJ5wZ-pdnbtqyj_
+Return-Path: ale.sacchi2002@icloud.com
+X-MS-Exchange-Organization-ExpirationStartTime: 07 May 2026 15:40:13.8809
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 42a961ce-61eb-452f-980d-08deac4eee4f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: dbb58153-e4db-40a0-9b26-d4d9f1473a75:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: LO1PEPF000022FC:EE_|CW1P265MB9263:EE_|LO4P265MB4309:EE_
+X-MS-Exchange-Organization-AuthSource: LO1PEPF000022FC.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 42a961ce-61eb-452f-980d-08deac4eee4f
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704160411799003|3109299003|1032899013|31052699007|7049299003|39142699007|7093399015|4123199012|69100299015|5073199012|5063199012|7149299003|2066899003|18002099003|16102099003|8096899003|55112099003|13003099007|56012099003|19002099003;
+X-Forefront-Antispam-Report: CIP:57.103.84.26;CTRY:US;LANG:it;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:outbound.qs.icloud.com;PTR:qs-2004c-snip4-3.eps.apple.com;CAT:NONE;SFS:(13230040)(704160411799003)(3109299003)(1032899013)(31052699007)(7049299003)(39142699007)(7093399015)(4123199012)(69100299015)(5073199012)(5063199012)(7149299003)(2066899003)(18002099003)(16102099003)(8096899003)(55112099003)(13003099007)(56012099003)(19002099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 May 2026 15:40:13.6798
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 42a961ce-61eb-452f-980d-08deac4eee4f
+X-MS-Exchange-CrossTenant-Id: dbb58153-e4db-40a0-9b26-d4d9f1473a75
+X-MS-Exchange-CrossTenant-AuthSource: LO1PEPF000022FC.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CW1P265MB9263
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:31.7468302
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9891.006
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4717077)(4999163)(920097)(811242)(255002)(410001)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?gb2312?B?akkrZkZvaUF1MSsxQTJ0amFlOSswczhTVXc3SFBtSDh2VTEvTy9RM2pMOGdR?=
+ =?gb2312?B?bGRPQVYwOTAwZW1XSWlIMnE2M1lVenNqOThKdmJWd0tZZHQzU3NhcnZWMytD?=
+ =?gb2312?B?aW5oYmZFUkJ0b1JIa2NEaXZnMVZwdFFHdzdkL2NHdnR2WGU2Qm5MWW16b0M2?=
+ =?gb2312?B?bFNlemxMSDNyU1NSc0luMU5VNjlMbEQ0OFg3bGdoSUtFM1ZuZU1KQWIwV2dI?=
+ =?gb2312?B?eUNTQ0RCYXRsT2psTFlaU21MZUUyZ0JYK1JNMkRlTi8xd2R3K1NSUXhQRjRx?=
+ =?gb2312?B?K0xuR2FFRk1iZ3lrQ3RoK012Lzh3K25tVW1Kbm0vbC9sTGNnVldiVVNpbW8r?=
+ =?gb2312?B?VWNWVUxVbHBqZkpXL2FUSXFVaEh2RXJ6a2hreTBnWHJJTWowc3RaQm11S2gr?=
+ =?gb2312?B?V1RHNUs4eG0yWU1LanVld0JyeitUSkoySFhJcHkzeURMcXNjWk9PZUN4Y1lo?=
+ =?gb2312?B?UmxqYkVzM2FqVXIrZldQeHdiQ0ZQd21JbjJ0ZEljb3RmUXN6akFCZ04rODZ1?=
+ =?gb2312?B?SWNOMnJpL3AyQWg2bFBLdDgzc0l5T2pZWmJDekk0d3E5T3podUlpa29nN05l?=
+ =?gb2312?B?WlFsUWVpczRLOExRMXhXQWRrQTBQaktyeTB6bmk3UEUzb3VtR3BReGJ1d1p4?=
+ =?gb2312?B?dzBxNzljc0pNYmM3UWo0UllDMm4zN0NWNjFXMStSTEZBcHVpS0JUVzQxRGdV?=
+ =?gb2312?B?NHhoU08rRm11VXRqN1EzVDlpeUtmaE5aRGlpb1JkL1hEMGNPK3pFWnFucElD?=
+ =?gb2312?B?NWtZcUZJY1pYSkNBRitKWU5zK0d0d1oxaU1YaHNQMDRoQmlkSDIvU2lVWFJB?=
+ =?gb2312?B?aFZrR0gyOUg4a01RSjcyOFVxYllnWHFURml2WHpuZUhrZkl5T2ZrblJ6d3pY?=
+ =?gb2312?B?Z0JMbFB1UklOTERYd1JYdGszSmp6QjQ5eVVlTy9zV1kxL25VWk1oODBPZjRO?=
+ =?gb2312?B?OUpVOEJLSEtQRWFyTXhjc0pDT1V1S3NTWHFQeU54N3luMTNDRmN5OHQ5Wm9B?=
+ =?gb2312?B?a2JwK0J2UXNGYS9yeUhLOENWWi82YWxvOHFySXg3V1JBYjU5dVVJZFlPaEsr?=
+ =?gb2312?B?MzZteXk4Z2ZrSVZJUXBUYW5tbmJDM2VlU1BRaWJIQVhGTjNkYk1rcHlIYXFE?=
+ =?gb2312?B?U0Q3cm4zRFZRa24yRGhjQ1NXdG9Cc2NvRklHeXgxdEJwZzgyWEVzZDdEd3Rk?=
+ =?gb2312?B?Sm1vT0U5MmwxNzBjSDhHQ3hLaUZ1TForeS9wbnZQZGlWa0hZSWZRUEV0VG82?=
+ =?gb2312?B?T0VqTVdBazg1TWNiSytpWkdZYWdyWk5wbmt4Wm9XNkdrQmtRMmZrRTJIV0ZU?=
+ =?gb2312?B?WUE5cUF4UllLWGVPdmR6K29kSkhsOUNuRGh4b3RRdWx4NEhMWTMrU2hFZURj?=
+ =?gb2312?B?M1NpZUFNV1c3bEFoZ3Uya2FnTjVVeGFwYktNdlVTdkRGTVJMdnl1eWRGUFVB?=
+ =?gb2312?B?ZHc4THJPdVgyV09QRUZxZU9nOHRyRk9WVEdldERJZEo2ZFBEY05UNHdhQjZi?=
+ =?gb2312?B?ZlJJMUJCUmVpeGJZaGFkR1FiMUZLRnpzQ0d5Z0tYc2ZlOXFPSUhicFFVYjFr?=
+ =?gb2312?B?amR2QWpCQUlOdkx1L3ZxNlV5eCtyMGVVVUgxaVBaUjczbUV4NHpPbmptWVh3?=
+ =?gb2312?B?S2JkdEpKdUlVZEJsRWtpRTl4cW9JZFl3dUpkckNIM001WGt2M2p5VUFEa210?=
+ =?gb2312?B?NzVlZENTbTZWN3RRNkhPb1JYUFUwN2svWDhGVVRlR0xPMGVwT2NJWlo2L2o0?=
+ =?gb2312?B?Q0dZamZraHloYlRJOHdXNVZWWGhVZHRabU5vNUIwY2xWMTZKcEE0clIvSVFT?=
+ =?gb2312?B?YU1ENkFtY2JQaTMwREo0V1YxVUEwdXpLbitrNmtXTXM0T1dLcWZjTks2OVcy?=
+ =?gb2312?B?MFRkUVJrc3dVRVN3QWxLVTZtQTN3SFB4V0JOQ3VORFN3SjR2NUdpMC85QjBi?=
+ =?gb2312?B?Ni9rWXlNTDlkRmdYT0NUcWFkVUlkUUNxckYwOXpzVW80elpIcHk3LytZTFEr?=
+ =?gb2312?B?TjNVeHZpOCthcU1GK2JYTEY2UldDaGJLdnhyeWJsRzFFY2xZRlBINkd3ZUVa?=
+ =?gb2312?B?RlBHbUs0Mjhub3NLVEU3ZG4wSHRoVGhFdGo0UjdJdE1mSjlEbTlhWkhtV2Vt?=
+ =?gb2312?B?YnFPV24wQ1hpRGRLUVVudHY1dWZjZ2lDaGlQZXZSQXFwd1BhdzF5ZXQ4Nnk4?=
+ =?gb2312?B?SHorNWdibFNqVlJ2NzhlNzZkT2ZGUzdUc3pYL21sMHFNU1ZoTnJWWmlJajNN?=
+ =?gb2312?B?UHJZcTFCaGVEcW1DaUw3WUVIZzRZYnRaY3JDZEZWbXk4UEszL29HVFJNdjVS?=
+ =?gb2312?B?Z0hRL2ZFQTBXY2hKdWY0SnFCQ0dvMktzK0psL0c2NDNqanpEc0ZWUlROc1JS?=
+ =?gb2312?B?a1U3Mk44YzNlaFBwbHNKelRZNUJQRkZxMGZWeEQ1RnZWOUNMV1QvZDZ2SUdz?=
+ =?gb2312?B?UVNNaU9JY3FyYUxMdTZzdkhhNUFnOVEyczZGa29HTllkS0Y3ODR1RElFTUE4?=
+ =?gb2312?B?eHdVZFlYeEtSU0lFcUh5YUJ0OGtrc1Q3dlVJN2JkbnROdm41alFDT2NqcFNk?=
+ =?gb2312?B?VkNqbXFqL3RtYTNSUldtMS9BNmREMFJnZlNDUVI0NjZYK1NrakY1U0c1eVMz?=
+ =?gb2312?B?WDJDZjg5RHlNVERob3duV1V2QWdlaFFwTVlSTTRuMzl4NlJEbUtDaXFhWGhz?=
+ =?gb2312?B?Y05GUXNwektKZjExZEkxVHBrbnBxRm81bUFvdGNVS0xVeGJZMTNaa2s1NVVZ?=
+ =?gb2312?B?THQrS05zRURNS1AzbU9QWERTNnpQM2hGOUlrMWZhNFBqMmwzdUQzd3dSZmt1?=
+ =?gb2312?B?azNvREJSbkJneXFTc29KNFd1aVJ3UGtrcDBmS3E3aW1zMERMbWxSWVh5Y29s?=
+ =?gb2312?B?N2dCVUpXV0RHeTVMWktiVnJsS0M2a2F6TmJqekRWMlVvY1BhcTB6WFByZC9r?=
+ =?gb2312?B?bWFqaHhseHJxdjRTNDZ4amN2ZVgzeUxZbk9GS09OTndCUzZ5MDhNVXJLQUVh?=
+ =?gb2312?B?WWcyMU4yWkZCUjVuQWVtbUJEMGZRZGUrK1Q1a1lmTFlzODdVTnFwWlNWanJn?=
+ =?gb2312?B?WW5GWlJZMERkRHBvaXBtaGFsTnlyL2h6dDl3QldSaHRNMVVKUWxOd0JBZlJl?=
+ =?gb2312?B?TlhGRFZMVnp1RWFSWWVibWpwdUZGRmFjeUs1ZXZUNkxCYVYyeHQ3ZHlzSmcz?=
+ =?gb2312?B?aGpwYWhJVWlHTHIxd1lLUTdyK3l0enE5aU03a0VnUXNBS0FxMk5wc0EwL01l?=
+ =?gb2312?B?R1RzaDlxSzRRNmJzWFJLeHJ2ZmNLUEZ5bTVhck1DUERxS1NFdy9iYVBtNnRZ?=
+ =?gb2312?B?cSt6TkUzOUdPZ0treWlSdVhZb1ZQbHNXa0h0RnhwZWZicTRIZ3hrNlRMM3FD?=
+ =?gb2312?B?MW1HalFweWZ1QWZRdVR0WDJiZEM1UUJWenlNNlc1L2V1dWFwWlkwaG1McDlC?=
+ =?gb2312?B?bEk5aHVpSWZ1b3pkSUlOS3p2QzMzTk1ESWlFQjc4ZUd3N0dnSDdhZkltMGVQ?=
+ =?gb2312?B?Zys2STFoaThWYUR3SXl1dXFrekhwWXlORnJ3K3VPWlZiSWp4a2RJenRRd3M3?=
+ =?gb2312?B?NU50TDN1djE0RnNmMHRqL015QVhPbEZnQk9HVUhhNHBZMlBFRzZ0Y2ZQTkN2?=
+ =?gb2312?B?NHRkVGZmS3VNckRIbFk0aDVOS0k4NGYwQTJ5dmVsbGd0UXNweFNYejl4RkdC?=
+ =?gb2312?B?cW52dmdOd0lheGJUaVVhMGU5bDFoNU0wY3Q0aHQ4TWZlWXBHV3Q3bWpTNUc0?=
+ =?gb2312?B?UUNkYlZ4R1RPeW10UG82dGp5Y3BsYWIzUUhSUnZITHFQckN5UmRIS2tiRkFn?=
+ =?gb2312?B?SkxwVjJYSkJ5S1E4TmlkOUw4VE9Md2I5NTJ1OEowQzJnMldMNjdBZHFSQ1pP?=
+ =?gb2312?B?anl2U0w5RnJmNWwzSXVYZFlyeHFYSHA0SjA4RUpsODlkMFFiN0Rnd3h4MmdT?=
+ =?gb2312?Q?/cpDcKjkqpzgVz4AzQn3a23XYjQh3Wb2DudwWV37KT0=3D?=
+MIME-Version: 1.0
+
+--Apple-Webmail-42--457c456d-7f70-46d9-99fd-c871ffef4cb7
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+    charset=utf-8;
+    format=flowed
+
+myRyanair Destinazione:: Londra (Stansted) Prenotazione: TT2YWP Informazio=
+ni del volo A Londra (Stansted) RK8317 Milano Malpensa - Londra (Stansted)=
+ 30/04/2026 Ora di partenza - 17:25 Ora di arrivo - 18:30 (MXP) - (STN) A =
+Milano Malpensa FR8318 Londra (Stansted) - Milano Malpensa 04/05/2026 Ora =
+di partenza - 17:40 Ora di arrivo - 20:35 (STN) - (MXP) Passeggero/i: Sig.=
+na BEATRICE LUNA RECCHIA =E2=97=8F Volo di andata: RK8317 =E2=97=8F Volo d=
+i ritorno: FR8318 Sig ALESSANDRO SACCHI =E2=97=8F Volo di andata: RK8317 =E2=
+=97=8F Volo di ritorno: FR8318 Ricevuta: Il riscatto del voucher regalo 15=
+0.00 EUR L=E2=80=99IVA non viene applicata sui voli internazionali, mentre=
+ i voli domestici possono essere soggetti all=E2=80=99IVA locale. Effettua=
+ il check-in adesso Devi effettuare una modifica? Modifica il tuo nome, i =
+tuoi voli e molto altro nel tuo account myRyanair. Gestisci prenotazione A=
+rticoli da viaggio indispensabili Ryanair Fast Track Supera i controlli di=
+ sicurezza in aeroporto in 5 minuti o meno con una fila dedicata. Aggiungi=
+ ora Trasferimenti aeroportuali Auto privata, autobus, navetta o treno? Sc=
+egli tu il modo di arrivare a destinazione. Aggiungi ora Noleggio auto Con=
+ il nostro Prezzo garantito assicurato, non troverai offerte migliori. Sco=
+pri l=E2=80=99offerta Parcheggi custoditi in aeroporto Con Ryanair puoi pr=
+enotare un parcheggio sicuro in aeroporto. Aggiungi ora Priorit=C3=A0 e 2 =
+bagagli a mano Devi aggiungere Priorit=C3=A0 e 2 bagagli a mano se vuoi po=
+rtare a bordo 2 bagagli a mano. Aggiungi ora Cambia posto Puoi cambiare po=
+sto fino a 2 ore prima del decollo previsto. Prenota ora Sfrutta al meglio=
+ ci=C3=B2 che Ryanair ha da offrire. Aggiungi bagagli Puoi aggiungere fino=
+ a 3 bagagli da 20 kg al tuo viaggio fino a 2 ore prima della partenza. Ag=
+giungi ora Ryaniar Rooms Sfoglia gli ultimi tour e le attrazioni pi=C3=B9 =
+recenti da aggiungere al tuo viaggio. Scopri di pi=C3=B9 Rivista disponibi=
+le a bordo Scarica e sfoglia la nostra rivista di bordo prima del volo. Sc=
+aricala subito Assicurazione di viaggio Assicurati la massima tranquillit=C3=
+=A0 per il tuo viaggio aggiungendo l=E2=80=99assicurazione di viaggio. Agg=
+iungi ora App Day of Travel Assistant Quando sar=C3=A0 il momento di volar=
+e, il nostro Day of Travel Assistant render=C3=A0 pi=C3=B9 facile il tuo v=
+iaggio in aeroporto. Ricevi aggiornamenti e notifiche in tempo reale su te=
+rminal, gate e volo direttamente sul tuo telefono. Durante le principali i=
+nterruzioni/ritardi, ricevi aggiornamenti video regolari dal nostro Centro=
+ operativo, il quale ti terr=C3=A0 aggiornato/a sulla risoluzione del prob=
+lema. Collegati con noi Scarica la nostra app! Modalit=C3=A0 di pagamento =
+2025 Ryanair DAC | Termini e Condizioni | Informativa sulla privacy | Cont=
+atti Se hai prenotato una combinazione di servizi di viaggio (ad esempio d=
+ue voli, hotel o noleggio auto) saremo pienamente responsabili della corre=
+tta esecuzione del pacchetto. Inoltre, ci assicureremo che ti vengano rimb=
+orsati tutti i servizi inutilizzati e, in caso di volo incluso, di garanti=
+re il rimpatrio nell=E2=80=99improbabile eventualit=C3=A0 che dovessimo es=
+sere insolventi. Puoi trovare maggiori informazioni qui In alternativa, se=
+ quanto scritto in precedenza non =C3=A8 applicabile e hai prenotato uno o=
+ pi=C3=B9 servizi di viaggio con noi, entro 24 ore dalla prenotazione del =
+primo servizio di viaggio con noi (ad esempio prenotando un hotel o un nol=
+eggio auto collegato a un volo prenotato nelle 24 ore precedenti) benefice=
+rai di tutti i diritti dell=E2=80=99UE che si applicano a tali piani di vi=
+aggio e sarai coperto da una protezione in caso di insolvenza che ti assic=
+ura di essere rimborsato per ogni servizio inutilizzato e, in caso di volo=
+ incluso, di essere rimpatriato se dovessimo risultare insolventi. Per mag=
+giori informazioni sulla protezione in caso di insolvenza, fai clic qui Sc=
+opri di pi=C3=B9 sui posti prenotati qui Per ulteriori informazioni ineren=
+ti la nostra politica sui bagagli, clicca qui Version: 17 544 785
+--Apple-Webmail-42--457c456d-7f70-46d9-99fd-c871ffef4cb7
+Content-Type: multipart/related;
+    type="text/html";
+    boundary=Apple-Webmail-86--457c456d-7f70-46d9-99fd-c871ffef4cb7
+
+--Apple-Webmail-86--457c456d-7f70-46d9-99fd-c871ffef4cb7
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+    charset=utf-8;
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body><div><div><br></div><blockquote type=3D"cite"><div><div><div class=3D=
+"gmail_quote"><blockquote style=3D"margin:0 0 0 .8ex;border-left:1px #ccc s=
+olid;padding-left:1ex" class=3D"gmail_quote"><div style=3D"background-color=
+:#e6eaed;color:#222222;font-family:Arial,Helvetica,sans-serif,'Roboto';font=
+-size:14px;font-weight:normal;line-height:19px;margin:0;min-width:100%;padd=
+ing:0;text-align:left;width:100%!important"><table style=3D"height:100%!imp=
+ortant;margin:0 auto;max-width:600px;padding:0;width:100%!important" width=
+=3D"100%" rules=3D"none" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" b=
+gcolor=3D"#E6EAED"><tbody><tr><td valign=3D"top" align=3D"center"><table st=
+yle=3D"background-color:#073590;border-bottom:2px solid #f1c933;margin:0 au=
+to;max-width:600px;width:100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" bgcolor=3D"#073590"><tbody><tr><td style=3D"padding:16px 0"><table s=
+tyle=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td styl=
+e=3D"padding:0"><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" b=
+gcolor=3D"#073590"><tbody><tr><td style=3D"padding:10px 0 10px 16px;text-al=
+ign:left" valign=3D"middle"><img style=3D"color:#ffffff;max-width:100%" alt=
+=3D"Ryanair" width=3D"168" border=3D"0" src=3D"https://www.ryanair.com/cont=
+ent/dam/ryanair/crm/templates/pb/_elements/ryanair_logo_footer_2x.png"><br>=
+</td><td style=3D"padding:4px 16px;text-align:right" valign=3D"middle" alig=
+n=3D"right"><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"right"><tbody><tr><td width=3D"42" valign=3D"middle" align=3D"left"><im=
+g style=3D"color:#ffffff;height:32px;width:32px" height=3D"32" width=3D"32"=
+ border=3D"0" alt=3D"Profile icon" src=3D"https://www.ryanair.com/content/d=
+am/ryanair/crm/templates/pb/_elements/sign-up-icon.png"><br></td><td style=
+=3D"color:#ffffff" valign=3D"middle"><div><a style=3D"color:#f1c933;display=
+:block!important;font-size:13px;text-decoration:none" rel=3D"noopener noref=
+errer" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fmyryanair%2F%3Futm_source%3Dcrm%26utm_m=
+edium%3Demail%26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_no=
+ls%26from%3Ditinerary-email&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel=
+.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%=
+7C0%7C0%7C639137652457590726%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydW=
+UsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60=
+000%7C%7C%7C&amp;sdata=3D513zekPYWAI4soEe7rrXU%2BItlJjcnpDHKJlK7bhDelo%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/myryanair/?ut=
+m_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITINERARY_=
+it_noseg_noab_nodiv_nop_nols&amp;from=3Ditinerary-email"><span style=3D"col=
+or: rgb(241, 201, 51); text-decoration: none;"><span class=3D"font" style=
+=3D"font-family:Arial, Helvetica, sans-serif, Roboto">myRyanair</span></spa=
+n></a></div></td></tr></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table><table style=3D"max-width:600px;wi=
+dth:100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFF=
+FF"><tbody><tr><td valign=3D"top"><table style=3D"margin:0 auto;max-width:6=
+00px;width:100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=
+=3D"#FFFFFF"><tbody><tr><td valign=3D"top"><table width=3D"100%" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td valign=3D"top"><table=
+ style=3D"background-color:#f3f9fe;border:0;margin:0 auto;max-width:600px;w=
+idth:100%" cellspacing=3D"0" bgcolor=3D"#f3f9fe" cellpadding=3D"0" border=
+=3D"0"><tbody><tr><td><table style=3D"width:100%" cellspacing=3D"0" cellpad=
+ding=3D"0"><tbody><tr><td style=3D"padding:0"><table width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"backgroun=
+d-color:#f3f9fe;color:#09237d;padding:6px 16px"><table width=3D"100%" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td valign=3D"top" a=
+lign=3D"left"><div style=3D"color:#09237d;font-family:Arial,Helvetica,sans-=
+serif,'Roboto';font-size:10px;line-height:14px;white-space:nowrap">Destinaz=
+ione::</div><div style=3D"color:#09237d;font-family:Arial,Helvetica,sans-se=
+rif,'Roboto';font-weight:bold;line-height:14px">Londra (Stansted)</div></td=
+><td style=3D"color:#09237d" valign=3D"top" align=3D"right"><div style=3D"f=
+ont-family:Arial,Helvetica,sans-serif,'Roboto';font-size:10px;line-height:1=
+4px;white-space:nowrap">Prenotazione:</div><div style=3D"font-family:Arial,=
+Helvetica,sans-serif,'Roboto';font-weight:bold;line-height:14px;white-space=
+:nowrap">TT2YWP</div></td></tr></tbody></table></td></tr></tbody></table></=
+td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table><table style=3D"max-wi=
+dth:600px;width:100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgco=
+lor=3D"#FFFFFF"><tbody><tr><td valign=3D"top"><table style=3D"margin:0 auto=
+;max-width:600px;width:100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" bgcolor=3D"#FFFFFF"><tbody><tr><td valign=3D"top"><table width=3D"100%" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td valign=3D"t=
+op"><table style=3D"margin:0 auto;max-width:600px;width:100%" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td width=3D"24"><br></td>=
+<td valign=3D"top"><table style=3D"width:100%" cellspacing=3D"0" cellpaddin=
+g=3D"0"><tbody><tr><td valign=3D"top"><table style=3D"font-size:0;line-heig=
+ht:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbod=
+y><tr><td height=3D"26"><br></td></tr></tbody></table><div style=3D"color:#=
+2e2e2e;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:24px;font-=
+weight:700;letter-spacing:-0.5px;line-height:28px;margin:0;padding:0;text-a=
+lign:center">Informazioni del volo</div><table style=3D"font-size:0;line-he=
+ight:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tb=
+ody><tr><td height=3D"15"><br></td></tr></tbody></table></td></tr></tbody><=
+/table></td><td width=3D"24"><br></td></tr></tbody></table><div><div><br></=
+div><div><div><br></div><div><br></div><div><br></div></div></div><div><div=
+><br></div><div><div><br></div><div><br></div><div><br></div></div></div><t=
+able width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody=
+><tr><td style=3D"color:#2e2e2e;padding:0 16px"><u></u><div style=3D"displa=
+y:inline-block;max-width:274px;width:48%"><u></u><table width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"backgr=
+ound-color:#f3f9fe;border:1px dotted #83b9e3;border-radius:5px;padding:10px=
+ 12px" valign=3D"top"><table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0"><tbody><tr><td style=3D"padding-bottom:8px" valign=3D"t=
+op" height=3D"1" align=3D"center"><table cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0"><tbody><tr><td width=3D"32"><img height=3D"24" width=3D"24" =
+alt=3D"Flight out icon" src=3D"https://www.ryanair.com/content/dam/ryanair/=
+crm/templates/pb/_elements/flight-to-icon.png"><br></td><td><table style=3D=
+"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></table>=
+<div style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:16p=
+x;letter-spacing:-0.5px;font-weight:bold">A Londra (Stansted) <span style=
+=3D"color:#888888;font-weight:normal">RK8317</span></div><table style=3D"fo=
+nt-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></table></t=
+d></tr></tbody></table></td></tr><tr><td valign=3D"bottom"><table width=3D"=
+100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td valig=
+n=3D"top" align=3D"center"><table width=3D"100%" cellspacing=3D"2" cellpadd=
+ing=3D"2"><tbody><tr><td style=3D"font-family:Arial,Helvetica,sans-serif,'R=
+oboto';font-size:16px;font-weight:500;letter-spacing:-0.5px;font-weight:bol=
+d" align=3D"center">Milano Malpensa   -=0A=
+Londra (Stansted)</td></tr><tr><td style=3D"font-size:0;line-height:0"><br>=
+</td></tr><tr><td style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';=
+font-size:16px;font-weight:500" align=3D"center">30/04/2026</td></tr><tr><t=
+d style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:16px;f=
+ont-weight:500" align=3D"center">Ora di partenza - <b style=3D"font-size:18=
+px">17:25</b></td></tr><tr><td style=3D"font-family:Arial,Helvetica,sans-se=
+rif,'Roboto';font-size:16px;font-weight:500" align=3D"center">Ora di arrivo=
+ - <b style=3D"font-size:18px">18:30</b></td></tr><tr><td style=3D"color:#8=
+88888;font-size:13px;line-height:19px" align=3D"center">(MXP) -=0A=
+(STN)</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr></tbody></table><u></u></div><u></u><div style=3D"display=
+:inline-block;height:8px;max-width:10px;width:2%">&nbsp;</div><div style=3D=
+"display:inline-block;max-width:274px;width:48%"><u></u><table width=3D"100=
+%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D=
+"background-color:#f3f9fe;border:1px dotted #83b9e3;border-radius:5px;paddi=
+ng:10px 12px" valign=3D"top"><table width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0"><tbody><tr><td style=3D"padding-bottom:8px" valign=
+=3D"top" height=3D"1" align=3D"center"><table cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0"><tbody><tr><td width=3D"32"><img height=3D"24" width=3D=
+"24" alt=3D"Flight back icon" src=3D"https://www.ryanair.com/content/dam/ry=
+anair/crm/templates/pb/_elements/flight-from-icon.png"><br></td><td><table =
+style=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody>=
+</table><div style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';font-=
+size:16px;letter-spacing:-0.5px;font-weight:bold">A Milano Malpensa <span s=
+tyle=3D"color:#888888;font-weight:normal">FR8318</span></div><table style=
+=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr><tr><td valign=3D"bottom"><table wid=
+th=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td=
+ valign=3D"top" align=3D"center"><table width=3D"100%" cellspacing=3D"2" ce=
+llpadding=3D"2"><tbody><tr><td style=3D"font-family:Arial,Helvetica,sans-se=
+rif,'Roboto';font-size:16px;font-weight:500;letter-spacing:-0.5px;font-weig=
+ht:bold" align=3D"center">Londra (Stansted)  -=0A=
+Milano Malpensa</td></tr><tr><td style=3D"font-size:0;line-height:0"><br></=
+td></tr><tr><td style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';fo=
+nt-size:16px;font-weight:500" align=3D"center">04/05/2026</td></tr><tr><td =
+style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:16px;fon=
+t-weight:500" align=3D"center">Ora di partenza - <b style=3D"font-size:18px=
+">17:40</b></td></tr><tr><td style=3D"font-family:Arial,Helvetica,sans-seri=
+f,'Roboto';font-size:16px;font-weight:500" align=3D"center">Ora di arrivo -=
+ <b style=3D"font-size:18px">20:35</b></td></tr><tr><td style=3D"color:#888=
+888;font-size:13px;line-height:19px" align=3D"center">(STN) -=0A=
+(MXP)</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr></tbody></table><u></u></div><u></u><table width=3D"100%"=
+ cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"p=
+adding:5px 0" align=3D"center"><br></td></tr></tbody></table></td></tr></tb=
+ody></table><div><div><br></div><div><div><br></div><div><br></div><div><br=
+></div></div></div><div><div><br></div><div><div><br></div><div><br></div><=
+div><br></div></div></div><table width=3D"100%" cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0"><tbody><tr><td style=3D"padding:0 16px"><table width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td a=
+lign=3D"center" style=3D"padding:5px 0"><br></td></tr></tbody></table><tabl=
+e width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><t=
+r><td style=3D"font-size:0" valign=3D"top" height=3D"20"><img height=3D"9" =
+width=3D"566" alt=3D"" src=3D"https://www.ryanair.com/content/dam/ryanair/c=
+rm/templates/pb/_elements/flight-info-spacer.png"><br></td></tr></tbody></t=
+able><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+><tbody><tr><td colspan=3D"2" align=3D"left"><table style=3D"font-size:0;li=
+ne-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+"><tbody><tr><td height=3D"10"><br></td></tr></tbody></table><div style=3D"=
+font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:18px;font-weight:=
+bold;letter-spacing:-0.5px;line-height:24px">Passeggero/i:</div><table styl=
+e=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></ta=
+ble></td></tr><tr><td align=3D"left"><table style=3D"color:#888888;line-hei=
+ght:21px" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><=
+tbody><tr><td colspan=3D"3">Sig.na&nbsp;BEATRICE LUNA RECCHIA</td></tr><tr =
+style=3D"font-size:12px"><td style=3D"font-size:8px;line-height:8px;padding=
+-right:5px;width:10px">=E2=97=8F</td><td width=3D"65">Volo di andata:</td><=
+td width=3D"60">RK8317</td><td><br></td></tr><tr style=3D"font-size:12px"><=
+td style=3D"font-size:8px;line-height:8px;padding-right:5px;width:10px">=E2=
+=97=8F</td><td width=3D"65">Volo di ritorno:</td><td width=3D"60">FR8318</t=
+d><td><br></td></tr></tbody></table></td></tr><tr><td align=3D"left"><table=
+ style=3D"color:#888888;line-height:21px" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0"><tbody><tr><td colspan=3D"3">Sig&nbsp;ALESSA=
+NDRO SACCHI</td></tr><tr style=3D"font-size:12px"><td style=3D"font-size:8p=
+x;line-height:8px;padding-right:5px;width:10px">=E2=97=8F</td><td width=3D"=
+65">Volo di andata:</td><td width=3D"60">RK8317</td><td><br></td></tr><tr s=
+tyle=3D"font-size:12px"><td style=3D"font-size:8px;line-height:8px;padding-=
+right:5px;width:10px">=E2=97=8F</td><td width=3D"65">Volo di ritorno:</td><=
+td width=3D"60">FR8318</td><td><br></td></tr></tbody></table></td></tr></tb=
+ody></table><div style=3D"background:rgb(255,255,255);background-color:rgb(=
+255,255,255);margin:0px auto;max-width:600px"><table style=3D"background:rg=
+b(255,255,255);background-color:rgb(255,255,255);width:100%" cellspacing=3D=
+"0" cellpadding=3D"0" border=3D"0" align=3D"center"><tbody><tr><td style=3D=
+"direction:ltr;font-size:0px;padding:20px 0;text-align:center"><div style=
+=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertic=
+al-align:top;width:100%" class=3D"m_-2151924740038858708mj-column-per-100">=
+<table width=3D"100%" style=3D"vertical-align:top" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0"><tbody><tr><td style=3D"font-size:0px;padding:10px=
+ 25px;word-break:break-word" align=3D"center"><p style=3D"border-top:solid =
+1px lightgrey;font-size:1px;margin:0px auto;width:100%"><br></p></td></tr><=
+tr><td style=3D"font-size:0px;padding:0;padding-bottom:8px;word-break:break=
+-word" align=3D"left"><div style=3D"font-family:Ubuntu,Helvetica,Arial,sans=
+-serif;font-size:18px;font-weight:700;line-height:1;text-align:left;color:#=
+000000">Ricevuta:</div></td></tr><tr><td style=3D"font-size:0px;padding:0 0=
+ 8px 0;word-break:break-word" align=3D"left"><table style=3D"color:#000000;=
+font-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:14px;line-height:22=
+px;table-layout:auto;width:100%;border:none" border=3D"0" width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"m_-21519247400388=
+58708receipt-table__left">Il riscatto del voucher regalo</td><td class=3D"m=
+_-2151924740038858708receipt-table__right">150.00&nbsp;EUR</td></tr></tbody=
+></table></td></tr><tr><td style=3D"font-size:0px;padding:0;word-break:brea=
+k-word" align=3D"left"><div style=3D"font-family:Ubuntu,Helvetica,Arial,san=
+s-serif;font-size:10px;line-height:1;text-align:left;color:#888888">L=E2=80=
+=99IVA non viene applicata sui voli internazionali, mentre i voli domestici=
+ possono essere soggetti all=E2=80=99IVA locale.</div></td></tr></tbody></t=
+able></div></td></tr></tbody></table></div><div style=3D"margin:0px auto;ma=
+x-width:600px"><table style=3D"width:100%" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" align=3D"center"><tbody><tr><td style=3D"direction:ltr;fon=
+t-size:0px;padding:20px 0;text-align:center"><div style=3D"font-size:0px;te=
+xt-align:left;direction:ltr;display:inline-block;vertical-align:top;width:1=
+00%" class=3D"m_-2151924740038858708mj-column-per-100"><table width=3D"100%=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"=
+vertical-align:top;padding-top:20px"><table width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"font-size:0px;padd=
+ing:10px 25px;word-break:break-word" align=3D"center"><table style=3D"borde=
+r-collapse:separate;line-height:100%" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0"><tbody><tr><td valign=3D"middle" style=3D"border:none;border-ra=
+dius:5px;background:#f2ca14" bgcolor=3D"#f2ca14" align=3D"center"><a style=
+=3D"display:inline-block;background:#f2ca14;color:#073590;font-family:Ubunt=
+u,Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;line-height:12=
+0%;margin:0;text-decoration:none;text-transform:none;padding:15px 25px;bord=
+er-radius:5px" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Ftri=
+p%2Fmanage%2FBookingId%3A876772919%3Futm_source%3Dcrm%26utm_medium%3Demail%=
+26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_nols%26from%3Dit=
+inerary-email&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961c=
+e61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C6391=
+37652457629278%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAu=
+MDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&a=
+mp;sdata=3DHl3b6wdmOdqIox00jOTnRgGMqxY7OFDWQOwU%2FwbSZnw%3D&amp;reserved=3D=
+0" originalsrc=3D"https://www.ryanair.com/it/it/trip/manage/BookingId:87677=
+2919?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITI=
+NERARY_it_noseg_noab_nodiv_nop_nols&amp;from=3Ditinerary-email">Effettua il=
+ check-in adesso</a></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table></div></td></tr></tbody></table></div><div style=3D"=
+background:#f4f9ff;background-color:#f4f9ff;margin:0px auto;border-radius:1=
+4px;max-width:600px"><table style=3D"background:#f4f9ff;background-color:#f=
+4f9ff;width:100%;border-radius:14px" cellspacing=3D"0" cellpadding=3D"0" bo=
+rder=3D"0" align=3D"center"><tbody><tr><td style=3D"direction:ltr;font-size=
+:0px;padding:20px 0;text-align:center"><div style=3D"font-size:0px;text-ali=
+gn:left;direction:ltr;display:inline-block;vertical-align:top;width:100%" c=
+lass=3D"m_-2151924740038858708mj-column-per-100"><table width=3D"100%" styl=
+e=3D"vertical-align:top" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><=
+tbody><tr><td style=3D"font-size:0px;padding:10px 25px;word-break:break-wor=
+d" align=3D"center"><div style=3D"font-family:Ubuntu,Helvetica,Arial,sans-s=
+erif;font-size:18px;font-weight:bold;line-height:1;text-align:center;color:=
+#000000">Devi effettuare una modifica?</div></td></tr><tr><td style=3D"font=
+-size:0px;padding:10px 25px;word-break:break-word" align=3D"center"><div st=
+yle=3D"font-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:13px;line-he=
+ight:1;text-align:center;color:#000000">Modifica il tuo nome, i tuoi voli e=
+ molto altro nel tuo account myRyanair.</div></td></tr><tr><td style=3D"fon=
+t-size:0px;padding:10px 25px;word-break:break-word" align=3D"center"><table=
+ style=3D"border-collapse:separate;line-height:100%" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0"><tbody><tr><td valign=3D"middle" style=3D"border=
+:none;border-radius:5px;background:#f2ca14" bgcolor=3D"#f2ca14" align=3D"ce=
+nter"><a style=3D"display:inline-block;background:#f2ca14;color:#073590;fon=
+t-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;=
+line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:=
+15px 25px;border-radius:5px" rel=3D"noopener noreferrer" href=3D"https://gb=
+r01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2=
+Fit%2Fit%2Ftrip%2Fmanage%2FBookingId%3A876772919%3Futm_source%3Dcrm%26utm_m=
+edium%3Demail%26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_no=
+ls&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f98=
+0d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652457650=
+518%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlA=
+iOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D=
+Sp%2FadzZbyYnDrq9%2BV7cAi5wZJAHs3itjuEgvdErWFbw%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://www.ryanair.com/it/it/trip/manage/BookingId:876772919?utm_=
+source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITINERARY_it=
+_noseg_noab_nodiv_nop_nols">Gestisci prenotazione</a></td></tr></tbody></ta=
+ble></td></tr></tbody></table></div></td></tr></tbody></table></div></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr></tbody></table><table style=3D"max-width:600px;width:100%" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"><tbody><tr><td =
+valign=3D"top"><table style=3D"margin:0 auto;max-width:600px;width:100%" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"><tbody><=
+tr><td valign=3D"top"><table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0"><tbody><tr><td valign=3D"top"><table style=3D"margin:0 =
+auto;max-width:600px;width:100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0"><tbody><tr><td width=3D"24"><br></td><td valign=3D"top"><table style=
+=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0"><tbody><tr><td height=3D"13"><br></td></tr></tbody></ta=
+ble><table style=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody>=
+<tr><td valign=3D"top"><div style=3D"color:#2e2e2e;font-family:Arial,Helvet=
+ica,sans-serif,'Roboto';font-size:24px;font-weight:700;letter-spacing:-0.5p=
+x;line-height:28px;margin:0;padding:0;text-align:center">Articoli da viaggi=
+o indispensabili Ryanair</div><table style=3D"font-size:0;line-height:0" wi=
+dth=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><t=
+d height=3D"15"><br></td></tr></tbody></table></td></tr></tbody></table></t=
+d><td width=3D"24"><br></td></tr></tbody></table><table width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"16"><br></td><td><u=
+></u><div style=3D"display:inline-block;max-width:269px;width:45%"><u></u><=
+table style=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><=
+td><a style=3D"display:inline-block;max-width:269px;text-align:left;text-de=
+coration:none;width:100%" rel=3D"noopener noreferrer" href=3D"https://gbr01=
+.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit=
+%2Fit%2Fcheck-in%3Futm_source%3Dcrm%26utm_medium%3Demail%26utm_campaign%3DU=
+_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_nols&amp;data=3D05%7C02%7Calessand=
+ro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a=
+09b26d4d9f1473a75%7C0%7C0%7C639137652457669799%7CUnknown%7CTWFpbGZsb3d8eyJF=
+bXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIld=
+UIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D5sChcxNWTfjEUXs3e4%2Bp7iFHmwCGMH=
+buOBFOym9aSnQ%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/i=
+t/it/check-in?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_=
+MULTI_ITINERARY_it_noseg_noab_nodiv_nop_nols"><span style=3D"display:block"=
+><img style=3D"border:0;display:block;outline:0;width:100%" width=3D"260" b=
+order=3D"0" alt=3D"{essentials.1.1.block.alt}" src=3D"https://assets.ryanai=
+r.com/resources/ui/emails/itinerary/fast-track.jpg"></span></a><br></td></t=
+r></tbody></table><table style=3D"background-color:#f4fafe;border:1px solid=
+ #f0f1f2;width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td sty=
+le=3D"background-color:#f4fafe;padding:0 10px;text-align:left" valign=3D"to=
+p" height=3D"100%"><u></u><div><u></u><table width=3D"100%" cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0"><tbody><tr><td valign=3D"top"><table styl=
+e=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0"><tbody><tr><td height=3D"10"><br></td></tr></tbody></t=
+able><u></u><table style=3D"font-size:0;line-height:0;display:none;font-siz=
+e:0;line-height:0;max-height:0;max-width:0;overflow:hidden;width:0" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td h=
+eight=3D"5"><br></td></tr></tbody></table><u></u><div style=3D"color:#2e2e2=
+e;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:18px;font-weigh=
+t:bold;letter-spacing:-0.5px;line-height:28px;margin:0;padding:0;text-align=
+:left">Fast Track</div></td></tr><tr><td style=3D"font-size:0;line-height:0=
+" height=3D"2"><br></td></tr><tr><td valign=3D"top" height=3D"72" align=3D"=
+left"><div style=3D"height:72px;min-height:72px;overflow:hidden"><table wid=
+th=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td=
+ style=3D"color:#888888;font-family:Arial,Helvetica,sans-serif,'Roboto';fon=
+t-size:14px;line-height:24px" valign=3D"top">Supera i controlli di sicurezz=
+a in aeroporto in 5 minuti o meno con una fila dedicata.</td></tr></tbody><=
+/table></div></td></tr></tbody></table><u></u></div><u></u><table width=3D"=
+100%" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"padding:1=
+0px 0 20px;text-align:right"><a style=3D"color:#2091eb;font-family:Arial,He=
+lvetica,sans-serif,'Roboto';font-size:16px;font-weight:bold;text-decoration=
+:none" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.protecti=
+on.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fcheck-in%3F=
+utm_source%3Dcrm%26utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITINERARY_it=
+_noseg_noab_nodiv_nop_nols&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.=
+com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7=
+C0%7C0%7C639137652457688597%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWU=
+sIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C600=
+00%7C%7C%7C&amp;sdata=3DrPpRv8o7iXRIHZmhOVmJG6JjjUqDF8%2FeBBnUA0VK5DA%3D&am=
+p;reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/check-in?utm_s=
+ource=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITINERARY_it_=
+noseg_noab_nodiv_nop_nols">Aggiungi ora&nbsp;</a></td></tr></tbody></table>=
+</td><td><u></u><br></td><td valign=3D"middle" align=3D"right"><table style=
+=3D"display:none;font-size:0;line-height:0;max-height:0;max-width:0;overflo=
+w:hidden;width:0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=
+=3D"padding:0 10px 0 0"><img height=3D"16" width=3D"10" border=3D"0" alt=3D=
+"" src=3D"https://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_ele=
+ments/blue-arrow.png"><br></td></tr></tbody></table></td><td><u></u><br></t=
+d></tr></tbody></table><u></u></div><span>&nbsp;</span><u></u><div style=3D=
+"display:inline-block;max-width:269px;width:45%"><u></u><table style=3D"wid=
+th:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><a style=3D"dis=
+play:inline-block;max-width:269px;text-align:left;text-decoration:none;widt=
+h:100%" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.protect=
+ion.outlook.com/?url=3Dhttps%3A%2F%2Fairporttransfers.ryanair.com%2Fit&amp;=
+data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f980d08dea=
+c4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652457707505%7CU=
+nknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW=
+4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DXLqdgog=
+uDG%2FrR3ZHNJ8sOALI%2FeECdYFfII%2BgaoFrSwA%3D&amp;reserved=3D0" originalsrc=
+=3D"https://airporttransfers.ryanair.com/it"><span style=3D"display:block">=
+<img style=3D"border:0;display:block;outline:0;width:100%" width=3D"260" bo=
+rder=3D"0" alt=3D"Trasferimenti aeroportuali" src=3D"https://assets.ryanair=
+.com/resources/ui/emails/itinerary/600x400_Transfers.jpg"></span></a><br></=
+td></tr></tbody></table><table style=3D"background-color:#f4fafe;border:1px=
+ solid #f0f1f2;width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><=
+td style=3D"background-color:#f4fafe;padding:0 10px;text-align:left" valign=
+=3D"top" height=3D"100%"><u></u><div><u></u><table width=3D"100%" cellpaddi=
+ng=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td valign=3D"top"><tabl=
+e style=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0"><tbody><tr><td height=3D"10"><br></td></tr></tbo=
+dy></table><u></u><table style=3D"font-size:0;line-height:0;display:none;fo=
+nt-size:0;line-height:0;max-height:0;max-width:0;overflow:hidden;width:0" w=
+idth=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><=
+td height=3D"5"><br></td></tr></tbody></table><u></u><div style=3D"color:#2=
+e2e2e;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:18px;font-w=
+eight:bold;letter-spacing:-0.5px;line-height:28px;margin:0;padding:0;text-a=
+lign:left">Trasferimenti aeroportuali</div></td></tr><tr><td style=3D"font-=
+size:0;line-height:0" height=3D"2"><br></td></tr><tr><td valign=3D"top" hei=
+ght=3D"72" align=3D"left"><div style=3D"height:72px;min-height:72px;overflo=
+w:hidden"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0"><tbody><tr><td style=3D"color:#888888;font-family:Arial,Helvetica,sa=
+ns-serif,'Roboto';font-size:14px;line-height:24px" valign=3D"top">Auto priv=
+ata, autobus, navetta o treno? Scegli tu il modo di arrivare a destinazione=
+.</td></tr></tbody></table></div></td></tr></tbody></table><u></u></div><u>=
+</u><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><t=
+d style=3D"padding:10px 0 20px;text-align:right"><a style=3D"color:#2091eb;=
+font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:16px;font-weight:=
+bold;text-decoration:none" rel=3D"noopener noreferrer" href=3D"https://gbr0=
+1.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fairporttransfers.ry=
+anair.com%2Fit&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961=
+ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639=
+137652457725593%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjA=
+uMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&=
+amp;sdata=3DCqpy0jvLClBnfqAm9xUhS%2FoD3KnaKPjwDgF%2BCr9mtjQ%3D&amp;reserved=
+=3D0" originalsrc=3D"https://airporttransfers.ryanair.com/it">Aggiungi ora&=
+nbsp;</a></td></tr></tbody></table></td><td><u></u><br></td><td valign=3D"m=
+iddle" align=3D"right"><table style=3D"display:none;font-size:0;line-height=
+:0;max-height:0;max-width:0;overflow:hidden;width:0" cellspacing=3D"0" cell=
+padding=3D"0"><tbody><tr><td style=3D"padding:0 10px 0 0"><img height=3D"16=
+" width=3D"10" border=3D"0" alt=3D"" src=3D"https://www.ryanair.com/content=
+/dam/ryanair/crm/templates/pb/_elements/blue-arrow.png"><br></td></tr></tbo=
+dy></table></td><td><u></u><br></td></tr></tbody></table><u></u></div><u></=
+u></td><td width=3D"16"><br></td></tr></tbody></table><table style=3D"font-=
+size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0"><tbody><tr><td height=3D"12"><br></td></tr></tbody></table><tabl=
+e width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td width=
+=3D"16"><br></td><td><u></u><div style=3D"display:inline-block;max-width:26=
+9px;width:45%"><u></u><table style=3D"width:100%" cellspacing=3D"0" cellpad=
+ding=3D"0"><tbody><tr><td><a style=3D"display:inline-block;max-width:269px;=
+text-align:left;text-decoration:none;width:100%" rel=3D"noopener noreferrer=
+" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fwww.ryanair.com%2Fit%2Fit%2Fr%2Femail%2Fcarhire%3FdepartureOutboundIata%=
+3DMXP%26arrivalOutboundIata%3DSTN%26departureInboundIata%3DSTN%26arrivalInb=
+oundIata%3DMXP%26culture%3Dit-it%26departureDateTimeOutbound%3D2026-04-30T1=
+7%3A25%3A00%26arrivalDateTimeOutbound%3D2026-04-30T18%3A30%3A00%26departure=
+DateTimeInbound%3D2026-05-04T17%3A40%3A00%26arrivalDateTimeInbound%3D2026-0=
+5-04T20%3A35%3A00%26adults%3D2%26teens%3D0%26children%3D0%26infants%3D0%26b=
+ookingId%3D876772919%26market%3Dit%2Fit%26adplat%3D640630&amp;data=3D05%7C0=
+2%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb=
+58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652457743649%7CUnknown%7CTWFp=
+bGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjo=
+iTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DkpZgRCHjE0OjlhCKJv0F=
+xbX6Jm%2Bg%2FIlyXBO8g5yoE58%3D&amp;reserved=3D0" originalsrc=3D"https://www=
+.ryanair.com/it/it/r/email/carhire?departureOutboundIata=3DMXP&amp;arrivalO=
+utboundIata=3DSTN&amp;departureInboundIata=3DSTN&amp;arrivalInboundIata=3DM=
+XP&amp;culture=3Dit-it&amp;departureDateTimeOutbound=3D2026-04-30T17:25:00&=
+amp;arrivalDateTimeOutbound=3D2026-04-30T18:30:00&amp;departureDateTimeInbo=
+und=3D2026-05-04T17:40:00&amp;arrivalDateTimeInbound=3D2026-05-04T20:35:00&=
+amp;adults=3D2&amp;teens=3D0&amp;children=3D0&amp;infants=3D0&amp;bookingId=
+=3D876772919&amp;market=3Dit/it&amp;adplat=3D640630"><span style=3D"display=
+:block"><img style=3D"border:0;display:block;outline:0;width:100%" width=3D=
+"260" border=3D"0" alt=3D"Noleggio auto" src=3D"https://www.ryanair.com/con=
+tent/dam/ryanair/trade-crm/activetripcrm/rental-cars-update/RC-Email-Image.=
+jpg"></span></a><br></td></tr></tbody></table><table style=3D"background-co=
+lor:#f4fafe;border:1px solid #f0f1f2;width:100%" cellspacing=3D"0" cellpadd=
+ing=3D"0"><tbody><tr><td style=3D"background-color:#f4fafe;padding:0 10px;t=
+ext-align:left" valign=3D"top" height=3D"100%"><u></u><div><u></u><table wi=
+dth=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><t=
+d valign=3D"top"><table style=3D"font-size:0;line-height:0" width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"1=
+0"><br></td></tr></tbody></table><u></u><table style=3D"font-size:0;line-he=
+ight:0;display:none;font-size:0;line-height:0;max-height:0;max-width:0;over=
+flow:hidden;width:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></table><u></u>=
+<div style=3D"color:#2e2e2e;font-family:Arial,Helvetica,sans-serif,'Roboto'=
+;font-size:18px;font-weight:bold;letter-spacing:-0.5px;line-height:28px;mar=
+gin:0;padding:0;text-align:left">Noleggio auto</div></td></tr><tr><td style=
+=3D"font-size:0;line-height:0" height=3D"2"><br></td></tr><tr><td valign=3D=
+"top" height=3D"72" align=3D"left"><div style=3D"height:72px;min-height:72p=
+x;overflow:hidden"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0"><tbody><tr><td style=3D"color:#888888;font-family:Arial,Helv=
+etica,sans-serif,'Roboto';font-size:14px;line-height:24px" valign=3D"top">C=
+on il nostro Prezzo garantito assicurato, non troverai offerte migliori.</t=
+d></tr></tbody></table></div></td></tr></tbody></table><u></u></div><u></u>=
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td st=
+yle=3D"padding:10px 0 20px;text-align:right"><a style=3D"color:#2091eb;font=
+-family:Arial,Helvetica,sans-serif,'Roboto';font-size:16px;font-weight:bold=
+;text-decoration:none" rel=3D"noopener noreferrer" href=3D"https://gbr01.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2F=
+it%2Fr%2Femail%2Fcarhire%3FdepartureOutboundIata%3DMXP%26arrivalOutboundIat=
+a%3DSTN%26departureInboundIata%3DSTN%26arrivalInboundIata%3DMXP%26culture%3=
+Dit-it%26departureDateTimeOutbound%3D2026-04-30T17%3A25%3A00%26arrivalDateT=
+imeOutbound%3D2026-04-30T18%3A30%3A00%26departureDateTimeInbound%3D2026-05-=
+04T17%3A40%3A00%26arrivalDateTimeInbound%3D2026-05-04T20%3A35%3A00%26adults=
+%3D2%26teens%3D0%26children%3D0%26infants%3D0%26bookingId%3D876772919%26mar=
+ket%3Dit%2Fit%26adplat%3D640630&amp;data=3D05%7C02%7Calessandro.sacchi%40pi=
+ksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473=
+a75%7C0%7C0%7C639137652457767327%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOn=
+RydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%=
+7C60000%7C%7C%7C&amp;sdata=3D3p22MMcjwxKUVUROXWpxdmRz%2Bt%2Fnpu7DpKE1Ou9K62=
+g%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/r/email=
+/carhire?departureOutboundIata=3DMXP&amp;arrivalOutboundIata=3DSTN&amp;depa=
+rtureInboundIata=3DSTN&amp;arrivalInboundIata=3DMXP&amp;culture=3Dit-it&amp=
+;departureDateTimeOutbound=3D2026-04-30T17:25:00&amp;arrivalDateTimeOutboun=
+d=3D2026-04-30T18:30:00&amp;departureDateTimeInbound=3D2026-05-04T17:40:00&=
+amp;arrivalDateTimeInbound=3D2026-05-04T20:35:00&amp;adults=3D2&amp;teens=
+=3D0&amp;children=3D0&amp;infants=3D0&amp;bookingId=3D876772919&amp;market=
+=3Dit/it&amp;adplat=3D640630">Scopri l=E2=80=99offerta</a></td></tr></tbody=
+></table></td><td><u></u><br></td><td valign=3D"middle" align=3D"right"><ta=
+ble style=3D"display:none;font-size:0;line-height:0;max-height:0;max-width:=
+0;overflow:hidden;width:0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><=
+td style=3D"padding:0 10px 0 0"><img height=3D"16" width=3D"10" border=3D"0=
+" alt=3D"" src=3D"https://www.ryanair.com/content/dam/ryanair/crm/templates=
+/pb/_elements/blue-arrow.png"><br></td></tr></tbody></table></td><td><u></u=
+><br></td></tr></tbody></table><u></u></div><span>&nbsp;</span><u></u><div =
+style=3D"display:inline-block;max-width:269px;width:45%"><u></u><table styl=
+e=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><a styl=
+e=3D"display:inline-block;max-width:269px;text-align:left;text-decoration:n=
+one;width:100%" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fr%=
+2Femail%2Fparking%3FdepartureOutboundIata%3DMXP%26arrivalOutboundIata%3DSTN=
+%26departureInboundIata%3DSTN%26arrivalInboundIata%3DMXP%26culture%3Dit-it%=
+26departureDateTimeOutbound%3D2026-04-30T17%3A25%3A00%26arrivalDateTimeOutb=
+ound%3D2026-04-30T18%3A30%3A00%26departureDateTimeInbound%3D2026-05-04T17%3=
+A40%3A00%26arrivalDateTimeInbound%3D2026-05-04T20%3A35%3A00%26adults%3D2%26=
+teens%3D0%26children%3D0%26infants%3D0%26bookingId%3D876772919%26market%3Di=
+t%2Fit&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb45=
+2f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C63913765245=
+7786560%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCI=
+sIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdat=
+a=3DVzCkwHZBGVe%2FnFxzJELrL%2FsoCSQNDjPWfgXMC4OcF5Q%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://www.ryanair.com/it/it/r/email/parking?departureOutboun=
+dIata=3DMXP&amp;arrivalOutboundIata=3DSTN&amp;departureInboundIata=3DSTN&am=
+p;arrivalInboundIata=3DMXP&amp;culture=3Dit-it&amp;departureDateTimeOutboun=
+d=3D2026-04-30T17:25:00&amp;arrivalDateTimeOutbound=3D2026-04-30T18:30:00&a=
+mp;departureDateTimeInbound=3D2026-05-04T17:40:00&amp;arrivalDateTimeInboun=
+d=3D2026-05-04T20:35:00&amp;adults=3D2&amp;teens=3D0&amp;children=3D0&amp;i=
+nfants=3D0&amp;bookingId=3D876772919&amp;market=3Dit/it"><span style=3D"dis=
+play:block"><img style=3D"border:0;display:block;outline:0;width:100%" widt=
+h=3D"260" border=3D"0" alt=3D"Parcheggi custoditi in aeroporto" src=3D"http=
+s://assets.ryanair.com/resources/ui/emails/itinerary/generic_parking_600x40=
+0.jpg"></span></a><br></td></tr></tbody></table><table style=3D"background-=
+color:#f4fafe;border:1px solid #f0f1f2;width:100%" cellspacing=3D"0" cellpa=
+dding=3D"0"><tbody><tr><td style=3D"background-color:#f4fafe;padding:0 10px=
+;text-align:left" valign=3D"top" height=3D"100%"><u></u><div><u></u><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr>=
+<td valign=3D"top"><table style=3D"font-size:0;line-height:0" width=3D"100%=
+" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D=
+"10"><br></td></tr></tbody></table><u></u><table style=3D"font-size:0;line-=
+height:0;display:none;font-size:0;line-height:0;max-height:0;max-width:0;ov=
+erflow:hidden;width:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></table><u></=
+u><div style=3D"color:#2e2e2e;font-family:Arial,Helvetica,sans-serif,'Robot=
+o';font-size:18px;font-weight:bold;letter-spacing:-0.5px;line-height:28px;m=
+argin:0;padding:0;text-align:left">Parcheggi custoditi in aeroporto</div></=
+td></tr><tr><td style=3D"font-size:0;line-height:0" height=3D"2"><br></td><=
+/tr><tr><td valign=3D"top" height=3D"72" align=3D"left"><div style=3D"heigh=
+t:72px;min-height:72px;overflow:hidden"><table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td style=3D"color:#888888=
+;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:14px;line-height=
+:24px" valign=3D"top">Con Ryanair puoi prenotare un parcheggio sicuro in ae=
+roporto.</td></tr></tbody></table></div></td></tr></tbody></table><u></u></=
+div><u></u><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"><tbody=
+><tr><td style=3D"padding:10px 0 20px;text-align:right"><a style=3D"color:#=
+2091eb;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:16px;font-=
+weight:bold;text-decoration:none" rel=3D"noopener noreferrer" href=3D"https=
+://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.=
+com%2Fit%2Fit%2Fr%2Femail%2Fparking%3FdepartureOutboundIata%3DMXP%26arrival=
+OutboundIata%3DSTN%26departureInboundIata%3DSTN%26arrivalInboundIata%3DMXP%=
+26culture%3Dit-it%26departureDateTimeOutbound%3D2026-04-30T17%3A25%3A00%26a=
+rrivalDateTimeOutbound%3D2026-04-30T18%3A30%3A00%26departureDateTimeInbound=
+%3D2026-05-04T17%3A40%3A00%26arrivalDateTimeInbound%3D2026-05-04T20%3A35%3A=
+00%26adults%3D2%26teens%3D0%26children%3D0%26infants%3D0%26bookingId%3D8767=
+72919%26market%3Dit%2Fit&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.co=
+m%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0=
+%7C0%7C639137652457804671%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsI=
+lYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000=
+%7C%7C%7C&amp;sdata=3DM%2BJAL9aRFPpDbeU%2FEsJxM50b3rp1hxGavjxTacMy%2Fuk%3D&=
+amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/r/email/park=
+ing?departureOutboundIata=3DMXP&amp;arrivalOutboundIata=3DSTN&amp;departure=
+InboundIata=3DSTN&amp;arrivalInboundIata=3DMXP&amp;culture=3Dit-it&amp;depa=
+rtureDateTimeOutbound=3D2026-04-30T17:25:00&amp;arrivalDateTimeOutbound=3D2=
+026-04-30T18:30:00&amp;departureDateTimeInbound=3D2026-05-04T17:40:00&amp;a=
+rrivalDateTimeInbound=3D2026-05-04T20:35:00&amp;adults=3D2&amp;teens=3D0&am=
+p;children=3D0&amp;infants=3D0&amp;bookingId=3D876772919&amp;market=3Dit/it=
+">Aggiungi ora&nbsp;</a></td></tr></tbody></table></td><td><u></u><br></td>=
+<td valign=3D"middle" align=3D"right"><table style=3D"display:none;font-siz=
+e:0;line-height:0;max-height:0;max-width:0;overflow:hidden;width:0" cellspa=
+cing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:0 10px 0 0"><i=
+mg height=3D"16" width=3D"10" border=3D"0" alt=3D"" src=3D"https://www.ryan=
+air.com/content/dam/ryanair/crm/templates/pb/_elements/blue-arrow.png"><br>=
+</td></tr></tbody></table></td><td><u></u><br></td></tr></tbody></table><u>=
+</u></div><u></u></td><td width=3D"16"><br></td></tr></tbody></table><table=
+ style=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cells=
+pacing=3D"0" border=3D"0"><tbody><tr><td height=3D"12"><br></td></tr></tbod=
+y></table><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tbody>=
+<tr><td width=3D"16"><br></td><td><u></u><div style=3D"display:inline-block=
+;max-width:269px;width:45%"><u></u><table style=3D"width:100%" cellspacing=
+=3D"0" cellpadding=3D"0"><tbody><tr><td><a style=3D"display:inline-block;ma=
+x-width:269px;text-align:left;text-decoration:none;width:100%" rel=3D"noope=
+ner noreferrer" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fcheck-in%3Futm_source%3Dcrm%26=
+utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_n=
+op_nols&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb4=
+52f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C6391376524=
+57823253%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMC=
+IsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sda=
+ta=3DBpdoRIkg2uubCMiDYAkJYF%2BlCgwOvMJAkQrVXjDWQVw%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://www.ryanair.com/it/it/check-in?utm_source=3Dcrm&amp;utm=
+_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_no=
+p_nols"><span style=3D"display:block"><img style=3D"border:0;display:block;=
+outline:0;width:100%" width=3D"260" border=3D"0" alt=3D"{essentials.3.1.blo=
+ck.alt}" src=3D"https://assets.ryanair.com/resources/ui/emails/itinerary/pr=
+iority-boarding.jpg"></span></a><br></td></tr></tbody></table><table style=
+=3D"background-color:#f4fafe;border:1px solid #f0f1f2;width:100%" cellspaci=
+ng=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background-color:#f4fafe=
+;padding:0 10px;text-align:left" valign=3D"top" height=3D"100%"><u></u><div=
+><u></u><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0"><tbody><tr><td valign=3D"top"><table style=3D"font-size:0;line-height:0=
+" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><t=
+r><td height=3D"10"><br></td></tr></tbody></table><u></u><table style=3D"fo=
+nt-size:0;line-height:0;display:none;font-size:0;line-height:0;max-height:0=
+;max-width:0;overflow:hidden;width:0" width=3D"100%" cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbod=
+y></table><u></u><div style=3D"color:#2e2e2e;font-family:Arial,Helvetica,sa=
+ns-serif,'Roboto';font-size:18px;font-weight:bold;letter-spacing:-0.5px;lin=
+e-height:28px;margin:0;padding:0;text-align:left">Priorit=C3=A0 e 2 bagagli=
+ a mano</div></td></tr><tr><td style=3D"font-size:0;line-height:0" height=
+=3D"2"><br></td></tr><tr><td valign=3D"top" height=3D"72" align=3D"left"><d=
+iv style=3D"height:72px;min-height:72px;overflow:hidden"><table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td style=
+=3D"color:#888888;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size=
+:14px;line-height:24px" valign=3D"top">Devi aggiungere&nbsp;Priorit=C3=A0 e=
+ 2 bagagli a mano se vuoi portare a bordo 2 bagagli a mano.</td></tr></tbod=
+y></table></div></td></tr></tbody></table><u></u></div><u></u><table width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"paddi=
+ng:10px 0 20px;text-align:right"><a style=3D"color:#2091eb;font-family:Aria=
+l,Helvetica,sans-serif,'Roboto';font-size:16px;font-weight:bold;text-decora=
+tion:none" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.prot=
+ection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fcheck-i=
+n%3Futm_source%3Dcrm%26utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITINERAR=
+Y_it_noseg_noab_nodiv_nop_nols&amp;data=3D05%7C02%7Calessandro.sacchi%40pik=
+sel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a=
+75%7C0%7C0%7C639137652457842041%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnR=
+ydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7=
+C60000%7C%7C%7C&amp;sdata=3DLpZZuGJChJDxMk%2F933AANRmZs1vAVv6V%2FW5SutyNzA4=
+%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/check-in=
+?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITINERA=
+RY_it_noseg_noab_nodiv_nop_nols">Aggiungi ora&nbsp;</a></td></tr></tbody></=
+table></td><td><u></u><br></td><td valign=3D"middle" align=3D"right"><table=
+ style=3D"display:none;font-size:0;line-height:0;max-height:0;max-width:0;o=
+verflow:hidden;width:0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td =
+style=3D"padding:0 10px 0 0"><img height=3D"16" width=3D"10" border=3D"0" a=
+lt=3D"" src=3D"https://www.ryanair.com/content/dam/ryanair/crm/templates/pb=
+/_elements/blue-arrow.png"><br></td></tr></tbody></table></td><td><u></u><b=
+r></td></tr></tbody></table><u></u></div><span>&nbsp;</span><u></u><div sty=
+le=3D"display:inline-block;max-width:269px;width:45%"><u></u><table style=
+=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><a style=
+=3D"display:inline-block;max-width:269px;text-align:left;text-decoration:no=
+ne;width:100%" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fche=
+ck-in%3Futm_source%3Dcrm%26utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITIN=
+ERARY_it_noseg_noab_nodiv_nop_nols&amp;data=3D05%7C02%7Calessandro.sacchi%4=
+0piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1=
+473a75%7C0%7C0%7C639137652457861053%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGk=
+iOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%=
+3D%7C60000%7C%7C%7C&amp;sdata=3Dt%2B2r%2FmbNIntokeSxSl1S93IE31%2FEmiqgdxPX0=
+y0X%2Bng%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/=
+check-in?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI=
+_ITINERARY_it_noseg_noab_nodiv_nop_nols"><span style=3D"display:block"><img=
+ style=3D"border:0;display:block;outline:0;width:100%" width=3D"260" border=
+=3D"0" alt=3D"{essentials.3.2.block.alt}" src=3D"https://assets.ryanair.com=
+/resources/ui/emails/itinerary/seat.jpg"></span></a><br></td></tr></tbody><=
+/table><table style=3D"background-color:#f4fafe;border:1px solid #f0f1f2;wi=
+dth:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"backg=
+round-color:#f4fafe;padding:0 10px;text-align:left" valign=3D"top" height=
+=3D"100%"><u></u><div><u></u><table width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0"><tbody><tr><td valign=3D"top"><table style=3D"font=
+-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0"><tbody><tr><td height=3D"10"><br></td></tr></tbody></table><u><=
+/u><table style=3D"font-size:0;line-height:0;display:none;font-size:0;line-=
+height:0;max-height:0;max-width:0;overflow:hidden;width:0" width=3D"100%" c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"5"=
+><br></td></tr></tbody></table><u></u><div style=3D"color:#2e2e2e;font-fami=
+ly:Arial,Helvetica,sans-serif,'Roboto';font-size:18px;font-weight:bold;lett=
+er-spacing:-0.5px;line-height:28px;margin:0;padding:0;text-align:left">Camb=
+ia posto</div></td></tr><tr><td style=3D"font-size:0;line-height:0" height=
+=3D"2"><br></td></tr><tr><td valign=3D"top" height=3D"72" align=3D"left"><d=
+iv style=3D"height:72px;min-height:72px;overflow:hidden"><table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td style=
+=3D"color:#888888;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size=
+:14px;line-height:24px" valign=3D"top">Puoi cambiare posto fino a 2 ore pri=
+ma del decollo previsto.</td></tr></tbody></table></div></td></tr></tbody><=
+/table><u></u></div><u></u><table width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0"><tbody><tr><td style=3D"padding:10px 0 20px;text-align:right"><a =
+style=3D"color:#2091eb;font-family:Arial,Helvetica,sans-serif,'Roboto';font=
+-size:16px;font-weight:bold;text-decoration:none" rel=3D"noopener noreferre=
+r" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.ryanair.com%2Fit%2Fit%2Fcheck-in%3Futm_source%3Dcrm%26utm_medium%3D=
+email%26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_nols&amp;d=
+ata=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac=
+4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652457880581%7CUn=
+known%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4=
+zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D%2BOyla2=
+qGo92FWNScZUyZMNXLUYUZlvAJzHsvhEo4PGo%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://www.ryanair.com/it/it/check-in?utm_source=3Dcrm&amp;utm_medium=3Dema=
+il&amp;utm_campaign=3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_nols">Preno=
+ta ora</a></td></tr></tbody></table></td><td><u></u><br></td><td valign=3D"=
+middle" align=3D"right"><table style=3D"display:none;font-size:0;line-heigh=
+t:0;max-height:0;max-width:0;overflow:hidden;width:0" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody><tr><td style=3D"padding:0 10px 0 0"><img height=3D"1=
+6" width=3D"10" border=3D"0" alt=3D"" src=3D"https://www.ryanair.com/conten=
+t/dam/ryanair/crm/templates/pb/_elements/blue-arrow.png"><br></td></tr></tb=
+ody></table></td><td><u></u><br></td></tr></tbody></table><u></u></div><u><=
+/u></td><td width=3D"16"><br></td></tr></tbody></table><table style=3D"font=
+-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0"><tbody><tr><td height=3D"12"><br></td></tr></tbody></table><tab=
+le style=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"24"><br></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table><table style=3D"max-width:600px;width:100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"><tbody><tr><td valign=
+=3D"top"><table style=3D"margin:0 auto;max-width:600px;width:100%" cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"><tbody><tr><td=
+ valign=3D"top"><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0"><tbody><tr><td valign=3D"top"><table style=3D"margin:0 auto;max=
+-width:600px;width:100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><=
+tbody><tr><td width=3D"24"><br></td><td valign=3D"top"><table style=3D"widt=
+h:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td valign=3D"top"><=
+div style=3D"color:#2e2e2e;font-family:Arial,Helvetica,sans-serif,'Roboto';=
+font-size:24px;font-weight:700;letter-spacing:-0.5px;line-height:28px;margi=
+n:0;padding:0;text-align:center">Sfrutta al meglio ci=C3=B2 che Ryanair ha =
+da offrire.</div><table style=3D"font-size:0;line-height:0" width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"1=
+5"><br></td></tr></tbody></table></td></tr></tbody></table></td><td width=
+=3D"24"><br></td></tr></tbody></table><table width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0"><tbody><tr><td width=3D"16"><br></td><td><u></u><div s=
+tyle=3D"display:inline-block;max-width:269px;width:45%"><u></u><table style=
+=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><a style=
+=3D"display:inline-block;max-width:269px;text-align:left;text-decoration:no=
+ne;width:100%" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fche=
+ck-in%3Futm_source%3Dcrm%26utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITIN=
+ERARY_it_noseg_noab_nodiv_nop_nols&amp;data=3D05%7C02%7Calessandro.sacchi%4=
+0piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1=
+473a75%7C0%7C0%7C639137652457898846%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGk=
+iOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%=
+3D%7C60000%7C%7C%7C&amp;sdata=3DIiON%2FeUYt8N%2B0H%2BQNtxxOMQQxxO1KMaZQGukD=
+M6v8EM%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/ch=
+eck-in?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_I=
+TINERARY_it_noseg_noab_nodiv_nop_nols"><span style=3D"display:block"><img s=
+tyle=3D"border:0;display:block;outline:0;width:100%" width=3D"260" border=
+=3D"0" alt=3D"Aggiungi bagagli" src=3D"https://assets.ryanair.com/resources=
+/ui/emails/itinerary/bags.jpg"></span></a><br></td></tr></tbody></table><ta=
+ble style=3D"background-color:#f4fafe;border:1px solid #f0f1f2;width:100%" =
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background-colo=
+r:#f4fafe;padding:0 10px;text-align:left" valign=3D"top" height=3D"100%"><u=
+></u><div><u></u><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0"><tbody><tr><td valign=3D"top"><table style=3D"font-size:0;line=
+-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=
+<tbody><tr><td height=3D"10"><br></td></tr></tbody></table><u></u><table st=
+yle=3D"font-size:0;line-height:0;display:none;font-size:0;line-height:0;max=
+-height:0;max-width:0;overflow:hidden;width:0" width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td>=
+</tr></tbody></table><u></u><div style=3D"color:#2e2e2e;font-family:Arial,H=
+elvetica,sans-serif,'Roboto';font-size:18px;font-weight:bold;letter-spacing=
+:-0.5px;line-height:28px;margin:0;padding:0;text-align:left">Aggiungi bagag=
+li</div></td></tr><tr><td style=3D"font-size:0;line-height:0" height=3D"2">=
+<br></td></tr><tr><td valign=3D"top" height=3D"72" align=3D"left"><div styl=
+e=3D"height:72px;min-height:72px;overflow:hidden"><table width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td style=3D"color=
+:#888888;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:14px;lin=
+e-height:24px" valign=3D"top">Puoi aggiungere fino a 3 bagagli da 20&nbsp;k=
+g al tuo viaggio fino a 2 ore prima della partenza.</td></tr></tbody></tabl=
+e></div></td></tr></tbody></table><u></u></div><u></u><table width=3D"100%"=
+ cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"padding:10px 0=
+ 20px;text-align:right"><a style=3D"color:#2091eb;font-family:Arial,Helveti=
+ca,sans-serif,'Roboto';font-size:16px;font-weight:bold;text-decoration:none=
+" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fcheck-in%3Futm_s=
+ource%3Dcrm%26utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITINERARY_it_nose=
+g_noab_nodiv_nop_nols&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7=
+C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C=
+0%7C639137652457921243%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYi=
+OiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C=
+%7C%7C&amp;sdata=3DKHOmQxyZLksnZnB%2BhaylJM10vf6TNaUn%2Fg21m70bwL8%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/check-in?utm_sour=
+ce=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITINERARY_it_nos=
+eg_noab_nodiv_nop_nols">Aggiungi ora&nbsp;</a></td></tr></tbody></table></t=
+d><td><u></u><br></td><td valign=3D"middle" align=3D"right"><table style=3D=
+"display:none;font-size:0;line-height:0;max-height:0;max-width:0;overflow:h=
+idden;width:0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"=
+padding:0 10px 0 0"><img height=3D"16" width=3D"10" border=3D"0" alt=3D"" s=
+rc=3D"https://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_element=
+s/blue-arrow.png"><br></td></tr></tbody></table></td><td><u></u><br></td></=
+tr></tbody></table><u></u></div><span>&nbsp;</span><u></u><div style=3D"dis=
+play:inline-block;max-width:269px;width:45%"><u></u><table style=3D"width:1=
+00%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><a style=3D"display=
+:inline-block;max-width:269px;text-align:left;text-decoration:none;width:10=
+0%" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Fit.hotels.ryanair.com%2F%3FMDPCID%3DRyanai=
+r-IT.DPS.RyanairRooms.Email-Itinerarylink.HOTEL&amp;data=3D05%7C02%7Calessa=
+ndro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db4=
+0a09b26d4d9f1473a75%7C0%7C0%7C639137652457947333%7CUnknown%7CTWFpbGZsb3d8ey=
+JFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsI=
+ldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3Dk1Mdzb1yV3jhJPoBSO%2BpDzPXTSky=
+PrgFgJiJv6sHBco%3D&amp;reserved=3D0" originalsrc=3D"https://it.hotels.ryana=
+ir.com/?MDPCID=3DRyanair-IT.DPS.RyanairRooms.Email-Itinerarylink.HOTEL"><sp=
+an style=3D"display:block"><img style=3D"border:0;display:block;outline:0;w=
+idth:100%" width=3D"260" border=3D"0" alt=3D"{offer.1.2.block.alt}" src=3D"=
+https://assets.ryanair.com/resources/ui/emails/itinerary/ryanair-rooms.jpg"=
+></span></a><br></td></tr></tbody></table><table style=3D"background-color:=
+#f4fafe;border:1px solid #f0f1f2;width:100%" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td style=3D"background-color:#f4fafe;padding:0 10px;text=
+-align:left" valign=3D"top" height=3D"100%"><u></u><div><u></u><table width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td v=
+align=3D"top"><table style=3D"font-size:0;line-height:0" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"10">=
+<br></td></tr></tbody></table><u></u><table style=3D"font-size:0;line-heigh=
+t:0;display:none;font-size:0;line-height:0;max-height:0;max-width:0;overflo=
+w:hidden;width:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></table><u></u><di=
+v style=3D"color:#2e2e2e;font-family:Arial,Helvetica,sans-serif,'Roboto';fo=
+nt-size:18px;font-weight:bold;letter-spacing:-0.5px;line-height:28px;margin=
+:0;padding:0;text-align:left">Ryaniar Rooms</div></td></tr><tr><td style=3D=
+"font-size:0;line-height:0" height=3D"2"><br></td></tr><tr><td valign=3D"to=
+p" height=3D"72" align=3D"left"><div style=3D"height:72px;min-height:72px;o=
+verflow:hidden"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0"><tbody><tr><td style=3D"color:#888888;font-family:Arial,Helveti=
+ca,sans-serif,'Roboto';font-size:14px;line-height:24px" valign=3D"top">Sfog=
+lia gli ultimi tour e le attrazioni pi=C3=B9 recenti da aggiungere al tuo v=
+iaggio.</td></tr></tbody></table></div></td></tr></tbody></table><u></u></d=
+iv><u></u><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"><tbody>=
+<tr><td style=3D"padding:10px 0 20px;text-align:right"><a style=3D"color:#2=
+091eb;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:16px;font-w=
+eight:bold;text-decoration:none" rel=3D"noopener noreferrer" href=3D"https:=
+//gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fit.hotels.rya=
+nair.com%2F%3FMDPCID%3DRyanair-IT.DPS.RyanairRooms.Email-Itinerarylink.HOTE=
+L&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f980=
+d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C6391376524579721=
+37%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAi=
+OiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D3=
+EobkY%2BriECUdmXjAL%2BmLM9J4kuQfWsNBboHLb3Ds1s%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://it.hotels.ryanair.com/?MDPCID=3DRyanair-IT.DPS.RyanairRooms=
+.Email-Itinerarylink.HOTEL">Scopri di pi=C3=B9</a></td></tr></tbody></table=
+></td><td><u></u><br></td><td valign=3D"middle" align=3D"right"><table styl=
+e=3D"display:none;font-size:0;line-height:0;max-height:0;max-width:0;overfl=
+ow:hidden;width:0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=
+=3D"padding:0 10px 0 0"><img height=3D"16" width=3D"10" border=3D"0" alt=3D=
+"" src=3D"https://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_ele=
+ments/blue-arrow.png"><br></td></tr></tbody></table></td><td><u></u><br></t=
+d></tr></tbody></table><u></u></div><u></u></td><td width=3D"16"><br></td><=
+/tr></tbody></table><table style=3D"font-size:0;line-height:0" width=3D"100=
+%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=
+=3D"12"><br></td></tr></tbody></table><table width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0"><tbody><tr><td width=3D"16"><br></td><td><u></u><div s=
+tyle=3D"display:inline-block;max-width:269px;width:45%"><u></u><table style=
+=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td><a style=
+=3D"display:inline-block;max-width:269px;text-align:left;text-decoration:no=
+ne;width:100%" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fcontent%2Fdam=
+%2Fryanair3%2Fitinerary%2Finflight%2Fmagazine.pdf%3Futm_source%3Dcrm%26utm_=
+medium%3Demail%26utm_campaign%3Ditinerary_it-it&amp;data=3D05%7C02%7Calessa=
+ndro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db4=
+0a09b26d4d9f1473a75%7C0%7C0%7C639137652457990799%7CUnknown%7CTWFpbGZsb3d8ey=
+JFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsI=
+ldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3Ds2qdJYJLbLE2RqrYDw9Fa6Y8WO6r4Y=
+rQRZQ7coidab8%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/c=
+ontent/dam/ryanair3/itinerary/inflight/magazine.pdf?utm_source=3Dcrm&amp;ut=
+m_medium=3Demail&amp;utm_campaign=3Ditinerary_it-it"><span style=3D"display=
+:block"><img style=3D"border:0;display:block;outline:0;width:100%" width=3D=
+"260" border=3D"0" alt=3D"{offer.2.1.block.alt}" src=3D"https://www.ryanair=
+.com/content/dam/ryanair3/itinerary/inflight/Inflight-email-asset.jpg?utm_s=
+ource=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3Ditinerary_it-it"></sp=
+an></a><br></td></tr></tbody></table><table style=3D"background-color:#f4fa=
+fe;border:1px solid #f0f1f2;width:100%" cellspacing=3D"0" cellpadding=3D"0"=
+><tbody><tr><td style=3D"background-color:#f4fafe;padding:0 10px;text-align=
+:left" valign=3D"top" height=3D"100%"><u></u><div><u></u><table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td valign=
+=3D"top"><table style=3D"font-size:0;line-height:0" width=3D"100%" cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"10"><br><=
+/td></tr></tbody></table><u></u><table style=3D"font-size:0;line-height:0;d=
+isplay:none;font-size:0;line-height:0;max-height:0;max-width:0;overflow:hid=
+den;width:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+"><tbody><tr><td height=3D"5"><br></td></tr></tbody></table><u></u><div sty=
+le=3D"color:#2e2e2e;font-family:Arial,Helvetica,sans-serif,'Roboto';font-si=
+ze:18px;font-weight:bold;letter-spacing:-0.5px;line-height:28px;margin:0;pa=
+dding:0;text-align:left">Rivista disponibile a bordo</div></td></tr><tr><td=
+ style=3D"font-size:0;line-height:0" height=3D"2"><br></td></tr><tr><td val=
+ign=3D"top" height=3D"72" align=3D"left"><div style=3D"height:72px;min-heig=
+ht:72px;overflow:hidden"><table width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0"><tbody><tr><td style=3D"color:#888888;font-family:Aria=
+l,Helvetica,sans-serif,'Roboto';font-size:14px;line-height:24px" valign=3D"=
+top">Scarica e sfoglia la nostra rivista di bordo prima del volo.</td></tr>=
+</tbody></table></div></td></tr></tbody></table><u></u></div><u></u><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"=
+padding:10px 0 20px;text-align:right"><a style=3D"color:#2091eb;font-family=
+:Arial,Helvetica,sans-serif,'Roboto';font-size:16px;font-weight:bold;text-d=
+ecoration:none" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fcontent%2Fda=
+m%2Fryanair3%2Fitinerary%2Finflight%2Fmagazine.pdf%3Futm_source%3Dcrm%26utm=
+_medium%3Demail%26utm_campaign%3Ditinerary_it-it&amp;data=3D05%7C02%7Caless=
+andro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db=
+40a09b26d4d9f1473a75%7C0%7C0%7C639137652458009584%7CUnknown%7CTWFpbGZsb3d8e=
+yJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIs=
+IldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DUZKOBTxe3i2%2BrkWQVu4m5gIBOs2=
+HcoDmOXi1GkgbAAg%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.co=
+m/content/dam/ryanair3/itinerary/inflight/magazine.pdf?utm_source=3Dcrm&amp=
+;utm_medium=3Demail&amp;utm_campaign=3Ditinerary_it-it">Scaricala subito</a=
+></td></tr></tbody></table></td><td><u></u><br></td><td valign=3D"middle" a=
+lign=3D"right"><table style=3D"display:none;font-size:0;line-height:0;max-h=
+eight:0;max-width:0;overflow:hidden;width:0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td style=3D"padding:0 10px 0 0"><img height=3D"16" width=
+=3D"10" border=3D"0" alt=3D"" src=3D"https://www.ryanair.com/content/dam/ry=
+anair/crm/templates/pb/_elements/blue-arrow.png"><br></td></tr></tbody></ta=
+ble></td><td><u></u><br></td></tr></tbody></table><u></u></div><span>&nbsp;=
+</span><u></u><div style=3D"display:inline-block;max-width:269px;width:45%"=
+><u></u><table style=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0"><tb=
+ody><tr><td><a style=3D"display:inline-block;max-width:269px;text-align:lef=
+t;text-decoration:none;width:100%" rel=3D"noopener noreferrer" href=3D"http=
+s://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair=
+.com%2Fit%2Fit%2Fcheck-in%3Futm_source%3Dcrm%26utm_medium%3Demail%26utm_cam=
+paign%3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_nols&amp;data=3D05%7C02%7=
+Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb581=
+53e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652458028692%7CUnknown%7CTWFpbGZ=
+sb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTW=
+FpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DtjEISqEicdr2mrfs%2FNjme=
+0osiH3kYIqloJexA0YprvA%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryan=
+air.com/it/it/check-in?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_camp=
+aign=3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_nols"><span style=3D"displ=
+ay:block"><img style=3D"border:0;display:block;outline:0;width:100%" width=
+=3D"260" border=3D"0" alt=3D"Assicurazione di viaggio" src=3D"https://asset=
+s.ryanair.com/resources/ui/emails/itinerary/generic_insurance_600x400.jpg">=
+</span></a><br></td></tr></tbody></table><table style=3D"background-color:#=
+f4fafe;border:1px solid #f0f1f2;width:100%" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td style=3D"background-color:#f4fafe;padding:0 10px;text=
+-align:left" valign=3D"top" height=3D"100%"><u></u><div><u></u><table width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td v=
+align=3D"top"><table style=3D"font-size:0;line-height:0" width=3D"100%" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"10">=
+<br></td></tr></tbody></table><u></u><table style=3D"font-size:0;line-heigh=
+t:0;display:none;font-size:0;line-height:0;max-height:0;max-width:0;overflo=
+w:hidden;width:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></table><u></u><di=
+v style=3D"color:#2e2e2e;font-family:Arial,Helvetica,sans-serif,'Roboto';fo=
+nt-size:18px;font-weight:bold;letter-spacing:-0.5px;line-height:28px;margin=
+:0;padding:0;text-align:left">Assicurazione di viaggio</div></td></tr><tr><=
+td style=3D"font-size:0;line-height:0" height=3D"2"><br></td></tr><tr><td v=
+align=3D"top" height=3D"72" align=3D"left"><div style=3D"height:72px;min-he=
+ight:72px;overflow:hidden"><table width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0"><tbody><tr><td style=3D"color:#888888;font-family:Ar=
+ial,Helvetica,sans-serif,'Roboto';font-size:14px;line-height:24px" valign=
+=3D"top">Assicurati la massima tranquillit=C3=A0 per il tuo viaggio aggiung=
+endo l=E2=80=99assicurazione di viaggio.</td></tr></tbody></table></div></t=
+d></tr></tbody></table><u></u></div><u></u><table width=3D"100%" cellpaddin=
+g=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"padding:10px 0 20px;text-=
+align:right"><a style=3D"color:#2091eb;font-family:Arial,Helvetica,sans-ser=
+if,'Roboto';font-size:16px;font-weight:bold;text-decoration:none" rel=3D"no=
+opener noreferrer" href=3D"https://gbr01.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fcheck-in%3Futm_source%3Dcrm=
+%26utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_nodi=
+v_nop_nols&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61=
+eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C6391376=
+52458047142%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDA=
+wMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;=
+sdata=3DcuiZo3wYUjbNIdIXSHUOtBhH94FUdEHT%2B35ViHfsv5M%3D&amp;reserved=3D0" =
+originalsrc=3D"https://www.ryanair.com/it/it/check-in?utm_source=3Dcrm&amp;=
+utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITINERARY_it_noseg_noab_nodiv=
+_nop_nols">Aggiungi ora&nbsp;</a></td></tr></tbody></table></td><td><u></u>=
+<br></td><td valign=3D"middle" align=3D"right"><table style=3D"display:none=
+;font-size:0;line-height:0;max-height:0;max-width:0;overflow:hidden;width:0=
+" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:0 10p=
+x 0 0"><img height=3D"16" width=3D"10" border=3D"0" alt=3D"" src=3D"https:/=
+/www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/blue-arrow.=
+png"><br></td></tr></tbody></table></td><td><u></u><br></td></tr></tbody></=
+table><u></u></div><u></u></td><td width=3D"16"><br></td></tr></tbody></tab=
+le><table style=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D=
+"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td height=3D"12"><br></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr></tbody></table><div style=3D"background:rgb(255,255,255);background-=
+color:rgb(255,255,255);margin:0px auto;max-width:600px"><table style=3D"bac=
+kground:rgb(255,255,255);background-color:rgb(255,255,255);width:100%" cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"><tbody><tr><t=
+d style=3D"direction:ltr;font-size:0px;padding:20px 0;text-align:center"><d=
+iv style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-bloc=
+k;vertical-align:top;width:100%" class=3D"m_-2151924740038858708mj-column-p=
+er-100"><table width=3D"100%" style=3D"vertical-align:top" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"font-size:0px;padd=
+ing:0;word-break:break-word" align=3D"center"><table style=3D"border-collap=
+se:collapse;border-spacing:0px" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0"><tbody><tr><td style=3D"width:600px"><img height=3D"auto" width=3D"6=
+00" style=3D"border:0;display:block;outline:none;text-decoration:none;heigh=
+t:auto;width:100%;font-size:13px" src=3D"https://assets.ryanair.com/resourc=
+es/ui/emails/dot-email.jpg" alt=3D""><br></td></tr></tbody></table></td></t=
+r><tr><td style=3D"background:#073590;font-size:0px;padding:16px;word-break=
+:break-word" align=3D"center"><div style=3D"font-family:Ubuntu,Helvetica,Ar=
+ial,sans-serif;font-size:24px;line-height:1;text-align:center;color:#ffffff=
+">App Day of Travel Assistant</div></td></tr><tr><td style=3D"font-size:0px=
+;padding:16px;word-break:break-word" align=3D"center"><div style=3D"font-fa=
+mily:Ubuntu,Helvetica,Arial,sans-serif;font-size:16px;line-height:1;text-al=
+ign:center;color:#888888">Quando sar=C3=A0 il momento di volare, il nostro =
+Day of Travel Assistant render=C3=A0 pi=C3=B9 facile il tuo viaggio in aero=
+porto. Ricevi aggiornamenti e notifiche in tempo reale su terminal, gate e =
+volo direttamente sul tuo telefono. Durante le principali interruzioni/rita=
+rdi, ricevi aggiornamenti video regolari dal nostro Centro operativo, il qu=
+ale ti terr=C3=A0 aggiornato/a sulla risoluzione del problema.</div></td></=
+tr></tbody></table></div></td></tr></tbody></table></div><table style=3D"ma=
+rgin:0 auto;max-width:600px;overflow:hidden;width:100%" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"0"><tbody><tr><td><table style=3D"background-col=
+or:#ffffff;margin:0 auto;max-width:600px;width:100%" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"><tbody><tr><td width=3D"16">=
+<br></td><td><table style=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0=
+"><tbody><tr><td style=3D"padding:0"><table style=3D"border-bottom:1px soli=
+d #daedfc" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><t=
+d style=3D"padding:12px 0;text-align:center"><u></u><div style=3D"display:i=
+nline-block;padding:20px 0;width:120px;vertical-align:top"><u></u><table st=
+yle=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></=
+table><div style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';font-si=
+ze:16px;letter-spacing:-0.5px;font-weight:bold;color:#888888;font-weight:no=
+rmal">Collegati con noi</div><table style=3D"font-size:0;line-height:0" wid=
+th=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td=
+ height=3D"5"><br></td></tr></tbody></table><u></u></div><u></u><div style=
+=3D"display:inline-block;padding:20px 0;text-align:center;vertical-align:mi=
+ddle"><u></u><table style=3D"padding:0 0 0 6px;text-align:center;width:100%=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"><tbody>=
+<tr><td style=3D"display:inline-block;padding:0 4px;text-align:center"><a s=
+tyle=3D"text-decoration:none" rel=3D"noopener noreferrer" href=3D"https://g=
+br01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ftwitter.com%2FRy=
+anair&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452=
+f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652458=
+065574%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIs=
+IlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=
+=3DFbq6eOQ0ADqO27osxcOp8ZJ8PVLxwf45VogmMgA9dWs%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://twitter.com/Ryanair"><img height=3D"30" width=3D"30" border=
+=3D"0" alt=3D"Twitter" src=3D"https://www.ryanair.com/content/dam/ryanair/c=
+rm/templates/pb/_elements/mobile/twitter-icon-mobile.png"></a><br></td><td =
+style=3D"display:inline-block;padding:0 4px;text-align:center"><a style=3D"=
+text-decoration:none" rel=3D"noopener noreferrer" href=3D"https://gbr01.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fryana=
+ir&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f98=
+0d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652458088=
+866%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlA=
+iOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D=
+x%2BDXmXoLisvUzWupoixiawc2nHc4mKfUSD528M%2BYMR8%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://www.facebook.com/ryanair"><img height=3D"30" width=3D"30" =
+border=3D"0" alt=3D"Facebook" src=3D"https://www.ryanair.com/content/dam/ry=
+anair/crm/templates/pb/_elements/mobile/facebook-icon-mobile.png"></a><br><=
+/td><td style=3D"display:inline-block;padding:0 4px;text-align:center"><a s=
+tyle=3D"text-decoration:none" rel=3D"noopener noreferrer" href=3D"https://g=
+br01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.instagram.co=
+m%2Fryanair%2F&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961=
+ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639=
+137652458107987%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjA=
+uMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&=
+amp;sdata=3Des3WEUozuR4TJ3vUyF40l9mqYkEIRRHNVTkgm3x9Tbg%3D&amp;reserved=3D0=
+" originalsrc=3D"https://www.instagram.com/ryanair/"><img height=3D"30" wid=
+th=3D"30" border=3D"0" alt=3D"Instagram" src=3D"https://www.ryanair.com/con=
+tent/dam/ryanair/crm/templates/pb/_elements/mobile/instagram-icon-mobile.pn=
+g"></a><br></td><td style=3D"display:inline-block;padding:0 4px;text-align:=
+center"><a style=3D"text-decoration:none" rel=3D"noopener noreferrer" href=
+=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww=
+.youtube.com%2Fuser%2FRyanairNews&amp;data=3D05%7C02%7Calessandro.sacchi%40=
+piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f14=
+73a75%7C0%7C0%7C639137652458126652%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGki=
+OnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3=
+D%7C60000%7C%7C%7C&amp;sdata=3DAPRj6vA0EP9M85g8Ylr9gyWjikri9Z3UKw0lKnOHYK4%=
+3D&amp;reserved=3D0" originalsrc=3D"https://www.youtube.com/user/RyanairNew=
+s"><img height=3D"30" width=3D"30" border=3D"0" alt=3D"YouTube" src=3D"http=
+s://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/mobile/y=
+outube-icon-mobile.png"></a><br></td><td style=3D"display:inline-block;padd=
+ing:0 4px;text-align:center"><a style=3D"text-decoration:none" rel=3D"noope=
+ner noreferrer" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fryanair&amp;data=3D05%7C02%7C=
+alessandro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb5815=
+3e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652458145095%7CUnknown%7CTWFpbGZs=
+b3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWF=
+pbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D8kJLUDc4I61jFVHR8hWHM3iU=
+5iz8zArsb76E4LPcMW8%3D&amp;reserved=3D0" originalsrc=3D"https://www.linkedi=
+n.com/company/ryanair"><img height=3D"30" width=3D"30" border=3D"0" alt=3D"=
+LinkedIn" src=3D"https://www.ryanair.com/content/dam/ryanair/crm/templates/=
+pb/_elements/mobile/linkedin-icon-mobile.png"></a><br></td></tr></tbody></t=
+able><u></u></div><u></u><div style=3D"display:inline-block;padding:4px 0 0=
+ 12px;text-align:right;vertical-align:middle;width:217px"><u></u><table sty=
+le=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></t=
+able><div style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';font-siz=
+e:16px;letter-spacing:-0.5px;font-weight:bold;color:#888888;font-size:14px;=
+font-weight:normal;text-align:center">Scarica la nostra app!</div><table st=
+yle=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody></=
+table><table style=3D"width:100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0"><tbody><tr><td style=3D"display:inline-block;padding:0 3px"><a rel=
+=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dc=
+om.ryanair.cheapflights%26hl%3Den&amp;data=3D05%7C02%7Calessandro.sacchi%40=
+piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f14=
+73a75%7C0%7C0%7C639137652458163273%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGki=
+OnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3=
+D%7C60000%7C%7C%7C&amp;sdata=3DWUlvYXz4xgDu%2BXDu64gzk0v6ug7xyGZqXyuBkZY85C=
+0%3D&amp;reserved=3D0" originalsrc=3D"https://play.google.com/store/apps/de=
+tails?id=3Dcom.ryanair.cheapflights&amp;hl=3Den"><img style=3D"height:auto;=
+width:97px" height=3D"30" width=3D"97" border=3D"0" alt=3D"Get it on Google=
+ play" src=3D"https://www.ryanair.com/content/dam/ryanair/crm/templates/pb/=
+_elements/google-play-2x.png"></a><br></td><td style=3D"display:inline-bloc=
+k;padding:0 3px"><a style=3D"text-decoration:none" rel=3D"noopener noreferr=
+er" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fitunes.apple.com%2Fie%2Fapp%2Fryanair-cheapest-fares%2Fid504270602&amp=
+;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f980d08de=
+ac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652458181566%7C=
+Unknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXa=
+W4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D9bioW%=
+2BqT2%2Fh%2Fla9QIhy2iBGSMK%2B4AbWF0%2BGDsCsxyVU%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://itunes.apple.com/ie/app/ryanair-cheapest-fares/id504270602=
+"><img style=3D"height:auto;width:97px" height=3D"30" width=3D"97" border=
+=3D"0" alt=3D"Download on the App Store" src=3D"https://www.ryanair.com/con=
+tent/dam/ryanair/crm/templates/pb/_elements/app-store-2x.png"></a><br></td>=
+</tr></tbody></table><u></u></div><u></u></td></tr></tbody></table><table s=
+tyle=3D"border-bottom:1px solid #daedfc" width=3D"100%" cellspacing=3D"0" c=
+ellpadding=3D"0"><tbody><tr><td style=3D"padding:12px 0;text-align:center">=
+<u></u><div style=3D"display:inline-block;vertical-align:top"><u></u><table=
+ style=3D"font-size:0;line-height:0" width=3D"100%" cellpadding=3D"0" cells=
+pacing=3D"0" border=3D"0"><tbody><tr><td height=3D"5"><br></td></tr></tbody=
+></table><div style=3D"font-family:Arial,Helvetica,sans-serif,'Roboto';font=
+-size:16px;letter-spacing:-0.5px;font-weight:bold;color:#888888;font-weight=
+:normal">Modalit=C3=A0 di pagamento</div><table style=3D"font-size:0;line-h=
+eight:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><t=
+body><tr><td height=3D"5"><br></td></tr></tbody></table><u></u></div><u></u=
+><div style=3D"display:inline-block;text-align:center;vertical-align:top"><=
+u></u><table style=3D"text-align:center" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0"><tbody><tr><td style=3D"display:inline-block;padding:0 0 0 1=
+2px"><img height=3D"20" width=3D"56" border=3D"0" alt=3D"Visa logo" src=3D"=
+https://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/visa=
+-icon.png"><br></td><td style=3D"display:inline-block;padding:0 0 0 12px"><=
+img height=3D"20" width=3D"73" border=3D"0" alt=3D"MasterPass logo" src=3D"=
+https://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/mast=
+ercard-icon.png"><br></td><td style=3D"display:inline-block;padding:0 0 0 1=
+2px"><img height=3D"20" width=3D"56" border=3D"0" alt=3D"SEPA logo" src=3D"=
+https://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/sepa=
+-icon.png"><br></td><td style=3D"display:inline-block;padding:0 0 0 12px"><=
+img height=3D"20" width=3D"24" border=3D"0" alt=3D"iDeal logo" src=3D"https=
+://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/ideal-ico=
+n.png"><br></td><td style=3D"display:inline-block;padding:0 0 0 12px"><img =
+height=3D"20" width=3D"79" border=3D"0" alt=3D"PayPal logo" src=3D"https://=
+www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/paypal-icon.=
+png"><br></td><td style=3D"display:inline-block;padding:0 0 0 12px"><img he=
+ight=3D"30" width=3D"60" border=3D"0" alt=3D"American Express logo" src=3D"=
+https://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/amex=
+-icon.jpg"><br></td></tr></tbody></table><u></u></div><u></u></td></tr></tb=
+ody></table></td></tr></tbody></table></td><td width=3D"16"><br></td></tr><=
+/tbody></table><table style=3D"background-color:#073590;border:1px solid #0=
+73590;margin:0 auto;max-width:600px;width:100%" cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0" bgcolor=3D"#073590"><tbody><tr><td><table style=3D"wi=
+dth:100%" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"paddi=
+ng:0"><table style=3D"background-color:#073590;color:#fff" width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D"pad=
+ding:16px" valign=3D"middle"><a style=3D"color:#ffffff" rel=3D"noopener nor=
+eferrer" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Fwww.ryanair.com%2Fie%2Fen%2F&amp;data=3D05%7C02%7Calessandro.sacc=
+hi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4=
+d9f1473a75%7C0%7C0%7C639137652458201411%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1=
+hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ=
+%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DWq3HWERXV4EdI8tesW7398gg8JEwSy0OhMx7cCZ=
+KNzA%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/ie/en/"><i=
+mg height=3D"12" width=3D"100" border=3D"0" alt=3D"Ryanair logo" src=3D"htt=
+ps://www.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/ryanair=
+_logo_footer_2x.png"></a><br></td><td style=3D"color:#fff;font-size:10px;pa=
+dding:16px" valign=3D"middle" align=3D"right">2025                         =
+     Ryanair DAC &nbsp;&nbsp;|&nbsp;&nbsp; <a style=3D"color:#fff;font-fami=
+ly:Arial,Helvetica,sans-serif,'Roboto';font-size:10px;text-decoration:none"=
+ rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.protection.out=
+look.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Finfo-utili%2FCent=
+ro-assistenza%2Ftermini-e-condizioni%2F%3Futm_source%3Dcrm%26utm_medium%3De=
+mail%26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_nop_nols&amp;da=
+ta=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4=
+eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137652458220391%7CUnk=
+nown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4z=
+MiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DSzYdNsTk%=
+2FjUy4t1P87OM68bw1xMkdQF0Hnwd4rYOq2Y%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://www.ryanair.com/it/it/info-utili/Centro-assistenza/termini-e-condizio=
+ni/?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITIN=
+ERARY_it_noseg_noab_nodiv_nop_nols">Termini e Condizioni</a> &nbsp;&nbsp;|&=
+nbsp;&nbsp; <a style=3D"color:#fff;font-family:Arial,Helvetica,sans-serif,'=
+Roboto';font-size:10px;text-decoration:none" rel=3D"noopener noreferrer" hr=
+ef=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fw=
+ww.ryanair.com%2Fit%2Fit%2Fazienda%2Finformativa-privacy%2F%3Futm_source%3D=
+crm%26utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_n=
+odiv_nop_nols&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961c=
+e61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C6391=
+37652458243821%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAu=
+MDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&a=
+mp;sdata=3DJVn4%2Fw0eyIUyWH2xZSTyNqW16Jws%2F2E0S3sUs4969jc%3D&amp;reserved=
+=3D0" originalsrc=3D"https://www.ryanair.com/it/it/azienda/informativa-priv=
+acy/?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MULTI_ITI=
+NERARY_it_noseg_noab_nodiv_nop_nols">Informativa sulla privacy</a> &nbsp;&n=
+bsp;|&nbsp;&nbsp; <a style=3D"color:#fff;font-family:Arial,Helvetica,sans-s=
+erif,'Roboto';font-size:10px;text-decoration:none" rel=3D"noopener noreferr=
+er" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.ryanair.com%2Fit%2Fit%2Fr%2Fhelp%2Fcontact-us%3Futm_source%3Dcrm%2=
+6utm_medium%3Demail%26utm_campaign%3DU_MULTI_ITINERARY_it_noseg_noab_nodiv_=
+nop_nols%26from%3Ditinerary-email&amp;data=3D05%7C02%7Calessandro.sacchi%40=
+piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f14=
+73a75%7C0%7C0%7C639137652458262697%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGki=
+OnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3=
+D%7C60000%7C%7C%7C&amp;sdata=3DzhxVX82q10hZMUCNhsjSCNn4QEdIIgI6kw4Hu%2FBRtl=
+M%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/r/help/=
+contact-us?utm_source=3Dcrm&amp;utm_medium=3Demail&amp;utm_campaign=3DU_MUL=
+TI_ITINERARY_it_noseg_noab_nodiv_nop_nols&amp;from=3Ditinerary-email">Conta=
+tti</a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table><table style=3D"font-size:0;line-height=
+:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody>=
+<tr><td height=3D"10"><br></td></tr></tbody></table><br><br><table cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"100%"><tbody><tr><td style=3D"padding:=
+0;text-align:center">Se hai prenotato una combinazione di servizi di viaggi=
+o (ad esempio due voli, hotel o noleggio auto) saremo pienamente responsabi=
+li della corretta esecuzione del pacchetto. Inoltre, ci assicureremo che ti=
+ vengano rimborsati tutti i servizi inutilizzati e, in caso di volo incluso=
+, di garantire il rimpatrio nell=E2=80=99improbabile eventualit=C3=A0 che d=
+ovessimo essere insolventi. Puoi trovare maggiori informazioni <a rel=3D"no=
+opener noreferrer" href=3D"https://gbr01.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fr%2Fhelp%2Fdirective-2015-2=
+302&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f9=
+80d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C63913765245828=
+0881%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIl=
+AiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=
+=3D5r4YSS7SFd1FiO5I8BbKM%2B6osLgzTxADvlnfxH726Uw%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://www.ryanair.com/it/it/r/help/directive-2015-2302"> qui</a=
+></td></tr><tr><td style=3D"padding:0;text-align:center">In alternativa, se=
+ quanto scritto in precedenza non =C3=A8 applicabile e hai prenotato uno o =
+pi=C3=B9 servizi di viaggio con noi, entro 24 ore dalla prenotazione del pr=
+imo servizio di viaggio con noi (ad esempio prenotando un hotel o un nolegg=
+io auto collegato a un volo prenotato nelle 24 ore precedenti) beneficerai =
+di tutti i diritti dell=E2=80=99UE che si applicano a tali piani di viaggio=
+ e sarai coperto da una protezione in caso di insolvenza che ti assicura di=
+ essere rimborsato per ogni servizio inutilizzato e, in caso di volo inclus=
+o, di essere rimpatriato se dovessimo risultare insolventi. Per maggiori in=
+formazioni sulla protezione in caso di insolvenza, fai clic <a rel=3D"noope=
+ner noreferrer" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2Fr%2Fhelp%2Fdirective-2015-2302=
+&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C42a961ce61eb452f980d=
+08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C63913765245829848=
+1%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiO=
+iJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DJe=
+7WC5QPkbk027Qq%2BPsgpqwD%2Bq99oG%2BwujOwvtE8aj0%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://www.ryanair.com/it/it/r/help/directive-2015-2302"> qui</a>=
+</td></tr><tr><td><br></td></tr><tr><td style=3D"padding:0;text-align:cente=
+r">Scopri di pi=C3=B9 sui posti prenotati <a rel=3D"noopener noreferrer" hr=
+ef=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fw=
+ww.ryanair.com%2Fit%2Fit%2Fr%2Fhelp%2Fseat-rules&amp;data=3D05%7C02%7Caless=
+andro.sacchi%40piksel.com%7C42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db=
+40a09b26d4d9f1473a75%7C0%7C0%7C639137652458316323%7CUnknown%7CTWFpbGZsb3d8e=
+yJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIs=
+IldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DGgF07m522wu8%2F%2FicX%2BN9Ji7=
+%2FEUkR5xHPp997D8QHHxU%3D&amp;reserved=3D0" originalsrc=3D"https://www.ryan=
+air.com/it/it/r/help/seat-rules"> qui</a></td></tr><tr><td style=3D"padding=
+:0;text-align:center">Per ulteriori informazioni inerenti la nostra politic=
+a sui bagagli, <a rel=3D"noopener noreferrer" href=3D"https://gbr01.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.ryanair.com%2Fit%2Fit%2F=
+r%2Fhelp%2Fbag-rules&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C=
+42a961ce61eb452f980d08deac4eee4f%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0=
+%7C639137652458334085%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiO=
+iIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%=
+7C%7C&amp;sdata=3DYkw9UnCchVuS8VQNZ%2FoJF9Zfyi%2FXvS%2FQTj0Cz2qEAhU%3D&amp;=
+reserved=3D0" originalsrc=3D"https://www.ryanair.com/it/it/r/help/bag-rules=
+"> clicca qui</a></td></tr><tr></tr></tbody></table><table style=3D"font-si=
+ze:0;line-height:0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0"><tbody><tr><td height=3D"10"><br></td></tr></tbody></table>Version=
+: 17 544 785</td></tr></tbody></table></div></blockquote></div></div></div>=
+</blockquote></div><div><br></div></body></html>=
+
+--Apple-Webmail-86--457c456d-7f70-46d9-99fd-c871ffef4cb7--
+
+--Apple-Webmail-42--457c456d-7f70-46d9-99fd-c871ffef4cb7--

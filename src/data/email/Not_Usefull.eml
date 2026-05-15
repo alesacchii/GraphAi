@@ -1,0 +1,289 @@
+Received: from LO6P265MB7166.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:345::15)
+ by LO4P265MB4309.GBRP265.PROD.OUTLOOK.COM with HTTPS; Sat, 9 May 2026
+ 05:03:56 +0000
+Received: from LO4P123CA0275.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:195::10)
+ by LO6P265MB7166.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:345::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9891.20; Sat, 9 May
+ 2026 05:03:53 +0000
+Received: from LO1PEPF000028CE.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:195::4)
+ by LO4P123CA0275.outlook.office365.com (2603:10a6:600:195::10) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9891.20
+ via Frontend Transport; Sat, 9 May 2026 05:03:53 +0000
+Authentication-Results: spf=pass (sender IP is 54.240.9.29)
+ smtp.mailfrom=amazonses.com; dkim=pass (signature was verified)
+ header.d=costalerts.amazonaws.com;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=pass action=none
+ header.from=costalerts.amazonaws.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of amazonses.com designates
+ 54.240.9.29 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.240.9.29; helo=a9-29.smtp-out.amazonses.com; pr=C
+Received: from a9-29.smtp-out.amazonses.com (54.240.9.29) by
+ LO1PEPF000028CE.mail.protection.outlook.com (10.167.240.38) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9913.8
+ via Frontend Transport; Sat, 9 May 2026 05:03:53 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=in3o6hyhhu3zvvrdxdieva4l5w7iftvj; d=costalerts.amazonaws.com;
+	t=1778303032;
+	h=Date:From:To:Subject:MIME-Version:Content-Type:Message-ID;
+	bh=Qgyabq6PB0iyHbrCpT+VPg0iPl3+tS78rN7D7F9qJZI=;
+	b=r9zOrmeCdZiTgZA4uLCI0W5iUnHpfSDJVOJsJh0zz8rMB9yqYjFfF0nWkV+u4aPy
+	DC5YGatEmhyyT9AtgeoWL6CRtWJ+aOaO0TkGRiZqIKapDRLzZ9+wecsTttIsXUcDDmp
+	7+Mv4mSRKB5SETduPMylG6r3xaE6jER91X57h+eM=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1778303032;
+	h=Date:From:To:Subject:MIME-Version:Content-Type:Message-ID:Feedback-ID;
+	bh=Qgyabq6PB0iyHbrCpT+VPg0iPl3+tS78rN7D7F9qJZI=;
+	b=e3m8xZhZ59Tq3zSWqIM3TKBuyzRTAsTvGm12XqOYEwl5BkPD3XZqtJxFFmQSjSVN
+	dbgOHTq0SATfo3dB57RHEyveN6N+XepXB2uuwhQqZAAowfy1q82s/AXCD01LRlVU3cv
+	FpOCDPcR2GE4DG7Cg4R5vCd/0hikSxv7GBpw2NHw=
+Date: Sat, 9 May 2026 05:03:52 +0000
+From: budgets@costalerts.amazonaws.com
+To: alessandro.sacchi@piksel.com
+Subject: AWS Budgets: Account 533267292111 has a budget exceeding your alert
+ threshold
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_103601_102066357.1778303032698"
+Message-ID: <0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000@email.amazonses.com>
+Feedback-ID: ::1.us-east-1.nj5EhV1EUf1yNiuTiGBTE6NUXbfuqw+wmLwGDjwdn7Q=:AmazonSES
+X-SES-Outgoing: 2026.05.09-54.240.9.29
+Return-Path: 0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000@amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 09 May 2026 05:03:53.8005
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 8e01173c-2656-4c4b-2955-08dead885e09
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: dbb58153-e4db-40a0-9b26-d4d9f1473a75:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: LO1PEPF000028CE:EE_|LO6P265MB7166:EE_|LO4P265MB4309:EE_
+X-MS-Exchange-Organization-AuthSource: LO1PEPF000028CE.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 8e01173c-2656-4c4b-2955-08dead885e09
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:2;ARA:13230040|3109299003|7049299003|69100299015|32142699015|13102899012|2092899012|3072899012|3092899012|5062899012|13012899012|7149299003|12012899012|57112099003|55112099003|13003099007|3023799003|4076899003|19002099003|18002099003|8096899003|16102099003;
+X-Forefront-Antispam-Report: CIP:54.240.9.29;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:a9-29.smtp-out.amazonses.com;PTR:a9-29.smtp-out.amazonses.com;CAT:NONE;SFS:(13230040)(3109299003)(7049299003)(69100299015)(32142699015)(13102899012)(2092899012)(3072899012)(3092899012)(5062899012)(13012899012)(7149299003)(12012899012)(57112099003)(55112099003)(13003099007)(3023799003)(4076899003)(19002099003)(18002099003)(8096899003)(16102099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 May 2026 05:03:53.5699
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 8e01173c-2656-4c4b-2955-08dead885e09
+X-MS-Exchange-CrossTenant-Id: dbb58153-e4db-40a0-9b26-d4d9f1473a75
+X-MS-Exchange-CrossTenant-AuthSource: LO1PEPF000028CE.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LO6P265MB7166
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.0608278
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9891.006
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944490095)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?KlP6G4Y00/f/bkyUDTMUsRqB+5NrxKpFuqRKgHPlmg9akC8TPTDGypKulBTi?=
+ =?us-ascii?Q?uON5huTkirMJFt8DeYMqWlmq8eIAwhz3NCV74orGTlwFAmpJZX+r7mlk9YYg?=
+ =?us-ascii?Q?Pxp1KyktWzb0P/yUgIowFbu71mjnCbAYWF/BrNtmEO9NaJgWCpf4l0pECKu6?=
+ =?us-ascii?Q?fsonDKar1Ge3K0SqHvb3FMBqCvQ+m2l+72K847BtaJSd7SiROAQUxzzdy3DZ?=
+ =?us-ascii?Q?ygm0mxl6Wft2IYoQG0BZ8a2+nLwocth4Pezw++YpbZLv95IP0tpBzlnSF5GN?=
+ =?us-ascii?Q?RC3QI6W9Blrimwa4fPLeaj2oCaJtrvaWT7cwxT15Hr4JLWF+hKQP/LMImM8t?=
+ =?us-ascii?Q?ONJGna6U3GXvpjfx7H3dORjziNuU6kxso9Rh2AODRJDbxyAqRkhl2KrhklnD?=
+ =?us-ascii?Q?b1R4VjnKeM9z9svsztPFGo+g7n7m+a61UDrA9N0jQOGNnfqmgBUyvLteBcDH?=
+ =?us-ascii?Q?1JL0S+rm2rclAS167SxXkl4fYanENkU7TTW4JKapLN/ywgWc4L2jau6WnvhP?=
+ =?us-ascii?Q?XaOIi6GiQyCyDcRL521YWjdEKhzksAiByXfRxJyeashz+kLcOd4DrNZnZrQI?=
+ =?us-ascii?Q?blMZqSqMa5cecWkxNkO/wKey57QjMGKTfCuLRTP41DpIdrA+MsFDFJ+bg2t9?=
+ =?us-ascii?Q?Ora8cs4xu7glzYOo5G8HmgzTLXx+t2REXbObaVOG+1Iv3wPOc9lAWdsw1G+b?=
+ =?us-ascii?Q?c+66u9ujwS139X5aeyVcfEmj575q3cYTeEHx28HUrpIi7s83vaBUatVd+ehe?=
+ =?us-ascii?Q?PQwPZ0RI3AExS/Zx5Mmof2lY7ivBFCrTzs4GePKUanU45LSfHR1JQ1MtcOlT?=
+ =?us-ascii?Q?eozVm/nut6bEshVoBCbXKODs1EpLO1uIHCRcn8O8+KygyBbDkxaA9KnV3I5J?=
+ =?us-ascii?Q?DBCMJVWDbEImicQz8M3TMKyU/sBn700iMfOJulfBd8slFadbxfr4swNQJkH1?=
+ =?us-ascii?Q?020MaOu1rA9iZqN81H6sHzRujsEpBcpE5h/iDYNFiOMS5AfRYWKyBmLA0qjy?=
+ =?us-ascii?Q?S8gEyij+vcv/ps94WAgIaTCsyxnMMUEcMNCz3c4Z6THl2167Ij4MDqVvzMNY?=
+ =?us-ascii?Q?c71tF9yvBk0GObN/QFALQDMW2heBBlPmdfIzuG7Q7BTI1849nIh9VNn803fM?=
+ =?us-ascii?Q?/+TmzNCeBQQyKpaFhpveIRYuwJi/KAdlETT7iobhWywcA4UXALvHNELOosPj?=
+ =?us-ascii?Q?Ysb9Yg38nUJwahiSd7WMZY/M1HYYaPMhUG+k/GOLw7W9jyNzCqjkkyNOLGbj?=
+ =?us-ascii?Q?8PsE3ylHWOi/x1DRvQmvmnTOFW3DF2BzXZiKqYELQy/l5AKKkx8APOkXVDMH?=
+ =?us-ascii?Q?o3MLqu7rKZGSWSuqJS14a6BZWcmtOB9i0/xikgAbufEvqskTgGVYotfq7sm3?=
+ =?us-ascii?Q?KhROWu5haCOnCc1vhcvmBlD8Lccm7AlthI/NrqChjNPlFyeGdRlsO5aoutps?=
+ =?us-ascii?Q?N+xwC5fokbisY0ycAz+WRH4guWfIYG8abcdzYmR00scc+LyAAQCn8JHX6bOw?=
+ =?us-ascii?Q?QNDfUYsa+CX7OuMqVsMZY6m+QpC9ip9zbhZxpjgdDtaa20PDwry+AdDIq6zV?=
+ =?us-ascii?Q?9/Mmwb2KgozA2iC+8Sezv4zPc83HkpKDtXsTxw7gs4v1WSaaWJ0ZRI8xR3/N?=
+ =?us-ascii?Q?0bnK68/GKbyXYXfMklL/91k8tNIIz8zFLbbdfnKuyhjajURhun64GjRs97tJ?=
+ =?us-ascii?Q?U6Oo/TMv4fUoVQBjWTzw6c4SfqX1YYyD/l0RV09Z3Z4cRWut9QsicyfK5ndZ?=
+ =?us-ascii?Q?6juWKWcns59l14A5S74iu5LabKeqJ/k5XGlEGVq4CIuo6fL3+Vr5sNnnPJxf?=
+ =?us-ascii?Q?HAlApUl6UKbmV8Px+TimzP6sBfxxIERGvXRTNUXsjFWzvMjo7V5wquPrXkt9?=
+ =?us-ascii?Q?nRpSsmh6FmQWlpLq1tOkUB6kjnk5HVsJCvFUbAl6OY6OYKPTO+v23YAJN3m6?=
+ =?us-ascii?Q?D2767tbE6PvBwbXVjwN9KdOQI21pXyHN/nL0XpsUHTK1AhC2bfxmEQzHR5VL?=
+ =?us-ascii?Q?52WL1NStCEkfX286vb3Kk64DHq/YgPPKmJfqqrsYobbDk0M/LZi4LVZrQZVr?=
+ =?us-ascii?Q?H460a57rjmJGXyvnf/V/uxs7KpmYIT2q17+bwhQIVebMpoXNrhlL8t8GaveI?=
+ =?us-ascii?Q?9XfX9MhcQXBrdMD7fLuyZcy9L5eFxdmUmeKGdu3I4YHQGXaEEKhAMv7yHbxA?=
+ =?us-ascii?Q?pX7LwpanF/OGQfUq/777TkrsdHwRYO1+Tp1yHry8RcOtCoR6QaUkvVXN11zK?=
+ =?us-ascii?Q?LVLcABmwMtMAMOjLxyQmRzG0cLXje/X74f/mnd0kf4Y2PeFp50EHNnbMiFCT?=
+ =?us-ascii?Q?0mRR527WhzmUKFtlseOelwURUhpnrDt5hldDOWXrVHSnPhptY1u45k+zuikS?=
+ =?us-ascii?Q?8aNMPh0ixpAWsxbzzd08c5NqohNJHH2dzKyFxFcz+CNync4Qq2obQBlqKPZO?=
+ =?us-ascii?Q?A3XxtecjTAWMSHWWoxejUmraGXIzHtTIdm9R9FdwHV8567in80fgxwF2pHOz?=
+ =?us-ascii?Q?GjnWCwdlXlOP6pGAjBJXhNdJb/Se8uTPCZ4YRik3KYd3BRS5DZ5qj3AdTyjM?=
+ =?us-ascii?Q?/JScT3U30D30vXgas3kZboG6obOysP4dda1KikTcDX7Z5TjiotWnRhHqTr8F?=
+ =?us-ascii?Q?fGCmRW+ovNDbUc5Q8i2tbRQdcMQi2fbFaVTk/a8r/qHwFryP2A88J1ll4LmR?=
+ =?us-ascii?Q?1FuGlM8vpuqZIOUjq2+L7JLmDuLik4PbDMiWUviCZS8Wf0RO?=
+MIME-Version: 1.0
+
+------=_Part_103601_102066357.1778303032698
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+AWS Budget Notification	                            May 09, 2026
+AWS Account: 533267292111
+AWS Budget Name: Daily Budget
+
+If you do not recognize the AWS account above, please disregard this email or contact AWS Support at https://aws.amazon.com/support.
+
+Dear AWS Customer,
+
+You requested that we alert you when the ACTUAL Cost associated with your Daily Budget budget is greater than $27.00 per day. Yesterday, the ACTUAL Cost associated with this budget is $31.55. You can find additional details below and by accessing the AWS Budgets dashboard.
+
+Budget Type: Cost
+Budgeted Amount: $30.00
+Alert Type: ACTUAL
+Alert Threshold: > $27.00
+ACTUAL Amount: $31.55
+
+
+------=_Part_103601_102066357.1778303032698
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body style="">
+       <table style="width:100%; font-family: Helvetica, Arial,sans-serif;">
+           <tr>
+               <td align="right">
+                   <img style="display:block;" height="35" src="https://d1.awsstatic.com/logos/aws-logo/full-color/AWS-Logo_Full-Color_100x60.5e9a396f44e8a57089a6c62488cd51517ae74f4b.png" align="right" hspace="6" vspace="6" alt="Description: awslogo" title="Description: awslogo" v:shapes="Picture_x0020_1">
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <p style="margin-bottom: 6px; margin-top: 0px; border-top: 7px solid #FFC000; text-align:center; font-size:1px; ">&nbsp;</p>
+
+               </td>
+           </tr>
+        </table>
+        <br>
+        <table style="width:100%; font-family: Helvetica, Arial,sans-serif;">
+            <tr>
+               <td>
+                   AWS Budget Notification
+               </td>
+               <td align="right">
+                   May 09, 2026
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   AWS Account: <i>533267292111</i>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   AWS Budget Name: <i>Daily Budget</i>
+               </td>
+           </tr>
+         </table>
+        <br>
+        <table style="width:100%; font-family: Helvetica, Arial,sans-serif;">
+           <tr>
+               <td>
+                   <b>If you do not recognize the AWS account above, please disregard this email or contact <a href="https://gbr01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvkf1hkdj.r.us-east-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Faws.amazon.com%252Fsupport%2F1%2F0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000%2FBvqbne9KeGF0Ys_BoBtaDoSKoSo%3D473&amp;data=05%7C02%7Calessandro.sacchi%40piksel.com%7C8e01173c26564c4b295508dead885e09%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639138998367619367%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=cHIbgO9c4OP3EJo3l1GthyDGQxtkArNvqjVFGAYoMZE%3D&amp;reserved=0" originalsrc="https://vkf1hkdj.r.us-east-1.awstrack.me/L0/https:%2F%2Faws.amazon.com%2Fsupport/1/0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000/Bvqbne9KeGF0Ys_BoBtaDoSKoSo=473">AWS Support</a>.</b>
+               </td>
+           </tr>
+       </table>
+         <br>
+         <table style="width:100%; font-family: Helvetica, Arial,sans-serif;">
+           <tr>
+               <td>Dear AWS Customer, </td>
+           </tr>
+        </table>
+        <br>
+        <table style="width:100%; font-family: Helvetica, Arial,sans-serif;">
+           <tr>
+               <td>
+                   You requested that we alert you when the <b>actual cost</b> associated with your <i>Daily Budget</i> budget <b>exceeds  $27.00</b> per day. Yesterday, the <b>actual cost</b> associated with this budget is <b>$31.55</b>. You can find additional details below and by accessing the AWS Budgets dashboard.
+               </td>
+           </tr>
+       </table>
+       <br>
+       <table style="border-collapse: collapse; width:100%; max-width: 800px; font-family: Helvetica, Arial,sans-serif;">
+           <tr align="left" bgcolor="#CCCCCC">
+               <td style="border: 1px solid #CCCCCC; padding:5px 10px;">
+                   <font color="#000000">Budget Name</font>
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:5px 10px;">
+                   <font color="#000000">Budget Type</font>
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:5px 10px;">
+                   <font color="#000000">Budgeted Amount</font>
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:5px 10px;">
+                   <font color="#000000">Alert Type</font>
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:5px 10px;">
+                   <font color="#000000">Alert Threshold</font>
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:5px 10px;">
+                   <font color="#000000">ACTUAL Amount</font>
+               </td>
+           </tr>
+           <tr align="left" height="15">
+               <td style="border: 1px solid #CCCCCC; padding:10px;">
+                   Daily Budget
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:10px;">
+                   Cost
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:10px;">
+                   $30.00
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:10px;">
+                   ACTUAL
+               </td>
+               <td style="border: 1px solid #CCCCCC; padding:10px;">
+                   &gt; $27.00
+               </td>
+                <td style="border: 1px solid #CCCCCC; padding:10px;">
+                   $31.55
+               </td>
+           </tr>
+       </table>
+       <br>
+       <table cellspacing="0" cellpadding="0" style="font-family: Helvetica, Arial,sans-serif;"> <tr>
+        <td align="center" width="280" height="25" bgcolor="#1166BB" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #ffffff; display: block;">
+            <a href="https://gbr01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvkf1hkdj.r.us-east-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Fconsole.aws.amazon.com%252Fcostmanagement%252Fhome%2523%252Fbudgets%2F1%2F0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000%2FNGv1rsK6AcNxejfm0gwfB7r3000%3D473&amp;data=05%7C02%7Calessandro.sacchi%40piksel.com%7C8e01173c26564c4b295508dead885e09%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639138998367646957%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=XuxTYCq6mNBw3GDFM0dumvQr9Jn%2BoYlF6MuvCrb8l80%3D&amp;reserved=0" originalsrc="https://vkf1hkdj.r.us-east-1.awstrack.me/L0/https:%2F%2Fconsole.aws.amazon.com%2Fcostmanagement%2Fhome%23%2Fbudgets/1/0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000/NGv1rsK6AcNxejfm0gwfB7r3000=473" style="text-decoration: none; line-height:25px; width:100%; display:inline-block">
+            <span style="color: #ffffff;">
+              Go to the AWS Budgets dashboard
+            </span>
+            </a>
+        </td>
+       </tr> </table>
+
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <p style="font-family: Helvetica, Arial,sans-serif; font-size:6pt; color:#000000; text-align:justify">
+           If you wish to stop receiving notifications, please click
+  <span><a href="https://gbr01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvkf1hkdj.r.us-east-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Faws-cost-management-alerts.com%253Ftoken%3DAQICAHjWioXQHIw52EYJYpUzcG2lG6qdrN7vcg805nZT9ivwfgECsksJlO99DlqpcUzFx%25252Bq2AAAA0DCBzQYJKoZIhvcNAQcGoIG%25252FMIG8AgEAMIG2BgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDMg1GIBb6mUucqEBRgIBEICBiJh9TyRjoqGLnhhMUX3hX0GDuvIHWT01pMA3u1Zmzz%25252FN591vUCrkvCViXkC7GRzivXVWH6AVkVFRPbUtCeE%25252Bgu3yo%25252FRamQuiMC1BbWiUoJgLU7QsBDHEbTYO5gpx0l9wuysqszn7bT0sdQjXwz76LoM1h%25252FOix2UEtT%25252BXFOwRfBbjRhV5OYkAlaA%25253D%2F1%2F0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000%2Fm2Rv1d0gf-A9QLk12Rk8eGFWAbo%3D473&amp;data=05%7C02%7Calessandro.sacchi%40piksel.com%7C8e01173c26564c4b295508dead885e09%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639138998367668285%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=bbUCIXAfK94zNHkHngMfMXzpwyFh6ulfXzpS3anqlb8%3D&amp;reserved=0" originalsrc="https://vkf1hkdj.r.us-east-1.awstrack.me/L0/https:%2F%2Faws-cost-management-alerts.com%3Ftoken=AQICAHjWioXQHIw52EYJYpUzcG2lG6qdrN7vcg805nZT9ivwfgECsksJlO99DlqpcUzFx%252Bq2AAAA0DCBzQYJKoZIhvcNAQcGoIG%252FMIG8AgEAMIG2BgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDMg1GIBb6mUucqEBRgIBEICBiJh9TyRjoqGLnhhMUX3hX0GDuvIHWT01pMA3u1Zmzz%252FN591vUCrkvCViXkC7GRzivXVWH6AVkVFRPbUtCeE%252Bgu3yo%252FRamQuiMC1BbWiUoJgLU7QsBDHEbTYO5gpx0l9wuysqszn7bT0sdQjXwz76LoM1h%252FOix2UEtT%252BXFOwRfBbjRhV5OYkAlaA%253D/1/0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000/m2Rv1d0gf-A9QLk12Rk8eGFWAbo=473">here</a></span> to request
+  opting out of this notification. Please do not reply directly to this email.
+  If you have any questions or comments regarding this email, please contact us
+  at <a href="https://gbr01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvkf1hkdj.r.us-east-1.awstrack.me%2FL0%2Fhttps%3A%252F%252Faws.amazon.com%252Fsupport%2F2%2F0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000%2F7XJ3zXDoQd9GsQduaguJMn7dF_Y%3D473&amp;data=05%7C02%7Calessandro.sacchi%40piksel.com%7C8e01173c26564c4b295508dead885e09%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639138998367689109%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=QIRV3E49lu39zKW39eNqWmS0nI5t%2FS3jOV8CJBVcWQI%3D&amp;reserved=0" originalsrc="https://vkf1hkdj.r.us-east-1.awstrack.me/L0/https:%2F%2Faws.amazon.com%2Fsupport/2/0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000/7XJ3zXDoQd9GsQduaguJMn7dF_Y=473">https://aws.amazon.com/support</a>
+  </p>
+  <p style="font-size:6pt; font-family: Helvetica, Arial,sans-serif; color:#000000; text-align:justify">
+      
+      This message was produced and distributed by Amazon Web Services, Inc., 410 Terry Avenue North, Seattle, Washington 98109-5210. AWS will not be bound by, and specifically objects to, any term, condition or other provision which is different from or in addition to the provisions of the AWS Customer Agreement or AWS Enterprise Agreement between AWS and you (whether or not it would materially alter such AWS Customer Agreement or AWS Enterprise Agreement) and which is submitted in any order, receipt, acceptance, confirmation, correspondence or otherwise, unless AWS specifically agrees to such provision in a written instrument signed by AWS.
+      
+  </p>
+    <img alt="" src="https://vkf1hkdj.r.us-east-1.awstrack.me/I0/0100019e0b1edcee-84589d2c-2207-4cae-b741-423dd9349211-000000/rT5piFnUVkygZtR0ErT69tByyyY=473" style="display: none; width: 1px; height: 1px;">
+</body>
+</html>
+------=_Part_103601_102066357.1778303032698--

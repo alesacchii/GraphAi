@@ -1,0 +1,44 @@
+# Variabili d'ambiente / segreti
+.env
+.env.*
+!.env.example
+
+# Bytecode e cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Ambienti virtuali
+.venv/
+venv/
+env/
+ENV/
+
+# Distribuzione / build
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test e coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Log
+*.log

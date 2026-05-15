@@ -1,0 +1,709 @@
+Received: from LO0P265MB6225.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:24b::12)
+ by LO4P265MB4309.GBRP265.PROD.OUTLOOK.COM with HTTPS; Thu, 7 May 2026
+ 15:37:05 +0000
+Received: from LO4P265CA0288.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:38f::16)
+ by LO0P265MB6225.GBRP265.PROD.OUTLOOK.COM (2603:10a6:600:24b::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9891.17; Thu, 7 May
+ 2026 15:36:59 +0000
+Received: from CW2PEPF000056BD.GBRP265.PROD.OUTLOOK.COM
+ (2603:10a6:600:38f:cafe::41) by LO4P265CA0288.outlook.office365.com
+ (2603:10a6:600:38f::16) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9891.17 via Frontend Transport; Thu,
+ 7 May 2026 15:36:58 +0000
+Authentication-Results: spf=pass (sender IP is 57.103.84.62)
+ smtp.mailfrom=icloud.com; dkim=pass (signature was verified)
+ header.d=icloud.com;dmarc=pass action=none
+ header.from=icloud.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of icloud.com designates
+ 57.103.84.62 as permitted sender) receiver=protection.outlook.com;
+ client-ip=57.103.84.62; helo=outbound.qs.icloud.com; pr=C
+Received: from outbound.qs.icloud.com (57.103.84.62) by
+ CW2PEPF000056BD.mail.protection.outlook.com (10.167.240.20) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9891.9
+ via Frontend Transport; Thu, 7 May 2026 15:36:58 +0000
+Received: from outbound.qs.icloud.com (unknown [127.0.0.2])
+	by p00-icloudmta-asmtp-us-east-2d-20-percent-0 (Postfix) with ESMTPS id 5A1631800249
+	for <alessandro.sacchi@piksel.com>; Thu, 07 May 2026 15:36:55 +0000 (UTC)
+X-ICL-Out-Info: HUtFAUMEWwJACUgBTUQeDx5WFlZNRAJCTQ5BHVwHRQBCCFYCVAFLVxQEGV8IGRhTE1oQWl8HWwAwUBtfAkIPHBNWFRMLU1ZTHFxWQAxUCFoZC0gDX3cCURxWDVdDVARfUEsbDlwXA1ccVkVcGEMJXQVXHB0cREVbE1UXRgkZCF0dGQhHHwowA0IOVgNDB0UALRkcV1BeCF4fTBwdDlgGEh1QHA5RVVkDE11KBloaCgBHW1UHXQJSH0lfQFFABAkBEghBVwlSU1RAeRVWQ1QEX04ZDEodUlZbE1UXRgk=
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=icloud.com; s=1a1hai; t=1778168217; x=1780760217; bh=lvislKSUsoERrr4V2sJSuL7LQ+XraIuCrGWn6h0v+E0=; h=To:From:Subject:Date:Message-id:Content-Type:MIME-Version:x-icloud-hme; b=tq9p2xUbgx+BSxKowsOvBB0CicrzKbwu4FzDQrIQrssUSnbdYqhrrX+b3JQh3qdPyTY3pfKwcHHRvDwa6Vm3cf89BauCmJPtUj7UR+gkFPLaVBqCTaaHHYwDNnw+LRtS5hp/15JyT+TK06hqm2wN4BoAwPqwQ0SASuIZUF6/Me3Bx6Cmihq/ecd49sDS9y8QkNT3VS87ARmTm7/mR9BhGCViyU4ProuKDfF42Bi6Rb6RCRwZa0vwOxTruPHuvs1G6jWOMMax0jJhufFZuhmpdEcL/bFfKH+zyQhPEhf/6sgAp3Nqw94TtuieCJTgEOBHYzNsF988EP7y8Duwfs/wNA==
+Received: from p00-mailws2-65744d9f87-cvvm6 (unknown [10.112.113.19])
+	by p00-icloudmta-asmtp-us-east-2d-20-percent-0 (Postfix) with ESMTPSA id 8A8561800246
+	for <alessandro.sacchi@piksel.com>; Thu, 07 May 2026 15:36:54 +0000 (UTC)
+To: alessandro.sacchi@piksel.com
+From: Alessandro Sacchi <ale.sacchi2002@icloud.com>
+Subject: =?utf-8?B?RndkOiBDaSBzY3VzaWFtbyBwZXIgbGEgbW9kaWZpY2EgZGVsbOKAmW9yYXJp?=
+ =?utf-8?B?byBwcmV2aXN0byBkZWwgdHVvIHZvbG8uIFRUMllXUA==?=
+Date: Thu, 7 May 2026 15:36:54 +0000 (GMT)
+X-Mailer: iCloud MailClient2614Hotfix46 MailServer2612B5.952a5ad53a12
+Message-id: <b21cd257-a27b-4059-9f8b-3b3b19dde8f0@me.com>
+Content-Type: multipart/alternative; boundary=Apple-Webmail-42--976435dc-0a3e-4497-a2af-05c8a283eb3c
+References: <26021318-5814-83a7-9d8c-255f1641b9a4@FR.PRD.15below.com>
+ <CAADfny8zb77euQ5qZRDjoh2GincKOLdOdaqyTfHOwv0eqMpHhg@mail.gmail.com>
+ <CAADfny9nRYBu6u6h+r53LrzCM-XUDn2tHz=L-Gu7KpyJ2kx8Xg@mail.gmail.com>
+X-Authority-Info-Out: v=2.4 cv=PqqergM3 c=1 sm=1 tr=0 ts=69fcb197
+ cx=c_apl:c_pps:t_out a=w0vwr1DNSLjGex3smDq1Tg==:117 a=NGcC8JguVDcA:10
+ a=5KLPUuaC_9wA:10 a=x7bEGLp0ZPQA:10 a=pxaA-jRotakA:10
+ a=VkNPw1HP01LnGYTKEx00:22 a=rIU5DLXHNMsiZxMBpc4A:9 a=QEXdDO2ut3YA:10
+ a=w6jg3rqHAAAA:8 a=KjJ4Jbs2ObUbOQ9YAB45dSuIviQ=:19 a=ar0NLCLKT12wwwLs:21
+ a=_W_S_7VecoQA:10
+X-Proofpoint-Spam-Details-Enc: AW1haW4tMjYwNTA3MDE1NiBTYWx0ZWRfXxFthet+nV4B/
+ z9AmP0tMmETwHw1I8ZyFpmq+uPRBmybfQg0QwdXzCednkd3QEIOXpSH/gr4GH6VH6SpJRmVBNVx
+ uj0Mogx4x6elj/+AOBn/jY0WvCbZK64Bp6/JF57RpS1FGRCe34mttZugmD+q5DzflW1TdMRcPRj
+ UtIHxzSgZPOSyEol8cSM2Op9SRKt5+edRRXbETLVC256CZT1RrbfJQ2KVTIIFKQWeiSQaP8noos
+ W8Luvnxg0/QCOEUU+LvM55FcSFyyUwyAP/tbZBjSc7mfAPuVgYYzprobHtrGLnx0zGoXnxkprq3
+ YBu50dwr59b5c0wzbV9GTxdwMd/zRT5LSBzsD8TCA1QZOfHGvcalOGWQjrMe9A=
+X-Proofpoint-GUID: 3bYAxfMgzP-b1ImXnSL-ntkZOBRkEB1L
+X-Proofpoint-ORIG-GUID: 3bYAxfMgzP-b1ImXnSL-ntkZOBRkEB1L
+Return-Path: ale.sacchi2002@icloud.com
+X-MS-Exchange-Organization-ExpirationStartTime: 07 May 2026 15:36:58.5697
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 1fa59b29-d8a2-429f-7a16-08deac4e79e5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: dbb58153-e4db-40a0-9b26-d4d9f1473a75:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CW2PEPF000056BD:EE_|LO0P265MB6225:EE_|LO4P265MB4309:EE_
+X-MS-Exchange-Organization-AuthSource: CW2PEPF000056BD.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 1fa59b29-d8a2-429f-7a16-08deac4e79e5
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704160411799003|1032899013|7049299003|4123199012|5073199012|5063199012|7149299003|69100299015|3109299003|7093399015|31052699007|39142699007|16102099003|18002099003|19002099003|56012099003|8096899003|2066899003|55112099003;
+X-Forefront-Antispam-Report: CIP:57.103.84.62;CTRY:US;LANG:it;SCL:-1;SRV:;IPV:NLI;SFV:SFE;H:outbound.qs.icloud.com;PTR:qs-2004f-snip4-10.eps.apple.com;CAT:NONE;SFS:(13230040)(704160411799003)(1032899013)(7049299003)(4123199012)(5073199012)(5063199012)(7149299003)(69100299015)(3109299003)(7093399015)(31052699007)(39142699007)(16102099003)(18002099003)(19002099003)(56012099003)(8096899003)(2066899003)(55112099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 May 2026 15:36:58.3451
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1fa59b29-d8a2-429f-7a16-08deac4e79e5
+X-MS-Exchange-CrossTenant-Id: dbb58153-e4db-40a0-9b26-d4d9f1473a75
+X-MS-Exchange-CrossTenant-AuthSource: CW2PEPF000056BD.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LO0P265MB6225
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.7719295
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9891.006
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4717077)(4999163)(920097)(811242)(255002)(410001)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?m0fZ6zdhAtT21Vf9+KyaixWuJ6vqJuYk+2YCSrpulpzQPnf4nlnpxGQs?=
+ =?Windows-1252?Q?Q3jKturZXTrYtwX0txE6gDMMwr+x+yu7hQ0KjM1zCSISPYQPBew4pjYT?=
+ =?Windows-1252?Q?doK/J0Aqy3yoEdMpS3q6CW0T3fR5YQH62GPDP/9Hcrkp3ysdXmrH7trt?=
+ =?Windows-1252?Q?y5p0JuYMgN4ZbmCll1rymMglo+CRzDR3Mv1sOaKZIvZVx7jBUwlFW2dv?=
+ =?Windows-1252?Q?PGUM0401S0tr95+qsBXOTkVOWViJ0UzqZWKZide5e+2gXV2ZfCkrFPkS?=
+ =?Windows-1252?Q?6THXvoUX6DeBPBo7mPgWGnFmq1lhDRGyWZ3DgCkd3NkOcB+QpwFY+8KH?=
+ =?Windows-1252?Q?/8K6UHHNz6eXnRoVWNm4eJUOP9iEF+ZT5Hw+Nk4G8y6pRFQWKD6S2Tbz?=
+ =?Windows-1252?Q?xtp8Np1YoUCJ2f/Rrv/BwM4HKt0NsGnH4RAcWo6g6Mr7JysQhFtLr1Yf?=
+ =?Windows-1252?Q?Fvd1Ew3cQ1orM1BWMJGo4rDeGRjO6kc1zA2cc1Q+SZndeFAA1ZQ2IlD6?=
+ =?Windows-1252?Q?Gx8wePgcbh8cgJkQAkNPejFNAfCfLxCay52MgzcKco4q1Wd2sxxXwcSg?=
+ =?Windows-1252?Q?TyivMGCR+7NN6ULCdknRGBd3+cysSpMJKuh0wwnUT4SEjA5SC1nqSxUq?=
+ =?Windows-1252?Q?1Ia/i/j9tG/YU0KF71IMKRKb71tLXW8pviDIetRRjjvA5ITfj1nVywum?=
+ =?Windows-1252?Q?aFcfnZzKEMc5z7Yx6dfRPuejmOyKX3YnVwW45DZqTk0nwT9purGxqiHO?=
+ =?Windows-1252?Q?0hLjF1bw32xvWHbEBXhaBARxfPvEHEgfrkHbV3KkTFGBeOgS2lh3Qm8i?=
+ =?Windows-1252?Q?uNWKgr2uf8RbolGim/0JGxmtGb/pUGb3U72bXdYVMzukjmMp9OjSvkk0?=
+ =?Windows-1252?Q?w9PF+fX6FlzjVR67rIl5X4PsI2BaXWKqJfsJGc8MQB7VfAGxzBXpMSCc?=
+ =?Windows-1252?Q?w0PdFzHrD4TSbkwUsst0Qpzz5NR3gxJCmBsV4AIzcd32m3Li1PyxRN2E?=
+ =?Windows-1252?Q?ANDdzHn1j1qmHs3mhWU0uKLpfYxzqX6OvHWe9zGpeBrEywcVLubjsRqK?=
+ =?Windows-1252?Q?mFIIEJ9arl1W+tk5nqvbtVJWazw2jsmrF1lIpdUv0R4zMQpAmbteqeCt?=
+ =?Windows-1252?Q?d06OxLtsGrwWHDaDyBFLSUP8tDBjQ589rfH2njA53DQnWVREXMhtpzSs?=
+ =?Windows-1252?Q?PFdoIYg0P8gAWBUjpK2GuGykhe1zxWCmNbfuLjmm9d8h6EAd8vGVvXr6?=
+ =?Windows-1252?Q?/G3MlKF80ZKfW5yfLgoJNqiU/KK56o/xhKVIC2gWssHE72hBlEJf+Ig/?=
+ =?Windows-1252?Q?bsjbacPfCJUydE67fyCdk8DfRX7NtfmjAG2o5txadgVVxJKh29t9zFbx?=
+ =?Windows-1252?Q?BKmRHZFe2H9l8WTVm6XesVoHSb0y7WYTQzk+Ze4TyBVvsAND9g+WijNu?=
+ =?Windows-1252?Q?5OiGohHDnt647KwJCLSNp2NXBkHun7XXWSDxPKdlNpyxmXBc5P3c5ZNX?=
+ =?Windows-1252?Q?CxuLWjFjJOxfWtT+5wzbgWFu+FiXcHRF3i6EYlH5jAPapUqswnWcyhnx?=
+ =?Windows-1252?Q?4081cTsvtpwhMi0VwZqyPtqLbZs/ybEJxvKodHeeH50acUxKJBuktZf0?=
+ =?Windows-1252?Q?De3i1EmBdhqCaAllITKpG3aHhdplCYix0gbnXyPPaByDsKiNmxx85csN?=
+ =?Windows-1252?Q?KG4Bi4X7TPbAaRunGsCituRa+4ZcnTtKBb2zA4B8lCFgU+8Df0CJ/hWe?=
+ =?Windows-1252?Q?7I+MDcugNTkUR+6kiY7xeqEMrhpqGdO/aVMhxrs5RJJWnZ5uihoiBk9U?=
+ =?Windows-1252?Q?WqVpvIvrbU99bjIwBZ3egl+19F04pWnuH++LhgWPExsHwJfUrtMZ/I9j?=
+ =?Windows-1252?Q?Z826j8q5KK09x5cnUp4xzROietTg29NrLVB9EMcgx9WxfRhijMQr9GM1?=
+ =?Windows-1252?Q?71TuRvHuGMEOrtFIry0Em7u4sG5ckTgm8MMiLqHakkP9nwj3EXGMrT8i?=
+ =?Windows-1252?Q?hzWDyKFgiaPGaQKMrkuKfv1NYimDzEx2nZPEDiQJn1rdD0u3Cvp59sHb?=
+ =?Windows-1252?Q?DsMnXVC6o8XC8/ZIr053PdaQR82FHfkK6VurWYQKTOFFQQ4AzVVmcpIt?=
+ =?Windows-1252?Q?VQrQKFF4GKG/QgT/Z1yoO137JuPw4zMcJQCnpVA72AjtU1N7gI+d5KdA?=
+ =?Windows-1252?Q?OgHq5FwK58rIqyQXX/gzDYJDOyldUowfZCeUWNmPyO4Vky9oijISXyM1?=
+ =?Windows-1252?Q?Ma1/6iXb9YHiDt66L2Ib1f668oQLxqBrEsCMhbudKcId5ZY635W2dMKb?=
+ =?Windows-1252?Q?OlOmZdMUDbgci0RhjaKSbvdE8I7TjJNXv9v3XVvt1y9LFYbDeRJQf0Rp?=
+ =?Windows-1252?Q?Euu1kMeVf/v3WqVRO4zIUsAd72IBAGTsIeyN7+n+07ttHkiCWbeErWvU?=
+ =?Windows-1252?Q?d2WqoxOymfDxEjqSiebjPxHqmu1cwVvWtHBWUn+VsHxrbSOcKHtYp+X7?=
+ =?Windows-1252?Q?KQhg5IZn7kjCJ6uhPuu6qq5NIthdK8R+fdS3rQ8qzT8nfEQQSe3Y4qsn?=
+ =?Windows-1252?Q?DDB4kZsaqFWXf2hKt+mQlSTSExD8PKbRP2gsnFAATk4qyxWr/qorrOV7?=
+ =?Windows-1252?Q?Hb363qTQpCCKYizwtvIkj+HvIKd1+gtLiuYkXq6c5jsz5wGRg2udgMc/?=
+ =?Windows-1252?Q?C90kqa1xsbhCk/IHaBKod9Tm4PpG4k1CarPTq1hTzhpzD4BksaL/qzX8?=
+ =?Windows-1252?Q?yZb6p3QKa8IBkFRH6heVf/11ReWXRz8vIR6k4LYqOLCos+egl2vLh2ix?=
+ =?Windows-1252?Q?uTKm0/mtAk1Nt6nZn54s4uOWKreciSFI/llu+/ykFN7E8zkT9sYcokGS?=
+ =?Windows-1252?Q?ypu760CwOOfROnubQBbtdehcqmTCY3rSRgYnAE5cl8vWPgX8MX7YWOmT?=
+ =?Windows-1252?Q?kaGkkQ+wcHX2UBWOUXS0WvP1ldAjsxmFlPiXvVknq/PCpKXf9UB7+g2G?=
+ =?Windows-1252?Q?ArHA1gKBYa2bkf9jbCjjmwfz2a1ZSotlVQE1+ZBBuVH1a2xmzKAOy5VN?=
+ =?Windows-1252?Q?gCtlz2cSimzG8AYvDJcfTmc99Dbvj4SgJ3FYcJMjjarCqeD30wAEiRyk?=
+ =?Windows-1252?Q?MLzKmqpbt1EcxKTW9aAPqrGeGI9sv30+9fwzKTtfsy3E20e797Ez1n27?=
+ =?Windows-1252?Q?t+J0T774FvdqvtcJ8jU94NIW3WESMgqIWx0uhZ7dVYvGEXTMhXihLw?=
+ =?Windows-1252?Q?=3D=3D?=
+MIME-Version: 1.0
+
+--Apple-Webmail-42--976435dc-0a3e-4497-a2af-05c8a283eb3c
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+    charset=utf-8;
+    format=flowed
+
+Riferimento prenotazione: TT2YWP Salve Beatrice Luna Ti informiamo che c=E2=
+=80=99=C3=A8 stato un cambio di orario che riguarda la tua prenotazione Ry=
+anair Di seguito sono indicati i dettagli del/dei nuovo/i volo/i. Se viagg=
+i con altri, informali delle modifiche. Ci scusiamo per eventuali disagi. =
+Tuttavia, ora hai a disposizione diverse opzioni, tra cui accettare il nuo=
+vo orario di partenza, modificare gratuitamente il volo o richiedere il ri=
+mborso completo del costo del biglietto. 1. Modifica dell=E2=80=99orario d=
+el/i volo/i Dettagli volo precedente Riferimento prenotazione: TT2YWP Viag=
+gio di andata Volo RK8317 Partenza 30apr2026 1725 Arrivo 30apr2026 1830 Mi=
+lano Malpensa Londra Stansted Viaggio di ritorno Volo FR8318 Partenza 04ma=
+g2026 1740 Arrivo 04mag2026 2035 Londra Stansted Milano Malpensa Dettagli =
+nuovo volo Riferimento prenotazione: TT2YWP Viaggio di andata Volo FR2756 =
+Partenza 01mag2026 0545 Arrivo 01mag2026 0650 Milano Malpensa Londra Stans=
+ted Viaggio di ritorno Volo FR2759 Partenza 04mag2026 1515 Arrivo 04mag202=
+6 1810 Londra Stansted Milano Malpensa Accetta la modifica del volo Se hai=
+ gi=C3=A0 scaricato la tua carta d=E2=80=99imbarco digitale tramite l=E2=80=
+=99app Ryanair, scaricala nuovamente per assicurarti che mostri l=E2=80=99=
+orario aggiornato di partenza e arrivo. 2. Cambia gratuitamente il tuo vol=
+o =E2=80=A2 Puoi scegliere di cambiare il tuo volo con il prossimo volo di=
+sponibile sulla stessa rotta o con un volo in partenza tre giorni prima o =
+tre giorni dopo il tuo nuovo orario di partenza. Non si applicano costi di=
+ cambio volo n=C3=A9 alcuna differenza tariffaria. =E2=80=A2 Clicca qui pe=
+r cambiare il tuo volo se desideri usufruire dell'opzione di cambio gratui=
+to. =E2=80=A2 Eventuali modifiche che superino i periodi sopra indicati sa=
+ranno soggette alle tariffe di modifica del volo e alla corresponsione di =
+una differenza tariffaria (se applicabile). 3. Richiedi un rimborso =E2=80=
+=A2 Puoi cancellare la tua prenotazione e richiedere il rimborso completo =
+del volo/dei voli non utilizzato/i. Fare qui per avviare la procedura di r=
+imborso. =E2=80=A2 Riceverai il rimborso entro 24 ore dal completamento de=
+lla procedura di rimborso. Ryanair non risponde di somme pagate in anticip=
+o, direttamente o indirettamente collegate alle prenotazioni affette dalla=
+ variazione dell=E2=80=99orario di questo volo. Se hai acquistato da noi a=
+ltri servizi (ad es. autonoleggio, trasferimenti, parcheggio, ecc=E2=80=A6=
+), pu=C3=B2 essere necessario apportare delle modifiche; ti preghiamo di c=
+ontattare direttamente i fornitori. Desideriamo cogliere questa opportunit=
+=C3=A0 per scusarci nuovamente per eventuali disagi causati dalla modifica=
+ al/i tuo/tuoi volo/i. Grazie per aver scelto Ryanair e non vediamo l=E2=80=
+=99ora di darti presto il benvenuto a bordo. Cordialmente, The Ryanair Gro=
+up Customer Care (Ryanair DAC, Lauda, Malta Air & Buzz) | Termini e Condiz=
+ioni | Informativa sulla privacy | Contatti
+--Apple-Webmail-42--976435dc-0a3e-4497-a2af-05c8a283eb3c
+Content-Type: multipart/related;
+    type="text/html";
+    boundary=Apple-Webmail-86--976435dc-0a3e-4497-a2af-05c8a283eb3c
+
+--Apple-Webmail-86--976435dc-0a3e-4497-a2af-05c8a283eb3c
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+    charset=utf-8;
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body><div><div><br></div><blockquote type=3D"cite"><div><div><div class=3D=
+"gmail_quote"><blockquote style=3D"margin:0 0 0 .8ex;border-left:1px #ccc s=
+olid;padding-left:1ex" class=3D"gmail_quote"><div><div dir=3D"auto" class=
+=3D"gmail_quote"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#E6EAED"><tbody><tr><td align=3D"center"><table ali=
+gn=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100=
+%"><tbody><tr><td style=3D"font-size:0px;line-height:0px">&nbsp;</td><td al=
+ign=3D"left" width=3D"600"><table cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" width=3D"100%"><tbody><tr><td style=3D"font-size:0;line-height:0"><=
+table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbod=
+y><tr><td bgcolor=3D"#073590" style=3D"line-height:0" valign=3D"middle" ali=
+gn=3D"center"><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" align=3D"center"><tbody><tr><td style=3D"line-height:0" width=3D"=
+100%" valign=3D"middle" align=3D"left"><table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0"><tbody><tr><td style=3D"padding:5px 0 5px 0"><table cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td width=3D"10"><=
+br></td><td bgcolor=3D"#F1C933" width=3D"5"><br></td><td valign=3D"middle">=
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td vali=
+gn=3D"middle" style=3D"padding:5px 15px 5px 10px"><div style=3D"color:#ffff=
+ff;font-family:Arial,Helvetica,sans-serif,'Roboto';font-size:10px;line-heig=
+ht:14px">Riferimento prenotazione:</div><div style=3D"color:#ffffff;font-fa=
+mily:Arial,Helvetica,sans-serif,'Roboto';font-size:14px;font-weight:bold;li=
+ne-height:14px">TT2YWP</div></td></tr></tbody></table></td><td width=3D"5">=
+<br></td></tr></tbody></table></td></tr></tbody></table></td><td style=3D"l=
+ine-height:0" valign=3D"middle" height=3D"52"><table width=3D"48" cellpaddi=
+ng=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td style=3D"line-height=
+:0;padding:0px 12px 0px 8px" align=3D"right"><img alt=3D"" height=3D"28" wi=
+dth=3D"28" src=3D"https://www.ryanair.com/content/dam/ryanair/trade-crm/act=
+ivetripcrm/taxitesting/header-harp.png"><br></td></tr></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><t=
+able cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%"><tbody=
+><tr><td><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0"><tbody><tr><td style=3D"font-size:0;line-height:0"><table bgcolor=3D=
+"#FFFFFF" background=3D"https://www.ryanair.com/content/dam/ryanair/trade-c=
+rm/assets-2021/october-21/flight-cancellation-email/Crew-1.png" style=3D"ba=
+ckground-position: center top; background-repeat: no-repeat; background-siz=
+e: 100% auto; line-height: 0;" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0"><tbody><tr><td style=3D"background-image:url(&quot;http=
+s://www.ryanair.com/content/dam/ryanair/trade-crm/assets-2021/october-21/fl=
+ight-cancellation-email/Crew-1.png&quot;);background-position:center top;ba=
+ckground-repeat:no-repeat;background-size:100% auto;line-height:0" align=3D=
+"center"><table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0"><tbody><tr><td style=3D"line-height:0" width=3D"30">&nbsp;</td><td s=
+tyle=3D"line-height:0px"><table width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0"><tbody><tr><td style=3D"background-image:url(&quot;htt=
+ps://www.ryanair.com/content/dam/ryanair/trade-crm/assets-2021/october-21/f=
+light-cancellation-email/Crew-1.png&quot;);background-position:-9999px -999=
+9px;background-repeat:no-repeat;background-size:cover;line-height:0px" heig=
+ht=3D"95" valign=3D"top"><table width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0"><tbody><tr><td style=3D"line-height:0" width=3D"1"><br=
+></td><td style=3D"line-height:0px;padding:20px 0px" valign=3D"top" align=
+=3D"center"><br></td><td style=3D"line-height:0" width=3D"1">&nbsp;</td></t=
+r></tbody></table></td></tr></tbody></table></td><td style=3D"line-height:0=
+" width=3D"30">&nbsp;</td></tr></tbody></table></td></tr></tbody></table></=
+td></tr></tbody></table><table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" style=3D"min-width:100%" width=3D"100%"><tbody><tr><td valign=3D"top=
+" align=3D"left"><table bgcolor=3D"#FFFFFF" style=3D"min-width:100%;margin:=
+0 auto;max-width:600px;overflow:hidden;width:100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td valign=3D"top" align=
+=3D"center"><table style=3D"min-width:100%;border:none" cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td style=3D"paddin=
+g:0px 50px 10px" valign=3D"top" align=3D"center"><table cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" style=3D"min-width:100%" width=3D"100%"><tbod=
+y><tr><td align=3D"center" style=3D"font-size:0;line-height:0;padding:0px 0=
+px 10px 0px"><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0"><tbody><tr><td style=3D"font-family:'Roboto',Helvetica,Arial,san=
+s-serif;font-size:16px;line-height:22px;color:#073590;padding-top:1em;paddi=
+ng-bottom:2.5em" align=3D"center">Salve Beatrice Luna<br><br>Ti informiamo =
+che c=E2=80=99=C3=A8 stato un cambio di orario che riguarda la tua prenotaz=
+ione Ryanair=0A=
+Di seguito sono indicati i dettagli del/dei nuovo/i volo/i. Se viaggi con a=
+ltri, informali delle modifiche.=0A=
+Ci scusiamo per eventuali disagi.<br><br>Tuttavia, ora hai a disposizione d=
+iverse opzioni, tra cui accettare il nuovo orario di partenza, modificare g=
+ratuitamente il volo o richiedere il rimborso completo del costo del biglie=
+tto.</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table><table bgcolor=
+=3D"#f4f4f4" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%=
+"><tbody><tr><td height=3D"45" style=3D"font-size:0;line-height:0" valign=
+=3D"top"><br></td></tr></tbody></table><table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"min-width:100%" width=3D"100%"><tbody><tr><td =
+valign=3D"top" align=3D"left"><table bgcolor=3D"#f4f4f4" style=3D"min-width=
+:100%;margin:0 auto;max-width:600px;overflow:hidden;width:100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td valign=
+=3D"top" align=3D"center"><table style=3D"min-width:100%;border:none" cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td s=
+tyle=3D"padding:0px 0px 0px 0px" valign=3D"top" align=3D"center"><table cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"min-width:100%" widt=
+h=3D"100%"><tbody><tr><td style=3D"padding:0px 0px 0px 0px" valign=3D"top" =
+align=3D"center"><img alt=3D"clock icon" style=3D"border:0;display:block;ou=
+tline:0;max-width:100%;width:100%" border=3D"0" width=3D"600" src=3D"https:=
+//www.ryanair.com/content/dam/ryanair/trade-crm/assets-2021/october-21/cs-e=
+mails/Time-Icn.png"><br></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table><table cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" style=3D"min-width:100%" width=3D"100%"><=
+tbody><tr><td valign=3D"top" align=3D"left"><table bgcolor=3D"#f4f4f4" styl=
+e=3D"min-width:100%;margin:0 auto;max-width:600px;overflow:hidden;width:100=
+%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"><tbody><=
+tr><td valign=3D"top" align=3D"center"><table style=3D"min-width:100%;borde=
+r:none" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"><tb=
+ody><tr><td style=3D"padding:10px 50px 0px" valign=3D"top" align=3D"center"=
+><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"min-width=
+:100%" width=3D"100%"><tbody><tr><td align=3D"center" style=3D"font-size:0;=
+line-height:0;padding:0px 0px 20px 0px"><table align=3D"center" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0"><tbody><tr><td style=3D"font-family:'=
+Roboto',Helvetica,Arial,sans-serif;font-size:20px;line-height:28px;color:#0=
+73590;font-weight:bold" align=3D"center">1. Modifica dell=E2=80=99orario de=
+l/i volo/i</td></tr></tbody></table></td></tr></tbody></table></td></tr></t=
+body></table></td></tr><tr><td style=3D"padding-left:45px;padding-right:45p=
+x" valign=3D"top" align=3D"center"><table style=3D"float:left;font-family:'=
+Roboto',Helvetica,Arial,sans-serif;font-size:14px" align=3D"left" width=3D"=
+240" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=
+=3D"background-color:#939393;color:#ffffff;font-weight:bold;text-align:cent=
+er;text-transform:uppercase;padding:12px 0 5px;border-top-left-radius:10px;=
+border-top-right-radius:10px" bgcolor=3D"#939393"><p style=3D"Margin:0">Det=
+tagli volo precedente</p></td></tr><tr><td style=3D"background-color:rgb(14=
+7,147,147);color:rgb(255,255,255);text-align:center;padding-bottom:10px" bg=
+color=3D"#939393"><p style=3D"Margin:0">Riferimento prenotazione: <b>TT2YWP=
+</b></p></td></tr><tr><td bgcolor=3D"#ffffff" style=3D"background-color:rgb=
+(255,255,255);color:rgb(0,39,137);text-align:center"><table align=3D"center=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><t=
+r><td style=3D"padding:6px 0px 5px;color:rgb(111,111,111);text-transform:up=
+percase;border-bottom-width:2px;border-bottom-style:solid;border-bottom-col=
+or:rgb(230,230,230)" colspan=3D"2"><b>Viaggio di andata</b></td></tr></tbod=
+y></table></td></tr><tr><td style=3D"text-align:center;color:#666666" colsp=
+an=3D"2" bgcolor=3D"#e6e6e6">Volo RK8317</td></tr><tr><td style=3D"backgrou=
+nd-color:rgb(255,255,255);color:rgb(111,111,111);text-align:center" bgcolor=
+=3D"#ffffff"><table align=3D"center" width=3D"100%" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"border-right-width:2px;bo=
+rder-right-style:solid;border-right-color:rgb(230,230,230);text-transform:u=
+ppercase;padding:20px 0px" width=3D"50%"><p style=3D"Margin-bottom:10px"><b=
+>Partenza</b></p><p style=3D"Margin-bottom:10px">30apr2026</p><p style=3D"f=
+ont-size:21px;text-decoration:line-through"><b>1725</b></p></td><td style=
+=3D"padding:20px 0px;text-transform:uppercase"><p style=3D"Margin-bottom:10=
+px"><b>Arrivo</b></p><p style=3D"Margin-bottom:10px">30apr2026</p><p style=
+=3D"font-size:21px;text-decoration:line-through"><b>1830</b></p></td></tr><=
+/tbody></table></td></tr><tr><td style=3D"background-color:#dddddd;color:#6=
+f6f6f;font-weight:bold;text-align:center;padding:0px" bgcolor=3D"#DDDDDD"><=
+table align=3D"center" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0"><tbody><tr><td style=3D"border-right-width:2px;border-right-sty=
+le:solid;border-right-color:rgb(204,204,204);padding:5px 0px" width=3D"50%"=
+><p style=3D"Margin:0">Milano Malpensa</p></td><td style=3D"padding:5px 0px=
+" width=3D"50%"><p style=3D"Margin:0">Londra Stansted</p></td></tr></tbody>=
+</table></td></tr><tr><td bgcolor=3D"#ffffff" style=3D"background-color:rgb=
+(255,255,255);color:rgb(0,39,137);text-align:center"><table align=3D"center=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><t=
+r><td style=3D"padding:6px 0px 5px;color:rgb(111,111,111);text-transform:up=
+percase;border-bottom-width:2px;border-bottom-style:solid;border-bottom-col=
+or:rgb(230,230,230)" colspan=3D"2"><b>Viaggio di ritorno</b></td></tr></tbo=
+dy></table></td></tr><tr><td style=3D"text-align:center;color:#666666" cols=
+pan=3D"2" bgcolor=3D"#e6e6e6">Volo FR8318</td></tr><tr><td style=3D"backgro=
+und-color:rgb(255,255,255);color:rgb(111,111,111);text-align:center" bgcolo=
+r=3D"#ffffff"><table align=3D"center" width=3D"100%" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"border-right-width:2px;b=
+order-right-style:solid;border-right-color:rgb(230,230,230);text-transform:=
+uppercase;padding:20px 0px" width=3D"50%"><p style=3D"Margin-bottom:10px"><=
+b>Partenza</b></p><p style=3D"Margin-bottom:10px">04mag2026</p><p style=3D"=
+font-size:21px;text-decoration:line-through"><b>1740</b></p></td><td style=
+=3D"padding:20px 0px;text-transform:uppercase"><p style=3D"Margin-bottom:10=
+px"><b>Arrivo</b></p><p style=3D"Margin-bottom:10px">04mag2026</p><p style=
+=3D"font-size:21px;text-decoration:line-through"><b>2035</b></p></td></tr><=
+/tbody></table></td></tr><tr><td style=3D"background-color:#dddddd;color:#6=
+f6f6f;font-weight:bold;text-align:center;padding:0px;border-bottom-left-rad=
+ius:10px;border-bottom-right-radius:10px" bgcolor=3D"#DDDDDD"><table align=
+=3D"center" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tbody><tr><td style=3D"border-right-width:2px;border-right-style:solid;bo=
+rder-right-color:rgb(204,204,204);padding:5px 0px" width=3D"50%"><p style=
+=3D"Margin:0">Londra Stansted</p></td><td style=3D"padding:5px 0px" width=
+=3D"50%"><p style=3D"Margin:0">Milano Malpensa</p></td></tr></tbody></table=
+></td></tr><tr><td>&nbsp;</td></tr></tbody></table><table style=3D"float:ri=
+ght;font-family:'Roboto',Helvetica,Arial,sans-serif;font-size:14px" align=
+=3D"right" width=3D"240" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><=
+tbody><tr><td style=3D"background-color:#f0c932;color:#002789;font-weight:b=
+old;text-align:center;text-transform:uppercase;padding:12px 0 5px;border-to=
+p-left-radius:10px;border-top-right-radius:10px" bgcolor=3D"#f0c932"><p sty=
+le=3D"Margin:0">Dettagli&nbsp;nuovo&nbsp;volo</p></td></tr><tr><td style=3D=
+"background-color:rgb(240,201,50);color:rgb(0,39,137);text-align:center;pad=
+ding-bottom:10px" bgcolor=3D"#f0c932"><p style=3D"Margin:0">Riferimento pre=
+notazione: <b>TT2YWP</b></p></td></tr><tr><td bgcolor=3D"#ffffff" style=3D"=
+background-color:rgb(255,255,255);color:rgb(0,39,137);text-align:center"><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%"><tbody><tr><td style=3D"padding:6px 0px 5px;text-transform:upper=
+case;border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:=
+rgb(230,230,230)" colspan=3D"2"><b>Viaggio di andata</b></td></tr></tbody><=
+/table></td></tr><tr><td style=3D"text-align:center;color:#002789" colspan=
+=3D"2" bgcolor=3D"#e6e6e6">Volo FR2756</td></tr><tr><td style=3D"background=
+-color:rgb(255,255,255);color:rgb(0,39,137);text-align:center" bgcolor=3D"#=
+ffffff"><table align=3D"center" width=3D"100%" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0"><tbody><tr><td style=3D"border-right-width:2px;border-=
+right-style:solid;border-right-color:rgb(230,230,230);text-transform:upperc=
+ase;padding:20px 0px" width=3D"50%"><p style=3D"Margin-bottom:10px"><b>Part=
+enza</b></p><p style=3D"Margin-bottom:10px">01mag2026</p><p style=3D"font-s=
+ize:21px"><b>0545</b></p></td><td style=3D"padding:20px 0px;text-transform:=
+uppercase"><p style=3D"Margin-bottom:10px"><b>Arrivo</b></p><p style=3D"Mar=
+gin-bottom:10px">01mag2026</p><p style=3D"font-size:21px"><b>0650</b></p></=
+td></tr></tbody></table></td></tr><tr><td style=3D"background-color:#dddddd=
+;color:#002789;font-weight:bold;text-align:center;padding:0px" bgcolor=3D"#=
+cccccc"><table align=3D"center" width=3D"100%" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0"><tbody><tr><td style=3D"border-right-width:2px;border-=
+right-style:solid;border-right-color:rgb(204,204,204);padding:5px 0px" widt=
+h=3D"50%"><p style=3D"Margin:0">Milano Malpensa</p></td><td style=3D"paddin=
+g:5px 0px" width=3D"50%"><p style=3D"Margin:0">Londra Stansted</p></td></tr=
+></tbody></table></td></tr><tr><td bgcolor=3D"#ffffff" style=3D"background-=
+color:rgb(255,255,255);color:rgb(0,39,137);text-align:center"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+><tbody><tr><td style=3D"padding:6px 0px 5px;text-transform:uppercase;borde=
+r-bottom-width:2px;border-bottom-style:solid;border-bottom-color:rgb(230,23=
+0,230)" colspan=3D"2"><b>Viaggio di ritorno</b></td></tr></tbody></table></=
+td></tr><tr><td style=3D"text-align:center;color:#002789" colspan=3D"2" bgc=
+olor=3D"#e6e6e6">Volo FR2759</td></tr><tr><td style=3D"background-color:rgb=
+(255,255,255);color:rgb(0,39,137);text-align:center" bgcolor=3D"#ffffff"><t=
+able align=3D"center" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0"><tbody><tr><td style=3D"border-right-width:2px;border-right-styl=
+e:solid;border-right-color:rgb(230,230,230);text-transform:uppercase;paddin=
+g:20px 0px" width=3D"50%"><p style=3D"Margin-bottom:10px"><b>Partenza</b></=
+p><p style=3D"Margin-bottom:10px">04mag2026</p><p style=3D"font-size:21px">=
+<b>1515</b></p></td><td style=3D"padding:20px 0px;text-transform:uppercase"=
+><p style=3D"Margin-bottom:10px"><b>Arrivo</b></p><p style=3D"Margin-bottom=
+:10px">04mag2026</p><p style=3D"font-size:21px"><b>1810</b></p></td></tr></=
+tbody></table></td></tr><tr><td style=3D"background-color:#dddddd;color:#00=
+2789;font-weight:bold;text-align:center;padding:0px;border-bottom-left-radi=
+us:10px;border-bottom-right-radius:10px" bgcolor=3D"#cccccc"><table align=
+=3D"center" width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tbody><tr><td style=3D"border-right-width:2px;border-right-style:solid;bo=
+rder-right-color:rgb(204,204,204);padding:5px 0px" width=3D"50%"><p style=
+=3D"Margin:0">Londra Stansted</p></td><td style=3D"padding:5px 0px" width=
+=3D"50%"><p style=3D"Margin:0">Milano Malpensa</p></td></tr></tbody></table=
+></td></tr><tr><td>&nbsp;</td></tr></tbody></table></td></tr></tbody></tabl=
+e></td></tr></tbody></table><table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" style=3D"min-width:100%" width=3D"100%"><tbody><tr><td valign=3D"t=
+op" align=3D"left"><table bgcolor=3D"f2f2f2" style=3D"min-width:100%;margin=
+:0 auto;max-width:600px;overflow:hidden;width:100%" cellpadding=3D"0" cells=
+pacing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td valign=3D"top" alig=
+n=3D"center"><table style=3D"min-width:100%;border:none" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td style=3D"paddi=
+ng:20px 16px 10px 16px" valign=3D"top" align=3D"center"><table cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"min-width:100%" width=3D"100=
+%"><tbody><tr><td style=3D"padding:10px 0px 20px 0px" align=3D"center"><tab=
+le cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td style=3D=
+"padding:15px 25px;border-radius:4px;color:rgb(7,53,144);font-size:16px;lin=
+e-height:20px;font-family:Roboto,Helvetica,Arial,sans-serif" align=3D"cente=
+r" bgcolor=3D"#f1c933"><a style=3D"color:#073590;text-decoration:none;displ=
+ay:block" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Fschdchng.ryanair.com%2FLinkTracking%=
+3Fq%3D8yI-gSAi655_N5X0y3XkWEcF_oyCbLRcfr0-LCluK4e0duFXWs9hBLJ_7P-RJBAoLf3WY=
+HT0z-MbmeOktyLQlHSg05rEl-h73poODVohR3I-9zo-X4R0dPYCXDmDtqidCFYVmH23D68FpR3w=
+fovnArHfFOXsyfXnJyalLHo58VdtzQHddYKf13oYsE80RlzOrX70t6o9NIhDssQERgm4L5zNLvZ=
+_WW3auwihEMZyBzCK96vaiKlf3WPhy2lghFt_O9oTMx4TfvNErF8glXG3DcL4-OlpwUXITbmHgo=
+g3kfwVyp0y3lytEEk8CE1G-hbHrbc3XrzfbfVAOgfC1psaNg%26r%3D823998245&amp;data=
+=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C1fa59b29d8a2429f7a1608deac4e7=
+9e5%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137650255314371%7CUnkno=
+wn%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMi=
+IsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3Dg4RGNzzMuwD1aDA=
+rfSGdVtA1GgJ7o9jIdtLjVvYAB4Q%3D&amp;reserved=3D0" originalsrc=3D"https://sc=
+hdchng.ryanair.com/LinkTracking?q=3D8yI-gSAi655_N5X0y3XkWEcF_oyCbLRcfr0-LCl=
+uK4e0duFXWs9hBLJ_7P-RJBAoLf3WYHT0z-MbmeOktyLQlHSg05rEl-h73poODVohR3I-9zo-X4=
+R0dPYCXDmDtqidCFYVmH23D68FpR3wfovnArHfFOXsyfXnJyalLHo58VdtzQHddYKf13oYsE80R=
+lzOrX70t6o9NIhDssQERgm4L5zNLvZ_WW3auwihEMZyBzCK96vaiKlf3WPhy2lghFt_O9oTMx4T=
+fvNErF8glXG3DcL4-OlpwUXITbmHgog3kfwVyp0y3lytEEk8CE1G-hbHrbc3XrzfbfVAOgfC1ps=
+aNg&amp;r=3D823998245"><b>Accetta la modifica del volo</b></a></td></tr></t=
+body></table></td></tr></tbody></table></td></tr></tbody></table></td></tr>=
+</tbody></table></td></tr></tbody></table><table cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" style=3D"min-width:100%" width=3D"100%"><tbody><tr><=
+td valign=3D"top" align=3D"left"><table bgcolor=3D"#F2F2F2" style=3D"min-wi=
+dth:100%;margin:0 auto;max-width:600px;overflow:hidden;width:100%" cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td vali=
+gn=3D"top" align=3D"center"><table style=3D"min-width:100%;border:none" cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td=
+ style=3D"padding:10px 50px" valign=3D"top" align=3D"center"><table cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"min-width:100%" width=3D=
+"100%"><tbody><tr><td align=3D"center" style=3D"font-size:0;line-height:0;p=
+adding:0px 0px 10px 0px"><table align=3D"center" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0"><tbody><tr><td style=3D"font-family:'Roboto',Helveti=
+ca,Arial,sans-serif;font-size:16px;line-height:22px;color:#073590" align=3D=
+"center">Se hai gi=C3=A0 scaricato la tua carta d=E2=80=99imbarco digitale =
+tramite l=E2=80=99app Ryanair, scaricala nuovamente per assicurarti che mos=
+tri l=E2=80=99orario aggiornato di partenza e arrivo.</td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"min-width:100%"><tbody><tr><td align=
+=3D"left" valign=3D"top"><table bgcolor=3D"#F2F2F2" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;margin:0 a=
+uto;max-width:600px;overflow:hidden;width:100%"><tbody><tr><td align=3D"cen=
+ter" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"min-width:100%;border:none"><tbody><tr><td align=
+=3D"center" valign=3D"top" style=3D"padding:0px 0px 0px 0px"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-widt=
+h:100%"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"padding:0px=
+ 0px 0px 0px"><img border=3D"0" width=3D"600" style=3D"border:0;display:blo=
+ck;outline:0;max-width:100%;width:100%" src=3D"https://www.ryanair.com/cont=
+ent/dam/ryanair/trade-crm/assets-2021/october-21/cs-emails/Schedule-Chng-Ic=
+n.png"><br></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%"><tbody><tr><td=
+ align=3D"left" valign=3D"top"><table bgcolor=3D"#F2F2F2" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;marg=
+in:0 auto;max-width:600px;overflow:hidden;width:100%"><tbody><tr><td align=
+=3D"center" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" style=3D"min-width:100%;border:none"><tbody><tr><td =
+align=3D"center" valign=3D"top" style=3D"padding:20px 70px 0px"><table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-wi=
+dth:100%"><tbody><tr><td align=3D"center" style=3D"font-size:0;line-height:=
+0;padding:0px 0px 10px 0px"><table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0"><tbody><tr><td align=3D"center" style=3D"font-fam=
+ily:'Roboto',Helvetica,Arial,sans-serif;font-size:22px;line-height:28px;col=
+or:#073590;font-weight:bold">2. Cambia gratuitamente il tuo volo</td></tr><=
+/tbody></table></td></tr><tr><td align=3D"center" style=3D"font-size:0;line=
+-height:0;padding:0px 0px 10px 0px"><table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"><tbody><tr><td align=3D"center" style=3D"=
+font-family:'Roboto',Helvetica,Arial,sans-serif;font-size:16px;line-height:=
+22px;color:#073590">=E2=80=A2 Puoi scegliere di cambiare il tuo volo con il=
+ prossimo volo disponibile sulla stessa rotta o con un volo in partenza tre=
+ giorni prima o tre giorni dopo il tuo nuovo orario di partenza. Non si app=
+licano costi di cambio volo n=C3=A9 alcuna differenza tariffaria.<br><br>=
+=E2=80=A2 <a rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fschdchng.ryanair.com%2FLinkTracki=
+ng%3Fq%3DCUOYi935xTN3fUCsl6CK4p0jpc2K9-5WFv-ORgqPJozZn9Nq6nudkueUJPhwQoWwak=
+cWLWQlb30doKO9tZnBp7oeT0Pcr_PdGSkMjx0kLs48j4qSlAsOEdIigPAU9-LyUo48TaLJC3VPT=
+EVz9oPW6n4CEKjj2pItLlJnsYaZrY2MF9Vo_rXZyPLtGzToE8h1jfwcbuVK9l1xowLp6YK9UPuZ=
+QnosrZL0SnX8aABodHU%26r%3D823998245&amp;data=3D05%7C02%7Calessandro.sacchi%=
+40piksel.com%7C1fa59b29d8a2429f7a1608deac4e79e5%7Cdbb58153e4db40a09b26d4d9f=
+1473a75%7C0%7C0%7C639137650255352306%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcG=
+kiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D=
+%3D%7C0%7C%7C%7C&amp;sdata=3Dka30RhdIRkWtK0DHw2H2J8mFXhe0nC1xTA713Ffqbr4%3D=
+&amp;reserved=3D0" originalsrc=3D"https://schdchng.ryanair.com/LinkTracking=
+?q=3DCUOYi935xTN3fUCsl6CK4p0jpc2K9-5WFv-ORgqPJozZn9Nq6nudkueUJPhwQoWwakcWLW=
+Qlb30doKO9tZnBp7oeT0Pcr_PdGSkMjx0kLs48j4qSlAsOEdIigPAU9-LyUo48TaLJC3VPTEVz9=
+oPW6n4CEKjj2pItLlJnsYaZrY2MF9Vo_rXZyPLtGzToE8h1jfwcbuVK9l1xowLp6YK9UPuZQnos=
+rZL0SnX8aABodHU&amp;r=3D823998245" style=3D"color:rgb(32,145,235)">Clicca q=
+ui</a> per cambiare il tuo volo se desideri usufruire dell'opzione di cambi=
+o gratuito.<br><br>=E2=80=A2 Eventuali modifiche che superino i periodi sop=
+ra indicati saranno soggette alle tariffe di modifica del volo e alla corre=
+sponsione di una differenza tariffaria (se applicabile).</td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table><table bgcolor=3D"#F2F2F2" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td height=
+=3D"15" valign=3D"top" style=3D"font-size:0;line-height:0"><br></td></tr><t=
+r><td valign=3D"top" style=3D"font-size:0;line-height:0"><br></td></tr></tb=
+ody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%"><tbody><tr><td align=3D"left" valign=3D"=
+top"><table bgcolor=3D"#F2F2F2" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"min-width:100%;margin:0 auto;max-width:600px=
+;overflow:hidden;width:100%"><tbody><tr><td align=3D"center" valign=3D"top"=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"min-width:100%;border:none"><tbody><tr><td align=3D"center" valign=3D=
+"top" style=3D"padding:0px 0px 0px 0px"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%"><tbody><tr><td=
+ align=3D"center" valign=3D"top" style=3D"padding:0px 0px 0px 0px"><img bor=
+der=3D"0" width=3D"600" style=3D"border:0;display:block;outline:0;max-width=
+:100%;width:100%" src=3D"https://www.ryanair.com/content/dam/ryanair/trade-=
+crm/assets-2021/october-21/cs-emails/Money-Icn.png"><br></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" style=3D"min-width:100%"><tbody><tr><td align=3D"left" valign=3D"top"=
+><table bgcolor=3D"#F2F2F2" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" style=3D"min-width:100%;margin:0 auto;max-width:600px;over=
+flow:hidden;width:100%"><tbody><tr><td align=3D"center" valign=3D"top"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"min-width:100%;border:none"><tbody><tr><td align=3D"center" valign=3D"top"=
+ style=3D"padding:20px 50px 0px"><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"min-width:100%"><tbody><tr><td align=
+=3D"center" style=3D"font-size:0;line-height:0;padding:0px 0px 10px 0px"><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tbo=
+dy><tr><td align=3D"center" style=3D"font-family:'Roboto',Helvetica,Arial,s=
+ans-serif;font-size:22px;line-height:28px;color:#073590;font-weight:bold">3=
+.  Richiedi un rimborso</td></tr></tbody></table></td></tr><tr><td align=3D=
+"center" style=3D"font-size:0;line-height:0;padding:0px 0px 10px 0px"><tabl=
+e align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tbody>=
+<tr><td style=3D"font-family:'Roboto',Helvetica,Arial,sans-serif;font-size:=
+16px;line-height:22px;color:#073590" align=3D"center"><br>=E2=80=A2 Puoi ca=
+ncellare la tua prenotazione e richiedere il rimborso completo del volo/dei=
+ voli non utilizzato/i.&nbsp;<a style=3D"color:#2091eb;text-decoration:unde=
+rline"></a><a rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2Fschdchng.ryanair.com%2FLinkTrack=
+ing%3Fq%3DCgTUBkFHCaIYESMrulSKVUOM-RWNzV5zG5ngtBQldqv4epjkveS7AJzKQZxnVA3LF=
+6HLEsD9ArsN4e_PkQrrK1pxoMbOGhn_spnzR_lHhFxH67qKe00xKjs7xo3qoz8xvp6C1Kwbmj73=
+RXMqqPnSWekiBlDshK6qMXyom9jc_13uEhni2Y5oSsgtuBTRVPclWR6qWwYDW_80InCdMpqFWi0=
+lQgWLCXX0VgLtcAdqWBw%26r%3D823998245&amp;data=3D05%7C02%7Calessandro.sacchi=
+%40piksel.com%7C1fa59b29d8a2429f7a1608deac4e79e5%7Cdbb58153e4db40a09b26d4d9=
+f1473a75%7C0%7C0%7C639137650255385695%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hc=
+GkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3=
+D%3D%7C0%7C%7C%7C&amp;sdata=3DOy2qd6rIzo%2F5PtHVc3ef8p5ZdAw25sC98vnXjuWk8yo=
+%3D&amp;reserved=3D0" originalsrc=3D"https://schdchng.ryanair.com/LinkTrack=
+ing?q=3DCgTUBkFHCaIYESMrulSKVUOM-RWNzV5zG5ngtBQldqv4epjkveS7AJzKQZxnVA3LF6H=
+LEsD9ArsN4e_PkQrrK1pxoMbOGhn_spnzR_lHhFxH67qKe00xKjs7xo3qoz8xvp6C1Kwbmj73RX=
+MqqPnSWekiBlDshK6qMXyom9jc_13uEhni2Y5oSsgtuBTRVPclWR6qWwYDW_80InCdMpqFWi0lQ=
+gWLCXX0VgLtcAdqWBw&amp;r=3D823998245">Fare qui</a> per avviare la procedura=
+ di rimborso.<br><br>=E2=80=A2 Riceverai il rimborso entro 24&nbsp;ore dal =
+completamento della procedura di rimborso.</td></tr></tbody></table></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr></tbody></table><table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" style=3D"min-width:100%" width=3D"100%"><tbody><tr><td valign=3D"top" al=
+ign=3D"left"><table bgcolor=3D"#FFFFFF" style=3D"min-width:100%;margin:0 au=
+to;max-width:600px;overflow:hidden;width:100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td valign=3D"top" align=3D"=
+center"><table style=3D"min-width:100%;border:none" cellpadding=3D"0" cells=
+pacing=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td style=3D"padding:20=
+px 50px 10px" valign=3D"top" align=3D"center"><table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" style=3D"min-width:100%" width=3D"100%"><tbody><=
+tr><td align=3D"center" style=3D"font-size:0;line-height:0;padding:0px 0px =
+10px 0px"><table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0"><tbody><tr><td style=3D"font-family:'Roboto',Helvetica,Arial,sans-s=
+erif;font-size:16px;line-height:22px;color:#073590" align=3D"center">Ryanai=
+r non risponde di somme pagate in anticipo, direttamente o indirettamente c=
+ollegate alle prenotazioni affette dalla variazione dell=E2=80=99orario di =
+questo volo. <br><br>Se hai acquistato da noi altri servizi (ad es. autonol=
+eggio, trasferimenti, parcheggio, ecc=E2=80=A6), pu=C3=B2 essere necessario=
+ apportare delle modifiche; ti preghiamo di contattare direttamente i forni=
+tori. <br><br>Desideriamo cogliere questa opportunit=C3=A0 per scusarci nuo=
+vamente per eventuali disagi=0A=
+ causati dalla modifica al/i tuo/tuoi volo/i.<br><br> Grazie per aver scelt=
+o Ryanair e non vediamo l=E2=80=99ora di darti presto il benvenuto a bordo.=
+<br><br> Cordialmente,<br><br> The Ryanair Group Customer Care (Ryanair DAC=
+, Lauda, Malta Air &amp; Buzz)<br></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table><table style=3D"font-size:0;line-he=
+ight:0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tb=
+ody><tr><td style=3D"text-align:center" valign=3D"top" bgcolor=3D"#073590" =
+background=3D"https://www.ryanair.com/content/dam/ryanair/trade-crm/activet=
+ripcrm/taxitesting/header-bg.jpg"><table style=3D"line-height:0" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%"><tbody><tr><td style=
+=3D"line-height:0"><div style=3D"line-height:0"><table style=3D"line-height=
+:0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody>=
+<tr><td width=3D"8"><br></td><td style=3D"padding:8px 0 8px 0;text-align:ri=
+ght"><div style=3D"display:inline-block;padding:8px 8px 8px 8px;vertical-al=
+ign:top"><a rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fschdchng.ryanair.com%2FLinkTrackin=
+g%3Fq%3DpVC5Er7JuL6n5fyU1DRWSJJ-KU_BxeRAyx2XXYYD_XJRxy66Sp_6AfembuAcd9jNTlM=
+i5HWsrZYll0ykhOT46uYP0qbYH4aM8IAXAckUCbI%26r%3D823998245&amp;data=3D05%7C02=
+%7Calessandro.sacchi%40piksel.com%7C1fa59b29d8a2429f7a1608deac4e79e5%7Cdbb5=
+8153e4db40a09b26d4d9f1473a75%7C0%7C0%7C639137650255419330%7CUnknown%7CTWFpb=
+GZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoi=
+TWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DQ2L7lPZTxsRZa2zF2MT0cluzJ=
+wJClE2C2cDgezoGpLA%3D&amp;reserved=3D0" originalsrc=3D"https://schdchng.rya=
+nair.com/LinkTracking?q=3DpVC5Er7JuL6n5fyU1DRWSJJ-KU_BxeRAyx2XXYYD_XJRxy66S=
+p_6AfembuAcd9jNTlMi5HWsrZYll0ykhOT46uYP0qbYH4aM8IAXAckUCbI&amp;r=3D82399824=
+5"><img alt=3D"Ryanair logo" height=3D"12" width=3D"100" src=3D"https://www=
+.ryanair.com/content/dam/ryanair/crm/templates/pb/_elements/ryanair_logo_fo=
+oter_2x.png" border=3D"0" style=3D"display:block"></a><br></div><div style=
+=3D"display:inline-block;max-width:100%;padding:8px 8px 8px 8px;vertical-al=
+ign:top"><table style=3D"line-height:0" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0"><tbody><tr><td style=3D"color:#ffffff;font-family:Arial,Helve=
+tica,sans-serif,'Roboto';font-size:10px;line-height:12px;width:450px" valig=
+n=3D"middle" align=3D"right">&nbsp;&nbsp;|&nbsp;&nbsp; <a style=3D"color:#f=
+fffff;text-decoration:none" rel=3D"noopener noreferrer" href=3D"https://gbr=
+01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fschdchng.ryanair.c=
+om%2FLinkTracking%3Fq%3DtuxX0cdoFJDuZMp2HHJnasoigqdsd9BKU1ZDhn1Z-IRJJqbxRt8=
+pcAvu1SxzluLhOenQGuISsFB_S8ca_hVMRgQoXiUTBBxpbkMOBjx0qtN9iy-Tx0T3_pyg8VIdGJ=
+ZqcOP9m_IhIuAgkbJFGxgUHj1JSGNrbL_0L22xcZTIxf7N9d9Kz-l1FSsc1nFfsmqA%26r%3D82=
+3998245&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C1fa59b29d8a24=
+29f7a1608deac4e79e5%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C6391376502=
+55446900%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMC=
+IsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=
+=3DNFN%2FyZ5gRGiZyhZwAkiw2Xa6GtrvmJkLdZTHQkzGBRE%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://schdchng.ryanair.com/LinkTracking?q=3DtuxX0cdoFJDuZMp2HHJ=
+nasoigqdsd9BKU1ZDhn1Z-IRJJqbxRt8pcAvu1SxzluLhOenQGuISsFB_S8ca_hVMRgQoXiUTBB=
+xpbkMOBjx0qtN9iy-Tx0T3_pyg8VIdGJZqcOP9m_IhIuAgkbJFGxgUHj1JSGNrbL_0L22xcZTIx=
+f7N9d9Kz-l1FSsc1nFfsmqA&amp;r=3D823998245"> Termini&nbsp;e&nbsp;Condizioni =
+</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a style=3D"color:#ffffff;text-decoration:no=
+ne" rel=3D"noopener noreferrer" href=3D"https://gbr01.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Fschdchng.ryanair.com%2FLinkTracking%3Fq%3D=
+dG_5fEcTltdX1xdnSfPjTZdQkHDOPZv702MhZwqa43vNojH_USAIBXYKljUiSRV75zIhtIivScV=
+K4_B2t_YuRWb48jN7kYb1nGBXg6b-wuyEyKxC862vJ0Olw8Jpovx3DxN26ByNeYyDgZzZOOTmfw=
+%26r%3D823998245&amp;data=3D05%7C02%7Calessandro.sacchi%40piksel.com%7C1fa5=
+9b29d8a2429f7a1608deac4e79e5%7Cdbb58153e4db40a09b26d4d9f1473a75%7C0%7C0%7C6=
+39137650255478607%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwL=
+jAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&am=
+p;sdata=3DeI4OdgqfbQGI%2FRSOAZl0yV42Zid%2B0ucYJbHVQiC6ZgQ%3D&amp;reserved=
+=3D0" originalsrc=3D"https://schdchng.ryanair.com/LinkTracking?q=3DdG_5fEcT=
+ltdX1xdnSfPjTZdQkHDOPZv702MhZwqa43vNojH_USAIBXYKljUiSRV75zIhtIivScVK4_B2t_Y=
+uRWb48jN7kYb1nGBXg6b-wuyEyKxC862vJ0Olw8Jpovx3DxN26ByNeYyDgZzZOOTmfw&amp;r=
+=3D823998245"> Informativa&nbsp;sulla&nbsp;privacy </a> &nbsp;&nbsp;|&nbsp;=
+&nbsp; <a style=3D"color:#ffffff;text-decoration:none" rel=3D"noopener nore=
+ferrer" href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps=
+%3A%2F%2Fschdchng.ryanair.com%2FLinkTracking%3Fq%3DWNOVcVN2YT_3QTuSfbSpmd9q=
+935Z9xw7OzVbN2KgGsV7P8SqGlAtR46Fp-1flEYhbYGQh9CrtLHklpZLsOo5DWQVsxu4tfYPosb=
+PluiV-iFdcO20GzdITj9SVB2S1HUSiUFpY2EhDBLieCrdBzhQK_mls2MuP5BmGEb2N_5fQbgjnc=
+z5MnPKhT15QqXRhWDt%26r%3D823998245&amp;data=3D05%7C02%7Calessandro.sacchi%4=
+0piksel.com%7C1fa59b29d8a2429f7a1608deac4e79e5%7Cdbb58153e4db40a09b26d4d9f1=
+473a75%7C0%7C0%7C639137650255514277%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGk=
+iOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%=
+3D%7C0%7C%7C%7C&amp;sdata=3Dvu%2Fy8ZthZnsKvn6wfb0uA1R8%2FCIviAF64Dk5qDiGUhU=
+%3D&amp;reserved=3D0" originalsrc=3D"https://schdchng.ryanair.com/LinkTrack=
+ing?q=3DWNOVcVN2YT_3QTuSfbSpmd9q935Z9xw7OzVbN2KgGsV7P8SqGlAtR46Fp-1flEYhbYG=
+Qh9CrtLHklpZLsOo5DWQVsxu4tfYPosbPluiV-iFdcO20GzdITj9SVB2S1HUSiUFpY2EhDBLieC=
+rdBzhQK_mls2MuP5BmGEb2N_5fQbgjncz5MnPKhT15QqXRhWDt&amp;r=3D823998245"> Cont=
+atti</a><a style=3D"padding-right:16px;color:rgb(255,255,255)"></a></td></t=
+r></tbody></table></div></td><td width=3D"8"><br></td></tr></tbody></table>=
+</div></td></tr></tbody></table></td></tr></tbody></table></td><td style=3D=
+"font-size:0px;line-height:0px">&nbsp;</td></tr></tbody></table>&nbsp; &nbs=
+p; &nbsp;&nbsp;</td></tr></tbody></table><div dir=3D"auto" style=3D"padding=
+:0;margin:0"><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=
+=3D"100%"><tbody><tr><td style=3D"font-size:1px;line-height:1px;min-width:6=
+00px" height=3D"1"><br></td></tr></tbody></table><div style=3D"display:none=
+;white-space:nowrap;font:15px courier;line-height:0">&nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div><div><img height=3D"1" width=3D"=
+1" alt=3D""> <img height=3D"1" width=3D"1" alt=3D"" src=3D"https://schdchng=
+.ryanair.com/EmailTracking?id=3D823998245"><br></div></div></div></div></bl=
+ockquote></div></div></div></blockquote></div><div><br></div></body></html>=
+
+--Apple-Webmail-86--976435dc-0a3e-4497-a2af-05c8a283eb3c--
+
+--Apple-Webmail-42--976435dc-0a3e-4497-a2af-05c8a283eb3c--
