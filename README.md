@@ -1,4 +1,4 @@
-# AgenticAI
+# GraphAI
 
 Esempio didattico di come costruire un **flusso agentico** con [LangGraph](https://langchain-ai.github.io/langgraph/) e un LLM multimodale tramite [OpenRouter](https://openrouter.ai/).
 
